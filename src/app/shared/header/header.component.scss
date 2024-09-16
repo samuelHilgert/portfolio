@@ -1,0 +1,5 @@
+@import './../../../styles.scss';
+
+header {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
+}

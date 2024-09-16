@@ -1,0 +1,8 @@
+@import './../../../../styles.scss';
+
+nav {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
+    >a {
+        @include navLinks();
+    }
+}
