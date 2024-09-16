@@ -4,6 +4,7 @@ section {
   @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
   height: 100vh;
   width: 100%;
+  box-sizing: border-box;
   background: linear-gradient(to top right, #1C1C1C, #08463B);
 }
 

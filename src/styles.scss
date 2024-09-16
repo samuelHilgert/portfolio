@@ -46,5 +46,7 @@ $portfolio-theme: mat.define-light-theme((
   src: url('./assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  box-sizing: border-box;
+}
