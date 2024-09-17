@@ -1,17 +1,16 @@
 <section>
-
   <header>
     <div class="topline">
-      <div class="custom-slide-toggle">
-        <input type="checkbox" id="toggle" class="toggle-checkbox" />
-        <label for="toggle" class="toggle-label">
-          <span class="toggle-text-left">DE</span>
-          <span class="toggle-text-right">EN</span>
+      <div class="custom-toggle">
+        <input type="checkbox" id="languageToggle" class="toggle-checkbox" [(ngModel)]="isEnglish" (change)="toggleLanguage()" />
+        <label for="languageToggle" class="toggle-label">
+          <span class="toggle-text-left">EN</span>
+          <span class="toggle-ball"></span>
+          <span class="toggle-text-right">DE</span>
         </label>
-      </div>
+      </div>      
 
       <app-navbar></app-navbar>
-
     </div>
     <img src="./../../../assets/img/SH.png" alt="" />
   </header>
@@ -21,5 +20,4 @@
   <app-social-links></app-social-links>
 
   <app-slider></app-slider>
-
 </section>
