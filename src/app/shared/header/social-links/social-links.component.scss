@@ -1,0 +1,44 @@
+@import './../../../../styles.scss';
+
+section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 0px 112px;
+    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
+    box-sizing: border-box;
+}
+
+hr {
+    border: none;
+    height: 210px;
+    width: 2px;
+    background-color: #3DCFB6;
+}
+
+.social-link-right {
+    @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: center, $g: 8px);
+    width:0;
+    box-sizing: border-box;
+    >div {
+        position:relative;
+        top:-125px;
+        >p {
+            transform: rotate(270deg);
+            white-space: nowrap;
+            display: inline-block;
+            color: white;
+            font-family: Karla;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.6px;
+        }
+    }
+
+    hr {
+        border: none;
+        height: 155px;
+        width: 2px;
+        background-color: #3DCFB6;
+    }
+}
