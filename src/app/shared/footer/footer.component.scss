@@ -35,10 +35,15 @@ section {
 }
 
 .footer-right {
-    font-family: Karla;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-    color: #FFFFFF;
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+    >a {
+        font-family: Karla;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        color: #FFFFFF;
+        cursor:pointer;
+        text-decoration: none;
+    }
 
 }

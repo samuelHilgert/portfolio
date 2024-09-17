@@ -4,6 +4,7 @@ section {
     position: absolute;
     left: 0;
     right: 0;
+    bottom:0px;
     padding: 0px 112px;
     @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
     box-sizing: border-box;
@@ -20,10 +21,11 @@ hr {
     @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: center, $g: 8px);
     width:0;
     box-sizing: border-box;
+
     >div {
         position:relative;
-        top:-125px;
-        >p {
+        top:-130px;
+        >a {
             transform: rotate(270deg);
             white-space: nowrap;
             display: inline-block;
@@ -32,12 +34,18 @@ hr {
             font-size: 18px;
             font-weight: 400;
             line-height: 21.6px;
+            cursor: pointer;
+            text-decoration: none;
         }
+    }
+
+    >img {
+        cursor:pointer;
     }
 
     hr {
         border: none;
-        height: 155px;
+        height: 200px;
         width: 2px;
         background-color: #3DCFB6;
     }
