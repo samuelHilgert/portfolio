@@ -1,0 +1,43 @@
+@import './../../../styles.scss';
+
+section {
+    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    background-color: #1C1C1C;
+    padding: 0px 112px;
+    padding-bottom: 52px;
+}
+
+.footer-left {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #FFFFFF;
+
+    >img {
+        height: 60px;
+        width: auto;
+    }
+}
+
+.footer-left-text {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+}
+
+.footer-center {
+    font-family: Fira Code;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #3DCFB6;
+}
+
+.footer-right {
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #FFFFFF;
+
+}
