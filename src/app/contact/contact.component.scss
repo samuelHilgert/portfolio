@@ -3,7 +3,6 @@
 section {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 0px);
     color: white;
-    height: 1000px;
     padding: 96px 112px;
     gap: 112px;
 }
