@@ -1,0 +1,91 @@
+@import './../../../styles.scss';
+
+section {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 0px);
+    color: white;
+    height: 1000px;
+    padding: 96px 112px;
+    gap: 112px;
+}
+
+.content-box-projects {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    width: 880px;
+    height: auto;
+
+    >h4 {
+        color: #3DCFB6;
+        font-family: Karla;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.06px;
+    }
+
+    >p {
+        font-family: Karla;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+    }
+
+    >h3 {
+        font-family: Fira Code;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.03em;
+        color: #3DCFB6;
+        padding-bottom:24px;
+    }
+
+}
+
+.content-rows-div {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-row {
+    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #3DCFB6;
+    padding: 40px 32px;
+
+    h5 {
+        font-family: Fira Code;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+    }
+
+    &:last-child {
+        border-bottom: 1px solid #3DCFB6;
+    }
+}
+
+.used-skills-div {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+
+    >div {
+        display: flex;
+        padding-right: 12px;
+        border-right: 1px solid #3DCFB6;
+
+        &:last-child {
+            display: flex;
+            border: none;
+            padding: 0px;
+        }
+
+        >p {
+            font-family: Karla;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.6px;
+        }
+    }
+
+
+}
