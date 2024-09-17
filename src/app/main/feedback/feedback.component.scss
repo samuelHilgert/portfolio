@@ -1,0 +1,76 @@
+@import './../../../styles.scss';
+
+section {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
+    color: white;
+    height: 1000px;
+    padding: 96px 112px;
+    width: 100%;
+    box-sizing: border-box;
+
+    >h5 {
+        font-family: Fira Code;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.98px;
+        color: #3DCFB6;
+    }
+}
+
+.quotes-icon {
+    position: relative;
+    left: -265px;
+    top: 45px;
+    z-index: 2;
+}
+
+.feedback-slider {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 68px);
+    width: 140%;
+    box-sizing: border-box;
+}
+
+.feedback-container {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
+    width: 820px;
+    height: auto;
+    padding: 32px 32px;
+    border-radius: 30px;
+    border: 1px solid #3DCFB6;
+    background: #3DCFB61A;
+
+    &:nth-child(2) {
+        filter:brightness(1.15);
+        background-color: rgb(38,82,75);
+        padding: 38px 32px;
+    }
+
+    >p {
+        font-family: Karla;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+    }
+}
+
+.author-div {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 48px);
+
+    >hr {
+        width: 150px;
+    }
+
+    >p {
+        font-family: Karla;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+    }
+}
+
+.slide-arrows-div {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 10px);
+    padding-top:50px;
+}
