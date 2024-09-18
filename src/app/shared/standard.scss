@@ -1,39 +1,49 @@
 @mixin dFlex ($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px) {
-    display: $d;
-    flex-direction: $fd;
-    justify-content: $jc;
-    align-items: $ai;
-    gap: $g;
-  }
+  display: $d;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
+}
 
-  @mixin navLinks () {
+@mixin navLinks () {
+  text-decoration: none;
+
+  &:visited {
     text-decoration: none;
-    &:visited {
-      text-decoration: none;
-    }
-    &:hover {
-      text-decoration: none;
-    }
   }
 
-  section {
-    width:100%;
-    box-sizing: border-box;
+  &:hover {
+    text-decoration: none;
   }
+}
 
-  @mixin btn() {
-    padding: 10px 24px;
-    gap: 10px;
-    border-radius: 24px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    border: 1px solid #FFFFFF;
-    color:white;
-    background-color: transparent;
-    cursor:pointer;
-  }
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  h1, h2, h3, h4, h5, p {
-    margin:0;
-  }
+@mixin btn() {
+  font-family: Karla;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  padding: 10px 24px;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #FFFFFF;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}

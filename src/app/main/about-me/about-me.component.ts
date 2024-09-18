@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { ContentBoxComponent } from '../content-box/content-box.component';
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [ContentBoxComponent],
+  imports: [],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
