@@ -35,16 +35,12 @@ $portfolio-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($portfolio-theme);
 
-@import './app/shared/standard.scss';
+@import './app/shared/styles/standard.scss';
+@import './app/shared/styles/fonts.scss';
 
-@font-face {
-    font-family: 'Fira Code';
-    src: url('./assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
-}
-@font-face {
-  font-family: 'Karla';
-  src: url('./assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
-}
+// elements
+@import './app/shared/styles/button.scss';
+
 
 *{
   scroll-behavior: smooth;

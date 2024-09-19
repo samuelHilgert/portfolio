@@ -2,14 +2,8 @@
 
 nav {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
-    >a {
-        @include navLinks();
-        font-family: Fira Code;
-        color:white;
-        font-weight:400;
-        font-size:20px;
-        line-height: 26.24px;
-        letter-spacing:-3%;
-    }
+}
 
+a {
+    @include navLinks();
 }

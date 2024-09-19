@@ -1,46 +1,38 @@
 @import './../../../../styles.scss';
 
 section {
+    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
     position: absolute;
     left: 0;
     right: 0;
-    bottom:0px;
+    bottom: 0px;
     padding: 0px 112px;
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
-    box-sizing: border-box;
 }
 
-hr {
-    border: none;
-    height: 210px;
-    width: 2px;
-    background-color: #3DCFB6;
+.left {
+    hr {
+        border: none;
+        height: 210px;
+        width: 2px;
+        background-color: #3DCFB6;
+    }
 }
 
-.social-link-right {
+.right {
     @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: center, $g: 8px);
-    width:0;
+    width: 0;
     box-sizing: border-box;
 
     >div {
-        position:relative;
-        top:-130px;
+        position: relative;
+        top: -130px;
+
         >a {
             transform: rotate(270deg);
             white-space: nowrap;
             display: inline-block;
             color: white;
-            font-family: Karla;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 21.6px;
-            cursor: pointer;
-            text-decoration: none;
         }
-    }
-
-    >img {
-        cursor:pointer;
     }
 
     hr {

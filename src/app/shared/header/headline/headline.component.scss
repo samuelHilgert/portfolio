@@ -1,36 +1,13 @@
 @import './../../../../styles.scss';
 
 section {
-    @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
-    gap:24px;
-    >h2 {
-        margin:0;
-        font-family: Fira Code;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 40px;
-        color: #D9D9D9;
-    }
+    @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
+}
 
-    >h1 {
-        margin:0;
-        font-family: Karla;
-        font-size: 128px;
-        font-weight: 700;
-        line-height: 128px;
-        letter-spacing: -0.02em;
-        color: #D9D9D9;
-    }
+.headline-btns-div {
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
+}
 
-    .headline-btns {
-        display: flex;
-        justify-content: center;
-        gap:48px;
-    }
-
-    button {
-        @include btn();
-    }
-
-
+button {
+    @include btn();
 }

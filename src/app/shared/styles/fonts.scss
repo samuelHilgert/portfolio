@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Fira Code';
+    src: url('./../../../assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./../../../assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: Karla;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: Karla;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 128px;
+    letter-spacing: -0.02em;
+    color: #D9D9D9;
+}
+
+h2 {
+    margin: 0;
+    font-family: Fira Code;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #D9D9D9;
+}
+
+
+h3 {
+    font-family: Fira Code;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+    color: #3DCFB6;
+}
+
+h4 {
+    color: #3DCFB6;
+    font-family: Karla;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.06px;
+}
+
+h5 {
+    font-family: Fira Code;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.98px;
+    color: #3DCFB6;
+}
+
+@mixin navLinks () {
+    font-family: Fira Code;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.24px;
+    letter-spacing: -3%;
+    text-decoration: none;
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.banner {
+    font-family: Karla;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px;
+    color: #3DCFB6;
+    margin: 0; // Verhindert zusätzlichen Abstand durch Standardabstände
+}
