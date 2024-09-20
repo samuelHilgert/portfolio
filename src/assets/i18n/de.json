@@ -39,6 +39,22 @@
     "title": "Was meine Kollegen über mich sagen",
     "l_pan": "Die Zusammenarbeit mit Sammuel war großartig! Seine Fähigkeit, komplexe Frontend-Probleme zu lösen, hat unser Projekt entscheidend vorangebracht. Immer kreativ und zuverlässig!",
     "g_heinrich": "Samuel bringt nicht nur technisches Wissen mit, sondern auch ein hervorragendes Gespür für Benutzererfahrung. Seine Designs sind ansprechend und intuitiv, was unseren Nutzern sehr zugutekommt.",
-    "e_herniks": "Es ist immer eine Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen."
+    "e_henriks": "Es ist immer eine Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen."
+  },
+  "contact": {
+    "title": "Kontaktiere mich",
+    "subtitle": "Lassen Sie uns zusammenarbeiten",
+    "subline": "Möchten Sie ein Problem lösen?",
+    "text": "Kontaktiere Sie mich über dieses Formular. Ich bin daran interessiert von Ihrem Anliegen zu hören und sicher finden wir einen Weg wie ich zur Lösung Ihres Problems beitragen kann.",
+    "question": "Benötigen Sie einen Frontend-Entwickler?",
+    "link": "Sprechen Sie mich an!",
+    "form_name": "Wie heißen Sie?",
+    "form_mail": "Wie lautet Ihre E-Mail?",
+    "form_message": "Wie kann ich Ihnen helfen?",
+    "term": "Ich habe die",
+    "term_end": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+  },
+  "footer": {
+    "legal-notice": "Impressum"
   }
 }

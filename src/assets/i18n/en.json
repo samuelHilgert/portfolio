@@ -39,6 +39,22 @@
     "title": "What my colleagues say about me",
     "l_pan": "Working with Samuel was fantastic! His ability to solve complex frontend issues significantly advanced our project. Always creative and reliable!",
     "g_heinrich": "Samuel not only brings technical knowledge, but also has an excellent sense of user experience. His designs are appealing and intuitive, which greatly benefits our users.",
-    "e_herniks": "It's always a pleasure to work with Samuel. He is not only talented in programming but also a team player, always willing to share his knowledge and support others."
+    "e_henriks": "It's always a pleasure to work with Samuel. He is not only talented in programming but also a team player, always willing to share his knowledge and support others."
+  },
+  "contact": {
+    "title": "Contact me",
+    "subtitle": "Let's work together",
+    "subline": "Got a problem to solve?",
+    "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "question": "Need a Frontend developer?",
+    "link": "Let's talk!",
+    "form_name": "What's your name?",
+    "form_mail": "What's your email?",
+    "form_message": "How can i help you?",
+    "term": "I've read the",
+    "term_end": "and agree to the processing of my data as outlined."
+  },
+  "footer": {
+    "legal-notice": "Legal Notice"
   }
 }
