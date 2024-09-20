@@ -1,7 +1,44 @@
 {
-    "headline-button": {
-      "check": "Check my work",
-      "contact": "Contact me"
-    }
+  "navbar-link": {
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "headline-button": {
+    "check": "Check my work",
+    "contact": "Contact me"
+  },
+  "banner": {
+    "remote": "Available for remote work",
+    "base": "Based in Viernheim",
+    "status": "Open to work"
+  },
+  "aboute-me": {
+    "title": "Who I Am",
+    "subtitle": "About me",
+    "intro": "As a frontend developer based in Viernheim, I am passionate about the diversity within IT. With great enthusiasm, I design modern and user-friendly websites and applications that stand out with their clean aesthetics and intuitive usability.",
+    "first": "I am flexible when it comes to the workplace and deliver top performance both in the direct vicinity of Viernheim, Mannheim, Heidelberg, as well as remotely.",
+    "second": "I am open to new challenges and always looking for opportunities to continuously improve my knowledge and skills.",
+    "third": "For me, programming is much more than just writing code – it's a creative way to solve problems. I place great importance on translating complex technical challenges into clear and user-friendly solutions. This way, I help you achieve your goals and bring your ideas to life."
+  },
+  "skills": {
+    "title": "Technologies",
+    "subtitle": "Skill Set",
+    "intro": "On my journey so far, I have worked on a variety of projects and utilized a wide range of frontend technologies and concepts. I am always open to new ideas and enjoy acquiring new methods and technologies to continuously improve my skills and stay up to date in the ever-evolving world of web development.",
+    "subline": "You need",
+    "sublineExt": "another skill?",
+    "text": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "button": "Let's Talk"
+  },
+  "projects": {
+    "title": "Portfolio",
+    "subtitle": "Featured Projects",
+    "intro": "Here you will find a selection of my completed projects – click on the projects to see my skills in action."
+  },
+  "feedback": {
+    "title": "What my colleagues say about me",
+    "l_pan": "Working with Samuel was fantastic! His ability to solve complex frontend issues significantly advanced our project. Always creative and reliable!",
+    "g_heinrich": "Samuel not only brings technical knowledge, but also has an excellent sense of user experience. His designs are appealing and intuitive, which greatly benefits our users.",
+    "e_herniks": "It's always a pleasure to work with Samuel. He is not only talented in programming but also a team player, always willing to share his knowledge and support others."
   }
-  
+}

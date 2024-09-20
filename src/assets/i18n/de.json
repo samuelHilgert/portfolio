@@ -1,7 +1,44 @@
 {
-    "headline-button": {
-      "check": "Weiter",
-      "contact": "Kontakt"
-    }
+  "navbar-link": {
+    "about": "Über mich",
+    "skills": "Kenntnisse",
+    "projects": "Projekte"
+  },
+  "headline-button": {
+    "check": "Weiter",
+    "contact": "Kontakt"
+  },
+  "banner": {
+    "remote": "Für Remote-Arbeit verfügbar",
+    "base": "Wohnhaft in Viernheim",
+    "status": "Offen für neue Herausforderungen"
+  },
+  "aboute-me": {
+    "title": "Wer ich bin",
+    "subtitle": "Über mich",
+    "intro": "Als Frontend-Entwickler aus Viernheim begeistert mich die Vielfalt der IT. Mit großer Leidenschaft gestalte ich moderne und benutzerfreundliche Websiten und Anwendungen, die sich durch ihre klare Ästhetik und intuitive Bedienbarkeit auszeichnen.",
+    "first": "Ich bin flexibel, was den Arbeitsort betrifft, und erbringe sowohl in der direkten Umgebung von Viernheim, Mannheim und Heidelberg als auch remote Bestleistung.",
+    "second": "Ich bin offen für neue Herausforderungen und stets auf der Suche nach Möglichkeiten, mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+    "third": "Programmieren ist für mich weit mehr als nur Code zu schreiben – es ist eine kreative Art, Probleme zu lösen. Ich lege großen Wert darauf, komplexe technische Herausforderungen in klare und benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Ideen zum Leben zu erwecken."
+  },
+  "skills": {
+    "title": "Technologien",
+    "subtitle": "Fähigkeiten",
+    "intro": "Auf meinem bisherigen Weg habe ich an einer Vielzahl von Projekten gearbeitet und eine breite Palette von Frontend-Technologien und -Konzepten genutzt. Ich bin immer offen für neue Ideen und lerne gerne neue Methoden und Technologien kennen, um meine Fähigkeiten kontinuierlich zu verbessern und um in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+    "subline": "Sie vermissen",
+    "sublineExt": "eine bestimmte Fähigkeit?",
+    "text": "Sie dürfen mich gerne kontaktieren. Ich freue mich auf neue Herausforderungen und Gelegenheiten mein Wissen zu erweitern.",
+    "button": "Kontakt aufnehmen"
+  },
+  "projects": {
+    "title": "Portfolio",
+    "subtitle": "Ausgewählte Projekte",
+    "intro": "Hier finden Sie eine Auswahl meiner abgeschlossenen Projekte – Klicken Sie auf das jeweilige Projekt, um meine Fähigkeiten in Aktion zu sehen."
+  },
+  "feedback": {
+    "title": "Was meine Kollegen über mich sagen",
+    "l_pan": "Die Zusammenarbeit mit Sammuel war großartig! Seine Fähigkeit, komplexe Frontend-Probleme zu lösen, hat unser Projekt entscheidend vorangebracht. Immer kreativ und zuverlässig!",
+    "g_heinrich": "Samuel bringt nicht nur technisches Wissen mit, sondern auch ein hervorragendes Gespür für Benutzererfahrung. Seine Designs sind ansprechend und intuitiv, was unseren Nutzern sehr zugutekommt.",
+    "e_herniks": "Es ist immer eine Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen."
   }
-  
+}

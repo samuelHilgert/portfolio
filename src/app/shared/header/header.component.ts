@@ -16,21 +16,24 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isEnglish: boolean = false;  // Standardmäßig auf Deutsch (false)
+  isEnglish: boolean = false;
 
   constructor(private translate: TranslateService) {
-    // Setze die Standardsprache auf Deutsch
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('en'); 
   }
 
+  /**
+   * This function translate the language between german and english
+   * 
+   */
   toggleLanguage() {
-    this.isEnglish = !this.isEnglish;
-    if (this.isEnglish) {
-      this.translate.use('en');  // Sprache auf Englisch umstellen
-      console.log('Sprache auf Englisch umgestellt');
+    this.isEnglish = this.isEnglish;
+    if (!this.isEnglish) {
+      this.translate.use('en');
+      // console.log('english');
     } else {
-      this.translate.use('de');  // Sprache auf Deutsch umstellen
-      console.log('Sprache auf Deutsch umgestellt');
+      this.translate.use('de');
+      // console.log('german');
     }
   }
 }
