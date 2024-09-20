@@ -5,24 +5,32 @@ import { HeadlineComponent } from './headline/headline.component';
 import { SliderComponent } from "./slider/slider.component";
 import { SocialLinksComponent } from "./social-links/social-links.component";
 import { FormsModule } from '@angular/forms';
+import { TranslateService } from '@ngx-translate/core';  // Importiere den TranslateService
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatSlideToggleModule, NavbarComponent, HeadlineComponent, SliderComponent, SocialLinksComponent, FormsModule],
+  imports: [MatSlideToggleModule, NavbarComponent, HeadlineComponent, SliderComponent, SocialLinksComponent, FormsModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isEnglish:boolean = false;  // Standardmäßig auf Englisch (EN)
+  isEnglish: boolean = false;  // Standardmäßig auf Deutsch (false)
+
+  constructor(private translate: TranslateService) {
+    // Setze die Standardsprache auf Deutsch
+    this.translate.setDefaultLang('en');
+  }
 
   toggleLanguage() {
-    this.isEnglish = this.isEnglish;
-    if (!this.isEnglish) {
+    this.isEnglish = !this.isEnglish;
+    if (this.isEnglish) {
+      this.translate.use('en');  // Sprache auf Englisch umstellen
       console.log('Sprache auf Englisch umgestellt');
     } else {
+      this.translate.use('de');  // Sprache auf Deutsch umstellen
       console.log('Sprache auf Deutsch umgestellt');
     }
   }
 }
-
