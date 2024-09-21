@@ -11,6 +11,7 @@ section {
     padding: 12px;
     transform: rotate(-3deg);
     transform-origin: top left;
+    overflow: hidden;
 }
 
 .banner {
@@ -20,6 +21,8 @@ section {
     width: 100%;
     box-sizing: border-box;
     padding: 0 12px;
+    position: relative;
+    overflow: hidden;
 }
 
 .spacer-div {

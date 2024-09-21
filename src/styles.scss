@@ -49,12 +49,6 @@ $portfolio-theme: mat.define-light-theme((
   scrollbar-color: #3DCFB6 #dddddd00;
 }
 
-body { 
-  margin: 0; 
-  box-sizing: border-box;
-}
-
-
 ::-webkit-scrollbar {
   width: 4px;
   height: 10px;

@@ -6,12 +6,20 @@
   gap: $g;
 }
 
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 section {
   width: 100%;
   box-sizing: border-box;
 }
 
 a {
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
 }
+
