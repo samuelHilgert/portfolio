@@ -3,47 +3,59 @@
   <img class="quotes-icon" src="./../../../assets/img/quotes.svg" alt="" />
 
   <div class="feedback-slider">
-    <div class="feedback-container">
-      <p>{{ 'feedback.l_pan' | translate }}</p>
+    <div class="feedback-container" [ngClass]="getAnimationClass()">
+      <p>{{ lastFeedback.messageKey | translate }}</p>
       <div class="author-div">
         <hr />
-        <p>L. Pan - Team Partner</p>
+        <p>{{ lastFeedback.author }} - {{ lastFeedback.role }}</p>
       </div>
     </div>
-
-    <div class="feedback-container">
-      <p>{{ 'feedback.g_heinrich' | translate }}</p>
+  
+    <div class="feedback-container" [ngClass]="getAnimationClass()">
+      <p>{{ currentFeedback.messageKey | translate }}</p>
       <div class="author-div">
         <hr />
-        <p>G. Heinrich - Frontend Developer</p>
+        <p>{{ currentFeedback.author }} - {{ currentFeedback.role }}</p>
       </div>
     </div>
-
-    <div class="feedback-container">
-      <p>{{ 'feedback.e_henriks' | translate }}</p>
+  
+    <div class="feedback-container" [ngClass]="getAnimationClass()">
+      <p>{{ nextFeedback.messageKey | translate }}</p>
       <div class="author-div">
         <hr />
-        <p>E. Henriks - Customer</p>
+        <p>{{ nextFeedback.author }} - {{ nextFeedback.role }}</p>
       </div>
     </div>
-  </div>
+  </div>  
 
-  <div class="slide-arrows-div" >
-    <svg class="feedback-arrow arrow-left" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <div class="filter-left"></div>
+  <div class="filter-right"></div>
+
+  <div class="slide-arrows-div">
+    <!-- Linker Pfeil -->
+    <svg class="feedback-arrow arrow-left" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      (click)="toggleFeedback('prev')">
       <path d="M20 12H4"/>
       <path d="M10 18L4 12l6-6"/>
     </svg>
-    
+
     <svg width="100" height="50">
-        <circle cx="20" cy="20" r="5" fill="green" />
-        <circle cx="50" cy="20" r="5" fill="white" stroke="black" />
-        <circle cx="80" cy="20" r="5" fill="white" stroke="black" />
+      <circle cx="20" cy="20" r="5" 
+              [attr.fill]="currentFeedbackIndex === 2 ? 'green' : 'white'" 
+              stroke="black" />
+      <circle cx="50" cy="20" r="5" 
+              [attr.fill]="currentFeedbackIndex === 0 ? 'green' : 'white'" 
+              stroke="black" />
+      <circle cx="80" cy="20" r="5" 
+              [attr.fill]="currentFeedbackIndex === 1 ? 'green' : 'white'" 
+              stroke="black" />
     </svg>
 
-    <svg class="feedback-arrow" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Rechter Pfeil -->
+    <svg class="feedback-arrow" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      (click)="toggleFeedback('next')">
       <path d="M4 12h16"/>
       <path d="M14 6l6 6-6 6"/>
     </svg>
   </div>
-
 </section>

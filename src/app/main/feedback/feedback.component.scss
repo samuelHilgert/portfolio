@@ -3,25 +3,34 @@
 section {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
     color: white;
-    padding: 96px 112px;
+    padding: 96px 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-slider {
+    display: flex;
+    gap: 68px;
+    width: 140%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .quotes-icon {
     position: relative;
-    left: -265px;
+    left: -320px;
     top: 45px;
     z-index: 2;
 }
 
-.feedback-slider {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 68px);
-    width: 140%;
-    box-sizing: border-box;
-}
-
 .feedback-container {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
-    width: 820px;
+    flex-basis: calc((100% - 136px) / 3);
+    position: relative;
+    height: auto;
+    flex: 1;
     padding: 32px 32px;
     border-radius: 30px;
     border: 1px solid #3DCFB6;
@@ -30,7 +39,6 @@ section {
     &:nth-child(2) {
         filter: brightness(1.15);
         background-color: rgb(38, 82, 75);
-        padding: 38px 32px;
     }
 }
 
@@ -43,21 +51,16 @@ section {
 .slide-arrows-div {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 10px);
     padding-top: 50px;
-
-    >svg {
-        &:last-child {
-           
-        }
-    }
 }
 
 .feedback-arrow {
-    position:relative;
-    top:5px;
+    position: relative;
+    top: 5px;
+
     &:hover {
         transition: transform 0.3s ease;
         stroke: $feedback-arrow-hover;
-        cursor:pointer;
+        cursor: pointer;
         transform: scale(1.1) translateX(3px);
     }
 }
@@ -69,5 +72,50 @@ section {
 }
 
 hr {
-    width: 150px;
+    flex: 1;
 }
+
+.filter-left {
+    position: absolute;
+    background: linear-gradient(to right, #1C1C1C, rgba(0, 0, 0, 0));
+    left: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 4;
+}
+
+.filter-right {
+    position: absolute;
+    background: linear-gradient(to left, #1C1C1C, rgba(0, 0, 0, 0));
+    right: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 4;
+}
+
+@keyframes moveLeft {
+    0% {
+      transform: translateX(100%); /* Startet rechts */
+    }
+    100% {
+      transform: translateX(0); /* Slidet in die Mitte */
+    }
+  }
+  
+  @keyframes moveRight {
+    0% {
+      transform: translateX(-100%); /* Startet links */
+    }
+    100% {
+      transform: translateX(0); /* Slidet in die Mitte */
+    }
+  }
+  
+  .move-left {
+    animation: moveLeft 0.4s ease forwards;
+  }
+  
+  .move-right {
+    animation: moveRight 0.4s ease forwards;
+  }
+  
