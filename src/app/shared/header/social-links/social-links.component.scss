@@ -14,7 +14,7 @@ section {
         border: none;
         height: 210px;
         width: 2px;
-        background-color: #3DCFB6;
+        background-color: $hr-color;
     }
 }
 
@@ -31,7 +31,7 @@ section {
             transform: rotate(270deg);
             white-space: nowrap;
             display: inline-block;
-            color: white;
+            color:$a-visited-color;
         }
     }
 
@@ -39,6 +39,6 @@ section {
         border: none;
         height: 200px;
         width: 2px;
-        background-color: #3DCFB6;
+        background-color: $hr-color;
     }
 }

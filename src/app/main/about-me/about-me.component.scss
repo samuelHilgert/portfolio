@@ -24,8 +24,8 @@ section {
     width: 568px;
     padding: 32px;
     border-radius: 30px;
-    border: 1px solid #3DCFB6;
-    background: #3DCFB61A;
+    border: 1px solid $content-box-border;
+    background: $content-box-bg;
 }
 
 .content-row {

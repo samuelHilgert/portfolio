@@ -7,7 +7,7 @@ section {
     right: 0;
     bottom: 0;
     height: 50px;
-    background-color: #FFFFFF1F;
+    background-color: $banner-bg-c;
     padding: 12px;
     transform: rotate(-3deg);
     transform-origin: top left;
@@ -30,7 +30,7 @@ section {
     width: 100px;
 
     circle {
-        fill: #3DCFB6;
+        fill: $banner-circle-color;
     }
 }
 
