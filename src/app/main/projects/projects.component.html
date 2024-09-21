@@ -1,40 +1,84 @@
 <section id="projects">
   <div class="content-box-projects">
-    <h4>{{ 'projects.title' | translate }}</h4>
-    <h3>{{ 'projects.subtitle' | translate }}</h3>
-    <p>{{ 'projects.intro' | translate }}</p>
+    <h4>{{ "projects.title" | translate }}</h4>
+    <h3>{{ "projects.subtitle" | translate }}</h3>
+    <p>{{ "projects.intro" | translate }}</p>
 
     <div class="content-rows-div">
-
-    <div class="content-row">
-      <h5>Join</h5>
-      <div class="used-skills-div">
-        <div><p>Angular</p></div>
-        <div><p>TypeScript</p></div>
-        <div><p>HTML</p></div>
-        <div><p>CSS</p></div>
-        <div><p>Firebase</p></div>
+      <div class="content-row" (mouseenter)="toggleArrow(1, true)" (mouseleave)="toggleArrow(1, false)">
+        <div class="content-row-title">
+          <h5>Join</h5>
+          <svg
+            *ngIf="arrowState[1]"
+            width="30"
+            height="30"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 17L17 7" />
+            <path d="M7 7h10v10" />
+          </svg>
+        </div>
+        <div class="used-skills-div">
+          <div><p>Angular</p></div>
+          <div><p>TypeScript</p></div>
+          <div><p>HTML</p></div>
+          <div><p>CSS</p></div>
+          <div><p>Firebase</p></div>
+        </div>
       </div>
-    </div>
 
-    <div class="content-row">
-        <h5>El Pollo Loco</h5>
+      <div class="content-row" (mouseenter)="toggleArrow(2, true)" (mouseleave)="toggleArrow(2, false)">
+    
+        <div class="content-row-title">
+          <h5>El Pollo Loco</h5>
+          <svg
+            *ngIf="arrowState[2]"
+            width="30"
+            height="30"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 17L17 7" />
+            <path d="M7 7h10v10" />
+          </svg>
+        </div>
         <div class="used-skills-div">
           <div><p>HTML</p></div>
           <div><p>CSS</p></div>
           <div><p>Javascript</p></div>
         </div>
       </div>
-
-      <div class="content-row">
-        <h5>DA Bubble</h5>
+    
+      <div class="content-row" (mouseenter)="toggleArrow(3, true)" (mouseleave)="toggleArrow(3, false)">
+    
+        <div class="content-row-title">
+          <h5>DA Bubble</h5>
+          <svg
+            *ngIf="arrowState[3]"
+            width="30"
+            height="30"
+            fill="none"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M7 17L17 7" />
+            <path d="M7 7h10v10" />
+          </svg>
+        </div>
         <div class="used-skills-div">
           <div><p>Angular</p></div>
           <div><p>Firebase</p></div>
           <div><p>TypeScript</p></div>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+    

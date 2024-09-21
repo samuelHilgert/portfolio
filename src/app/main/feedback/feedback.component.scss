@@ -43,6 +43,29 @@ section {
 .slide-arrows-div {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 10px);
     padding-top: 50px;
+
+    >svg {
+        &:last-child {
+           
+        }
+    }
+}
+
+.feedback-arrow {
+    position:relative;
+    top:5px;
+    &:hover {
+        transition: transform 0.3s ease;
+        stroke: $feedback-arrow-hover;
+        cursor:pointer;
+        transform: scale(1.1) translateX(3px);
+    }
+}
+
+.arrow-left {
+    &:hover {
+        transform: translateX(-3px);
+    }
 }
 
 hr {
