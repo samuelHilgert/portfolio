@@ -16,6 +16,11 @@ body {
     color: white;
 }
 
+.terms-text {
+    font-size: 15px;
+    line-height: 18px;
+}
+
 h1,
 h2,
 h3,
@@ -69,6 +74,7 @@ h5 {
     line-height: 41.98px;
     color: #3DCFB6;
 }
+
 
 @mixin navLinks () {
     font-family: Fira Code;

@@ -9,36 +9,6 @@ section {
   @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
 }
 
-.skills-row {
-  width: 100%;
-  box-sizing: border-box;
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
-}
-
-.skill {
-  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 12px);
-
-  >p {
-    text-align: center;
-  }
-}
-
-h4 {
-  color: white;
-
-  >a {
-    color: #3DCFB6;
-  }
-}
-
-button {
-  @include btn();
-}
-
-.content-row {
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
-}
-
 .content-box-border {
   @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
   width: 568px;
@@ -49,9 +19,31 @@ button {
   background: $content-box-bg;
 }
 
+span {
+  >a {
+    color: $content-text-link;
+  }
+}
+
+button {
+  @include btn();
+}
+
 .skills-container {
+  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 48px);
   padding-top: 52px;
+}
+
+.skills-row {
+  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
   width: 100%;
   box-sizing: border-box;
-  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 48px);
+}
+
+.skill {
+  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 12px);
+
+  >p {
+    text-align: center;
+  }
 }

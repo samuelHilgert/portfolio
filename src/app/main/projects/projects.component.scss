@@ -2,7 +2,6 @@
 
 section {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 0px);
-    color: white;
     padding: 96px 112px;
     gap: 112px;
 }
@@ -23,36 +22,33 @@ section {
     @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
     width: 100%;
     box-sizing: border-box;
-    border-top: 1px solid #3DCFB6;
+    border-top: 1px solid $row-div-border;
     padding: 40px 32px;
 
-    h5 {
-        font-family: Fira Code;
-        font-size: 24px;
+    h4 {
         font-weight: 700;
-        line-height: 28.8px;
+        color: $project-title;
     }
 
     &:last-child {
-        border-bottom: 1px solid #3DCFB6;
-    }
-    
-    &:hover {
-        filter: brightness(1.15);
-        background-color: rgb(38, 82, 75);
-        cursor:pointer;
+        border-bottom: 1px solid $row-div-border;
     }
 
+    &:hover {
+        filter: brightness(1.15);
+        background-color: $row-div-hover-fill;
+        cursor: pointer;
+    }
 }
 
 .content-row-title {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 4px); 
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 4px);
+
     >svg {
-        position:relative;
-        top:4px;
+        position: relative;
+        top: 4px;
     }
 }
-
 
 .used-skills-div {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
@@ -60,19 +56,12 @@ section {
     >div {
         display: flex;
         padding-right: 12px;
-        border-right: 1px solid #3DCFB6;
+        border-right: 1px solid $skills-div-border;
 
         &:last-child {
             display: flex;
             border: none;
             padding: 0px;
-        }
-
-        >p {
-            font-family: Karla;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 21.6px;
         }
     }
 

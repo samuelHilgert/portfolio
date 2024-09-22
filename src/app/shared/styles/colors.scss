@@ -1,5 +1,5 @@
 /////////// general /////////// 
-
+$text-link-color:#3DCFB6;
 
 /////////// header /////////// 
 $bg-linear-c-1:#1C1C1C;
@@ -16,6 +16,24 @@ $toggle-inline-text:white;
 /////////// content-box /////////// 
 $content-box-border: #3DCFB6;
 $content-box-bg: #3DCFB61A;
+$content-text-link:#3DCFB6;
+
+
+/////////// projects /////////// 
+$project-title:white;
+$row-div-border:#3DCFB6;
+$row-div-hover-fill:rgb(38, 82, 75);
+$skills-div-border:#3DCFB6;
+
+/////////// feedback /////////// 
+$feedback-container-border:#3DCFB6;
+$feedback-container-bg:#3DCFB61A;
+$feedback-current-container-bg:rgb(38, 82, 75);
+$feedback-container-linear1: #1C1C1C;
+$feedback-container-linear2: rgba(0, 0, 0, 0);
+
+/////////// contact /////////// 
+$contact-form-row-border:#3DCFB6;
 
 // arrows
 $feedback-arrow-hover: #3DCFB6;
