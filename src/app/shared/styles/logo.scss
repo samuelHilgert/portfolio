@@ -1,0 +1,25 @@
+.logo-div {
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    height:auto;
+    cursor:pointer;
+    
+    img {
+        height:80px;
+        width:auto;
+        position: relative;
+        top:10px;
+    }
+    >div {
+        @include dFlex($d: flex, $fd: column, $jc: center, $ai: flex-start, $g: 8px);
+        >p {
+            font-family: Karla;
+            font-size: 28px;
+            font-weight: thin;
+            color:white;
+            text-transform:uppercase;
+            &:last-child {
+                padding-left:18px;
+            }
+        }
+    }
+}

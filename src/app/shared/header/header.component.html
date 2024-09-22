@@ -1,18 +1,33 @@
-<section>
+<section id="hero">
   <header>
     <div class="topline">
       <div class="custom-toggle">
-        <input type="checkbox" id="languageToggle" class="toggle-checkbox" [(ngModel)]="isEnglish" (change)="toggleLanguage()" />
+        <input
+          type="checkbox"
+          id="languageToggle"
+          class="toggle-checkbox"
+          [(ngModel)]="isEnglish"
+          (change)="toggleLanguage()"
+        />
         <label for="languageToggle" class="toggle-label">
           <span class="toggle-text-left">EN</span>
           <span class="toggle-ball"></span>
           <span class="toggle-text-right">DE</span>
         </label>
-      </div>      
+      </div>
 
       <app-navbar></app-navbar>
     </div>
-    <img src="./../../../assets/img/SH.png" alt="" />
+
+    <a href="#hero">
+      <div class="logo-div">
+        <img src="./../../../assets/img/logo-sh.png" alt="" />
+        <div>
+          <p>Samuel</p>
+          <p>Hilgert</p>
+        </div>
+      </div>
+    </a>
   </header>
 
   <app-headline></app-headline>
