@@ -2,19 +2,14 @@
 
 section {
     @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
-    background-color: #1C1C1C;
+    background-color: $footer-bg-c;
     padding: 0px 112px;
     padding-bottom: 52px;
-    padding-top:48px;
+    padding-top: 48px;
 }
 
 .footer-left {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    font-family: Karla;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-    color: #FFFFFF;
 
     >img {
         height: 60px;
@@ -27,23 +22,17 @@ section {
 }
 
 .footer-center {
-    font-family: Fira Code;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-    color: #3DCFB6;
+    color: $footer-center-c;
 }
 
 .footer-right {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+    color:$main-text;
     >a {
-        font-family: Karla;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19.2px;
-        color: #FFFFFF;
-        cursor:pointer;
-        text-decoration: none;
+        color:$main-text;
+        &:visited, :hover {
+            color:$main-text;
+        }
     }
 
 }

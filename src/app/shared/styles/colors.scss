@@ -1,40 +1,48 @@
-/////////// general /////////// 
-$text-link-color:#3DCFB6;
+/////////// general (short) settings /////////// 
+$main-text:white;
+$main-color:#3DCFB6;
+$nav-links:white;
+$header-headline:#D9D9D9;
+$header-subline:#D9D9D9;
+$bg-color1:#1C1C1C;
+$text-link-color: $main-color;
+
+//////////////////////////////
 
 /////////// header /////////// 
-$bg-linear-c-1:#1C1C1C;
-$bg-linear-c-2:#08463B;
-$banner-bg-c:#FFFFFF1F;
-$banner-circle-color: #3DCFB6;
-$hr-color:#3DCFB6;
-$a-visited-color:white;
-$toggle-border: #3DCFB6;
-$toggle-bg-c:transparent;
-$toggle-ball:#3DCFB6;
-$toggle-inline-text:white;
+$bg-linear-c-1: $bg-color1;
+$bg-linear-c-2: #08463B;
+$banner-bg-c: #FFFFFF1F;
+$banner-circle-color: $main-color;
+$hr-color: $main-color;
+$a-visited-color: white;
+$toggle-border: $main-color;
+$toggle-bg-c: transparent;
+$toggle-ball: $main-color;
+$toggle-inline-text: white;
 
 /////////// content-box /////////// 
-$content-box-border: #3DCFB6;
+$content-box-border: $main-color;
 $content-box-bg: #3DCFB61A;
-$content-text-link:#3DCFB6;
-
 
 /////////// projects /////////// 
-$project-title:white;
-$row-div-border:#3DCFB6;
-$row-div-hover-fill:rgb(38, 82, 75);
-$skills-div-border:#3DCFB6;
+$project-title: $main-text;
+$row-div-border: $main-color;
+$row-div-hover-fill: rgb(38, 82, 75);
+$skills-div-border: $main-color;
 
 /////////// feedback /////////// 
-$feedback-container-border:#3DCFB6;
-$feedback-container-bg:#3DCFB61A;
-$feedback-current-container-bg:rgb(38, 82, 75);
-$feedback-container-linear1: #1C1C1C;
+$feedback-container-border: $main-color;
+$feedback-container-bg: #3DCFB61A;
+$feedback-current-container-bg: rgb(38, 82, 75);
+$feedback-container-linear1: $bg-color1;
 $feedback-container-linear2: rgba(0, 0, 0, 0);
+$feedback-arrow-hover: $main-color;
 
 /////////// contact /////////// 
-$contact-form-row-border:#3DCFB6;
+$contact-form-row-border: $main-color;
 
-// arrows
-$feedback-arrow-hover: #3DCFB6;
+/////////// footer /////////// 
+$footer-bg-c: $bg-color1;
+$footer-center-c:$main-color;
 

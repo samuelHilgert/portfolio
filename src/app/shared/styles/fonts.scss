@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 @font-face {
     font-family: 'Fira Code';
     src: url('./../../../assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
@@ -13,7 +15,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.6px;
-    color: white;
+    color: $main-text;
 }
 
 .terms-text {
@@ -37,7 +39,7 @@ h1 {
     font-weight: 700;
     line-height: 128px;
     letter-spacing: -0.02em;
-    color: #D9D9D9;
+    color: $header-headline;
 }
 
 h2 {
@@ -46,9 +48,8 @@ h2 {
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
-    color: #D9D9D9;
+    color: $header-subline;
 }
-
 
 h3 {
     font-family: Fira Code;
@@ -56,15 +57,15 @@ h3 {
     font-weight: 700;
     line-height: 64px;
     letter-spacing: -0.03em;
-    color: #3DCFB6;
+    color: $main-color;
 }
 
 h4 {
-    color: #3DCFB6;
     font-family: Karla;
     font-size: 24px;
     font-weight: 500;
     line-height: 28.06px;
+    color: $main-color;
 }
 
 h5 {
@@ -72,13 +73,13 @@ h5 {
     font-size: 32px;
     font-weight: 700;
     line-height: 41.98px;
-    color: #3DCFB6;
+    color: $main-color;
 }
 
 
 @mixin navLinks () {
     font-family: Fira Code;
-    color: white;
+    color: $nav-links;
     font-weight: 400;
     font-size: 20px;
     line-height: 26.24px;
@@ -99,6 +100,11 @@ h5 {
     font-size: 32px;
     font-weight: 400;
     line-height: 38.4px;
-    color: #3DCFB6;
-    margin: 0; // Verhindert zusätzlichen Abstand durch Standardabstände
+    margin: 0;
+    color: $main-color;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
