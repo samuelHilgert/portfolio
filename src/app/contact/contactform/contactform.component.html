@@ -1,0 +1,75 @@
+<form
+  class="content-rows-div"
+  (ngSubmit)="onSubmit(contactForm)"
+  #contactForm="ngForm"
+>
+  <div class="content-row">
+    <label class="form-label" for="name">{{
+      "contact.form_name" | translate
+    }}</label>
+    <input
+      class="form-input"
+      [(ngModel)]="contactData.name"
+      type="text"
+      placeholder="Your name goes here"
+      id="name"
+      name="name"
+      required
+    />
+  </div>
+
+  <div class="content-row">
+    <label class="form-label" for="email">{{
+      "contact.form_mail" | translate
+    }}</label>
+    <input
+      class="form-input"
+      [(ngModel)]="contactData.email"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="youremail@email.com"
+      pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      required
+    />
+  </div>
+
+  <div class="content-row">
+    <label class="form-label" for="message">{{
+      "contact.form_message" | translate
+    }}</label>
+    <textarea
+      class="form-input"
+      #message="ngModel"
+      minlength="4"
+      [(ngModel)]="contactData.message"
+      id="message"
+      name="message"
+      placeholder="Hello Lukas, I am interested in..."
+      required
+    >
+    </textarea>
+  </div>
+
+  <div class="terms-div">
+    <label>
+      <input
+        [(ngModel)]="contactData.term"
+        type="checkbox"
+        name="acceptTerms"
+        id="acceptTerms"
+        required
+      />
+      <span class="terms-text"
+        >{{ "contact.term" | translate }} <a href="">privacy policy</a
+        >{{ "contact.term_end" | translate }}</span
+      >
+    </label>
+  </div>
+
+  <span *ngIf="!message.valid && message.touched && !message.disabled">
+    Please enter a message
+  </span>
+
+  <input type="submit" value="Submit" [disabled]="!contactForm.valid"/>
+</form>
