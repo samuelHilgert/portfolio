@@ -11,6 +11,7 @@ section {
 
 .left {
     @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-end, $g: 0px);
+
     hr {
         border: none;
         height: 210px;
@@ -32,7 +33,15 @@ section {
             transform: rotate(270deg);
             white-space: nowrap;
             display: inline-block;
-            color:$a-visited-color;
+            color: $a-visited-color;
+        }
+    }
+
+    >a {
+        >img {
+            &:hover {
+                filter: brightness(1.2);
+            }
         }
     }
 
