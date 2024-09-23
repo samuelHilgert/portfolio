@@ -1,7 +1,8 @@
 @import './../../../styles.scss';
 
+
 section {
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
+  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 64px);
   padding: 96px 112px;
 }
 
@@ -17,22 +18,37 @@ section {
   border-radius: 30px;
   border: 1px solid $content-box-border;
   background: $content-box-bg;
+
+  span {
+    >a {
+      color: $text-link-color;
+    }
+  }
+
+  >a:last-child {
+    @include btn();
+  }
 }
 
 .skills-container {
-  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 48px);
-  padding-top: 52px;
+  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 32px);
+  margin-top: 52px;
+  width: 100%;
+  height:550px;
+  box-sizing: border-box;
 }
 
-.skills-row {
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
-  width: 100%;
+.skills-col {
+  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+  box-sizing: border-box;
+  height:100%;
   box-sizing: border-box;
 }
 
 .skill {
-  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 12px);
-
+  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
+  height:130px;
+  width:120px;
   &:hover {
     transform:scale(1.1);
     transition: transform 0.3s ease;
