@@ -20,7 +20,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $message = $params->message;
         $term = $params->term;
 
-        $recipient = 'kontakt@samuelhilgert.com';
+        $recipient = 'mail@samuelhilgert.com';
         $subject = "Contact From <$email>";
         $message = "From: " . $name . "<br>" . $message;
 
@@ -29,7 +29,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $headers[] = 'Content-type: text/html; charset=utf-8';
 
         // Additional headers.
-        $headers[] = "From: kontakt@samuelhilgert.com";
+        $headers[] = "From: mail@samuelhilgert.com";
 
         // Send the mail.
         mail($recipient, $subject, $message, implode("\r\n", $headers));
