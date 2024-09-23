@@ -18,7 +18,7 @@ export class ContactformComponent {
     name: "",
     email: "",
     message: "",
-    term: false
+    termAccepted: false
   }
 
   mailTest = true;
