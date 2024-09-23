@@ -1,11 +1,55 @@
 @mixin btn() {
-    padding: 10px 24px;
-    gap: 10px;
-    border-radius: 24px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    border: 1px solid $button-border;
-    color: $button-text;
-    background-color: $button-bg;
-    cursor: pointer;
+  padding: 10px 24px;
+  gap: 10px;
+  border-radius: 24px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid $button-border;
+  color: $button-text;
+  background-color: $button-bg;
+  cursor: pointer;
+}
+
+.btn {
+  @include btn();
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+
+  span {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
   }
+
+  &:hover span {
+    animation: slide 2s ease-in-out infinite;
+  }
+
+  &:hover {
+    border-color: $button-border-hover;
+    color: $button-border-hover;
+  }
+}
+
+// Keyframes für den Slidetransition-Effekt
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(-140%);
+  }
+
+  41% {
+    transform: translateX(140%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

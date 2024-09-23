@@ -6,9 +6,6 @@ section {
 
 .headline-btns-div {
     @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
-    z-index:3;
+    z-index: 3;
 }
 
-a {
-    @include btn();
-}

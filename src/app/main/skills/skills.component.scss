@@ -17,16 +17,6 @@ section {
   border-radius: 30px;
   border: 1px solid $content-box-border;
   background: $content-box-bg;
-
-  span {
-    >a {
-      color: $text-link-color;
-    }
-  }
-
-  >a:last-child {
-    @include btn();
-  }
 }
 
 .skills-container {
