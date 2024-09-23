@@ -21,7 +21,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $term = $params->term;
 
         $recipient = 'mail@samuelhilgert.com';
-        $subject = "Contact From <$email>";
+        $subject = "Nachricht über Kontaktformular von <$email>";
         $message = "From: " . $name . "<br>" . $message;
 
         $headers   = array();
