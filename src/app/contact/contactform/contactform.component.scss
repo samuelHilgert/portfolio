@@ -15,7 +15,9 @@
     padding: 40px 32px;
     cursor: pointer;
 
-    >label, input, textarea {
+    >label,
+    input,
+    textarea {
         &:hover {
             cursor: pointer;
         }
@@ -25,25 +27,96 @@
         border-bottom: none;
     }
 
-    &:nth-child(3){
+    &:nth-child(3) {
         border-top: none;
     }
 
     &:hover {
-        filter:brightness(1.1);
+        filter: brightness(1.1);
         border-color: lighten($contact-form-row-border, 25%);
+    }
+}
+
+label {
+    color: $main-color;
+}
+
+.form-input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    color: $placeholder-text;
+
+    &::placeholder {
+        color: $placeholder-text;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $placeholder-text;
+    }
+
+    &::-moz-placeholder {
+        color: $placeholder-text;
+    }
+
+    &:-ms-input-placeholder {
+        color: $placeholder-text;
+    }
+
+    &::-ms-input-placeholder {
+        color: $placeholder-text;
+    }
+
+    &:focus-visible {
+        outline: none;
+        caret-color: $caret;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        &::-moz-placeholder {
+            color: transparent;
+        }
+
+        &:-ms-input-placeholder {
+            color: transparent;
+        }
+
+        &::-ms-input-placeholder {
+            color: transparent;
+        }
     }
 }
 
 .terms-div {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
-    padding:40px 0;
+    padding: 40px 0;
     width: 100%;
     box-sizing: border-box;
 
     span {
+        color: $placeholder-text;
+
         >a {
             color: $text-link-color;
         }
     }
+}
+
+.submit-row {
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
+    width: 100%;
+    box-sizing: border-box
+}
+
+.submit-btn {
+    @include btn();
+    color: $placeholder-text;
+    font-size: 16px;
 }

@@ -18,11 +18,6 @@ body {
     color: $main-text;
 }
 
-.terms-text {
-    font-size: 15px;
-    line-height: 18px;
-}
-
 h1,
 h2,
 h3,
@@ -107,4 +102,18 @@ h5 {
 a {
     cursor: pointer;
     text-decoration: none;
+}
+
+.form-text {
+    font-family: Karla;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.06px;
+}
+
+.terms-text {
+    font-family: Karla;
+    font-size: 15px;
+    line-height: 18px;
+
 }

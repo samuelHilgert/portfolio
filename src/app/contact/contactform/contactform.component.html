@@ -4,7 +4,7 @@
   #contactForm="ngForm"
 >
   <div class="content-row">
-    <label class="form-label" for="name">{{
+    <label class="form-text" for="name">{{
       "contact.form_name" | translate
     }}</label>
     <input
@@ -19,7 +19,7 @@
   </div>
 
   <div class="content-row">
-    <label class="form-label" for="email">{{
+    <label class="form-text" for="email">{{
       "contact.form_mail" | translate
     }}</label>
     <input
@@ -35,7 +35,7 @@
   </div>
 
   <div class="content-row">
-    <label class="form-label" for="message">{{
+    <label class="form-text" for="message">{{
       "contact.form_message" | translate
     }}</label>
     <textarea
@@ -52,16 +52,16 @@
   </div>
 
   <div class="terms-div">
+    <input
+      [(ngModel)]="contactData.termAccepted"
+      type="checkbox"
+      name="acceptTerms"
+      id="acceptTerms"
+      required
+    />
     <label>
-      <input
-        [(ngModel)]="contactData.termAccepted"
-        type="checkbox"
-        name="acceptTerms"
-        id="acceptTerms"
-        required
-      />
       <span class="terms-text"
-        >{{ "contact.term" | translate }} <a href="">privacy policy</a
+        >{{ "contact.term" | translate }} <a href="">privacy policy </a
         >{{ "contact.term_end" | translate }}</span
       >
     </label>
@@ -71,5 +71,14 @@
     Please enter a message
   </span>
 
-  <input type="submit" value="Submit" [disabled]="!contactForm.valid"/>
+  <div class="submit-row">
+    <input
+    class="submit-btn form-label"
+    type="submit"
+    value="Say Hello :)"
+    [disabled]="!contactForm.valid"
+  />
+  </div>
+
+
 </form>

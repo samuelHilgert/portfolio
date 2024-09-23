@@ -42,7 +42,6 @@ $portfolio-theme: mat.define-light-theme((
 // elements
 @import './app/shared/styles/logo.scss';
 @import './app/shared/styles/button.scss';
-@import './app/shared/styles/form.scss';
 
 *{
   scroll-behavior: smooth;
