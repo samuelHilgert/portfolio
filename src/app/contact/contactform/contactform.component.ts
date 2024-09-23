@@ -21,7 +21,7 @@ export class ContactformComponent {
     termAccepted: false
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://www.samuelhilgert.com/sendMail.php',
