@@ -1,11 +1,11 @@
-import { NgIf } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [TranslateModule, NgIf],
+  imports: [TranslateModule, NgIf, CommonModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

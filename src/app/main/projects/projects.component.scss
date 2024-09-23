@@ -1,9 +1,8 @@
 @import './../../../styles.scss';
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 0px);
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 90px);
     padding: 96px 112px;
-    gap: 112px;
 }
 
 .content-box-projects {
@@ -64,6 +63,55 @@ section {
             padding: 0px;
         }
     }
+}
 
+.review-container {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
+    height: 100%;
+    width: auto;
+    box-sizing: border-box;
+    background-color: yellow;
+}
 
+.review-col {
+    position: relative;
+    top: -55px;
+
+    img {
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+}
+
+.diagonal-lines {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 10px 20px;
+    background: repeating-linear-gradient(135deg,
+            $main-color,
+            $main-color 1px,
+            transparent 2px,
+            transparent 10px);
+
+    &:first-child {
+        top: 0;
+        z-index: 3;
+    }
+
+    &:nth-child(2) {
+
+        top: 80px;
+        z-index: 2;
+    }
+
+    &:last-child {
+        top: 155px;
+        z-index: 1;
+    }
 }

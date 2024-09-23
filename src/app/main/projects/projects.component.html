@@ -5,7 +5,11 @@
     <p>{{ "projects.intro" | translate }}</p>
 
     <div class="content-rows-div">
-      <div class="content-row" (mouseenter)="toggleArrow(1, true)" (mouseleave)="toggleArrow(1, false)">
+      <div
+        class="content-row"
+        (mouseenter)="toggleArrow(1, true)"
+        (mouseleave)="toggleArrow(1, false)"
+      >
         <div class="content-row-title">
           <h4>Join</h4>
           <svg
@@ -31,8 +35,11 @@
         </div>
       </div>
 
-      <div class="content-row" (mouseenter)="toggleArrow(2, true)" (mouseleave)="toggleArrow(2, false)">
-    
+      <div
+        class="content-row"
+        (mouseenter)="toggleArrow(2, true)"
+        (mouseleave)="toggleArrow(2, false)"
+      >
         <div class="content-row-title">
           <h4>El Pollo Loco</h4>
           <svg
@@ -55,9 +62,12 @@
           <div><p>Javascript</p></div>
         </div>
       </div>
-    
-      <div class="content-row" (mouseenter)="toggleArrow(3, true)" (mouseleave)="toggleArrow(3, false)">
-    
+
+      <div
+        class="content-row"
+        (mouseenter)="toggleArrow(3, true)"
+        (mouseleave)="toggleArrow(3, false)"
+      >
         <div class="content-row-title">
           <h4>DA Bubble</h4>
           <svg
@@ -81,4 +91,13 @@
         </div>
       </div>
     </div>
-    
+  </div>
+
+  <div class="review-container">
+    <div class="review-col">
+      <div [ngStyle]="{ display: arrowState[1] ? 'flex' : 'none' }" class="diagonal-lines"><img src="./../../../assets/img/join.png" alt="" /></div>
+      <div [ngStyle]="{ display: arrowState[2] ? 'flex' : 'none' }" class="diagonal-lines"><img src="./../../../assets/img/el-pollo-loco.png" alt="" /></div>
+      <div [ngStyle]="{ display: arrowState[3] ? 'flex' : 'none' }" class="diagonal-lines"><img src="./../../../assets/img/bubble.png" alt="" /></div>
+    </div>
+  </div>
+</section>
