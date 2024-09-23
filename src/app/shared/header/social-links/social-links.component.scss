@@ -1,15 +1,16 @@
 @import './../../../../styles.scss';
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
+    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-end, $g: 0px);
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0px;
+    bottom: -17px;
     padding: 0px 112px;
 }
 
 .left {
+    @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-end, $g: 0px);
     hr {
         border: none;
         height: 210px;

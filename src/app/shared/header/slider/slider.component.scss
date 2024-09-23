@@ -1,14 +1,23 @@
 @import './../../../../styles.scss';
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px); // Vertikale Zentrierung
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.banner-container {
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     position: absolute;
+    width: 100%;
+    box-sizing: border-box;
     left: 0;
     right: 0;
     bottom: 0;
     height: 50px;
     background-color: $banner-bg-c;
-    padding: 12px;
+    padding: 12px 0;
     transform: rotate(-3deg);
     transform-origin: top left;
     overflow: hidden;
@@ -18,11 +27,10 @@ section {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
     animation: slide-left 20s linear infinite;
     white-space: nowrap;
-    width: 100%;
+    min-width: 110%; // Setze die Breite auf 140%, damit der Inhalt nicht abgeschnitten wird
     box-sizing: border-box;
     padding: 0 12px;
     position: relative;
-    overflow: hidden;
 }
 
 .spacer-div {
@@ -40,6 +48,6 @@ section {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-140%); // Behalte die 140%, damit der Text durchläuft
     }
 }
