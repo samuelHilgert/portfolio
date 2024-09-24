@@ -4,7 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { PopupProjectComponent } from './popup-project/popup-project.component';
 import { HttpClient } from '@angular/common/http';
 
-interface Project {
+export interface Project {
   id: number;
   title: string;
   description: string;
@@ -23,7 +23,8 @@ interface Project {
 export class ProjectsComponent {
   openPopup: boolean = false;
   arrowState: { [key: number]: boolean } = {};
-  project: Project[] = [];
+  projectList: Project[] = [];
+  selectedProject: Project | null = null;
 
   constructor(private http: HttpClient) {
     this.loadProjectDataFromJson();
@@ -31,13 +32,32 @@ export class ProjectsComponent {
 
   loadProjectDataFromJson() {
     this.http.get<Project[]>('assets/projects.json').subscribe((data: any) => {
-      this.project = data.projects;
+      this.projectList = data.projects;
       // console.log(data.projects);
-      console.log(this.project);
+      //console.log(this.projectList);
     });
   }
 
   toggleArrow(index: number, show: boolean) {
     this.arrowState[index] = show;
+  }
+
+  // Methode, um das ausgewählte Projekt zu setzen
+  openProjectPopup(i: number) {
+    // console.log('Selected Project Index:', i);
+    // console.log('Project List:', this.projectList);
+
+    if (this.projectList.length > 0) {
+      this.selectedProject = this.projectList[i]; // Wähle das Projekt basierend auf dem Index aus
+      this.openPopup = true;
+    } else {
+      console.error('projectList is empty or not loaded yet.');
+    }
+  }
+
+  // Methode zum Schließen des Popups
+  closeProjectPopup() {
+    this.openPopup = false;
+    this.selectedProject = null;
   }
 }

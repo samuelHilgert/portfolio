@@ -57,6 +57,9 @@
   "footer": {
     "legal-notice": "Impressum"
   },
+  "popup-project": {
+    "headline": "Worum geht es in diesem Projekt?"
+  },
   "projects": [
     {
       "description": "Ein Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."

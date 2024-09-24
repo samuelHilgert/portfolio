@@ -57,6 +57,9 @@
   "footer": {
     "legal-notice": "Legal Notice"
   },
+  "popup-project": {
+    "headline": "What is this project about?"
+  },
   "projects": [
     {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."

@@ -7,8 +7,8 @@
     <div class="content-rows-div">
       <div
         class="content-row"
-        *ngFor="let proj of project; let i = index"
-        (click)="openPopup = true"
+        *ngFor="let proj of projectList; let i = index" 
+        (click)="openProjectPopup(i)"
         (mouseenter)="toggleArrow(i, true)"
         (mouseleave)="toggleArrow(i, false)"
       >
@@ -39,7 +39,7 @@
 
   <div class="review-container">
     <div class="review-col">
-      <div *ngFor="let proj of project; let i = index">
+      <div *ngFor="let proj of projectList; let i = index"> 
         <div
           [ngStyle]="{
             display: arrowState[i] ? 'flex' : 'none',
@@ -54,6 +54,11 @@
   </div>
 </section>
 
+<!-- Nur anzeigen, wenn openPopup true ist und selectedProject nicht null -->
 <app-popup-project
+  *ngIf="openPopup && selectedProject"
   [ngStyle]="{ display: openPopup ? 'flex' : 'none' }"
-></app-popup-project>
+  [project]="selectedProject"
+  [openPopup]="openPopup"
+  (closePopup)="closeProjectPopup()">
+</app-popup-project>

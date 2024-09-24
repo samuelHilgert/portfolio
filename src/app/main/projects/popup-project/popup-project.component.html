@@ -1,15 +1,15 @@
 <section id="projectPopup">
   <div class="popup-container">
     <div class="popup-content-box-left">
-      <h1>02</h1>
-      <h3>El Pollo Loco</h3>
-      <p class="popup-project-headline">What is this project about?</p>
-      <p>
-        Jump, run and throw game based on object-oriented approach. Help Pepe to
-        find coins and tabasco salsa to fight against the crazy hen.
-      </p>
-      <div class="popup-project-skills-box">JavaScript HTML CSS</div>
-
+      <h1>{{ project.id }}</h1>
+      <h3>{{ project.title }}</h3>
+      <p class="popup-project-headline">{{ "popup-project.headline" | translate }}</p>
+      <p>{{ "projects." + project.id + ".description" | translate }}</p>
+      <div class="popup-project-skills-box">
+        <div *ngFor="let skill of project.skills.split(', ')">
+          <p>{{ skill }}</p>
+        </div>
+      </div>
       <div class="popup-project-btn-div">
         <a class="btn-popup" href="#"><span>GitHub</span></a>
         <a class="btn-popup" href="#"><span>Live Test</span></a>
@@ -17,12 +17,12 @@
     </div>
 
     <div class="popup-content-box-right">
-      <svg (click)="openPopup = false" viewBox="0 0 24 24" width="35" height="35">
+      <svg (click)="close()" viewBox="0 0 24 24" width="35" height="35">
         <path
           d="M18.3 5.71a1 1 0 00-1.42 0L12 10.59 7.11 5.71A1 1 0 105.7 7.12L10.59 12l-4.88 4.88a1 1 0 001.42 1.42L12 13.41l4.88 4.88a1 1 0 001.42-1.42L13.41 12l4.88-4.88a1 1 0 000-1.41z"
         />
       </svg>
-      <img src="./../../../../assets/img/el-pollo-loco.png" alt="" />
+      <img [src]="'./' + project.imgGameplay" alt="{{ project.title }}" />
       <div class="popup-right-next-div">
         <p>Next project</p>
         <svg
