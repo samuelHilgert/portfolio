@@ -60,5 +60,6 @@
   [ngStyle]="{ display: openPopup ? 'flex' : 'none' }"
   [project]="selectedProject"
   [openPopup]="openPopup"
-  (closePopup)="closeProjectPopup()">
+  (closePopup)="closeProjectPopup()"
+  (nextProject)="nextProject()">
 </app-popup-project>

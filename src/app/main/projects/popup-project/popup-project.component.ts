@@ -20,6 +20,7 @@ export class PopupProjectComponent implements OnChanges {
   @Input() openPopup: boolean = false;
   @Input() project!: Project;
   @Output() closePopup: EventEmitter<void> = new EventEmitter(); // EventEmitter für Popup-Schließen
+  @Output() nextProject: EventEmitter<void> = new EventEmitter(); // EventEmitter für das nächste Projekt
   skillImagesList: SkillImage[] = [];
   matchingSkillImages: SkillImage[] = []; // Gefilterte Skill-Images
 
@@ -60,5 +61,15 @@ export class PopupProjectComponent implements OnChanges {
   // Methode, um das Schließen-Event zu emittieren
   close() {
     this.closePopup.emit(); // Sendet ein Event an die Parent-Komponente
+  }
+
+  // Methode, um das nächste Projekt zu laden
+  loadNextProject() {
+    this.nextProject.emit(); // Sende das Event an die Parent-Komponente
+  }
+
+  closePopupOnClickOutside(event: MouseEvent) {
+    // Hier wird das Popup geschlossen, wenn außerhalb des Containers geklickt wird
+    this.close();
   }
 }

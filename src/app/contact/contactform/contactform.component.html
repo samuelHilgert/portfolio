@@ -15,7 +15,12 @@
       id="name"
       name="name"
       required
+      #name="ngModel"
     />
+    <!-- Fehlermeldung für Name -->
+    <span class="missing-msg" *ngIf="contactForm.submitted && name.invalid">
+      {{ "contact.form_name_required" | translate }}
+    </span>
   </div>
 
   <div class="content-row">
@@ -31,7 +36,18 @@
       placeholder="youremail@email.com"
       pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       required
+      #email="ngModel"
     />
+    <!-- Fehlermeldung für E-Mail -->
+    <span *ngIf="contactForm.submitted && email.invalid">
+      <!-- Zeige die spezifische Fehlermeldung basierend auf der Validierung -->
+      <span class="missing-msg" *ngIf="email.errors?.['required']">{{
+        "contact.form_email_required" | translate
+      }}</span>
+      <span class="missing-msg" *ngIf="email.errors?.['pattern']">{{
+        "contact.form_email_invalid" | translate
+      }}</span>
+    </span>
   </div>
 
   <div class="content-row">
@@ -40,45 +56,59 @@
     }}</label>
     <textarea
       class="form-input"
-      #message="ngModel"
-      minlength="4"
       [(ngModel)]="contactData.message"
+      minlength="4"
       id="message"
       name="message"
       placeholder="Hello Lukas, I am interested in..."
       required
-    >
-    </textarea>
+      #message="ngModel"
+    ></textarea>
+    <!-- Fehlermeldung für Nachricht -->
+    <span class="missing-msg" *ngIf="contactForm.submitted && message.invalid">
+      {{ "contact.form_message_required" | translate }}
+    </span>
   </div>
 
   <div class="terms-div">
-    <input
-      [(ngModel)]="contactData.termAccepted"
-      type="checkbox"
-      name="acceptTerms"
-      id="acceptTerms"
-      required
-    />
-    <label>
-      <span class="terms-text"
-        >{{ "contact.term" | translate }} <a href="">privacy policy </a
-        >{{ "contact.term_end" | translate }}</span
-      >
-    </label>
-  </div>
+    <div class="terms-row">
+      <input
+        [(ngModel)]="contactData.termAccepted"
+        type="checkbox"
+        name="acceptTerms"
+        id="acceptTerms"
+        required
+        #acceptTerms="ngModel"
+      />
+      <label>
+        <span class="terms-text">
+          {{ "contact.term" | translate }}
+          <a href="">{{ "contact.privacy" | translate }}</a>
+          {{ "contact.term_end" | translate }}
+        </span>
+      </label>
+    </div>
 
-  <span *ngIf="!message.valid && message.touched && !message.disabled">
-    Please enter a message
-  </span>
+    <div class="term-missing-msg">
+      <!-- Fehlermeldung für Terms Checkbox -->
+      <span
+        class="missing-msg"
+        *ngIf="contactForm.submitted && acceptTerms.invalid"
+      >
+        {{ "contact.missingTerm" | translate }}
+      </span>
+    </div>
+  </div>
 
   <div class="submit-row">
     <input
-    class="submit-btn form-label"
-    type="submit"
-    value="Say Hello :)"
-    [disabled]="!contactForm.valid"
-  />
+      [ngClass]="{
+        validSubmitBtn: contactForm.valid,
+        invalidSubmitBtn: !contactForm.valid
+      }"
+      class="submit-btn form-label"
+      type="submit"
+      value="Say Hello :)"
+    />
   </div>
-
-
 </form>

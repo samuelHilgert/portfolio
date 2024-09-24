@@ -1,5 +1,5 @@
-<section id="projectPopup">
-  <div class="popup-container">
+<section id="projectPopup" (click)="closePopupOnClickOutside($event)">
+  <div class="popup-container" (click)="$event.stopPropagation()">
     <div class="popup-content-box-left">
       <h1>0{{ project.id }}</h1>
       <h3>{{ project.title }}</h3>
@@ -31,7 +31,7 @@
         />
       </svg>
       <img [src]="'./' + project.imgGameplay" alt="{{ project.title }}" />
-      <div class="popup-right-next-div">
+      <div class="popup-right-next-div"  (click)="loadNextProject()">
         <p>Next project</p>
         <svg
           class="feedback-arrow"

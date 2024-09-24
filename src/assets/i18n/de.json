@@ -52,7 +52,13 @@
     "form_mail": "Wie lautet Ihre E-Mail?",
     "form_message": "Wie kann ich Ihnen helfen?",
     "term": "Ich habe die",
-    "term_end": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu."
+    "term_end": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "privacy": "Datenschutzrichtlinien",
+    "form_name_required": "Name fehlt.",
+    "form_email_required": "Email fehlt.",
+    "form_email_invalid": "Bitte gib eine gültige E-Mail Adresse an.",
+    "form_message_required": "Eine Nachricht fehlt.",
+    "missingTerm": "Du musst die Datenschutzrichtlinien akzeptieren."
   },
   "footer": {
     "legal-notice": "Impressum"

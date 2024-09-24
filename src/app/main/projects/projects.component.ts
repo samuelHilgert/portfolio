@@ -5,14 +5,14 @@ import { PopupProjectComponent } from './popup-project/popup-project.component';
 import { HttpClient } from '@angular/common/http';
 
 export interface Project {
-  id: number,
-  title: string,
-  description: string,
-  skills: string,
-  imgStart: string,
-  imgGameplay: string,
-  gitHub: string,
-  liveTest: string
+  id: number;
+  title: string;
+  description: string;
+  skills: string;
+  imgStart: string;
+  imgGameplay: string;
+  gitHub: string;
+  liveTest: string;
 }
 
 @Component({
@@ -61,5 +61,20 @@ export class ProjectsComponent {
   closeProjectPopup() {
     this.openPopup = false;
     this.selectedProject = null;
+  }
+
+  // Methode, um zum nächsten Projekt zu wechseln
+  nextProject() {
+    if (this.selectedProject) {
+      const currentIndex = this.projectList.findIndex(
+        (proj) => proj.id === this.selectedProject?.id
+      );
+
+      if (currentIndex >= 0 && currentIndex < this.projectList.length - 1) {
+        this.selectedProject = this.projectList[currentIndex + 1];
+      } else {
+        this.selectedProject = this.projectList[0];
+      }
+    }
   }
 }

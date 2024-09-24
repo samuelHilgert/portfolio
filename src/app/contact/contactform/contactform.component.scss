@@ -95,10 +95,14 @@ label {
 }
 
 .terms-div {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
     padding: 40px 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+.terms-row {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
 
     span {
         color: $placeholder-text;
@@ -106,6 +110,35 @@ label {
         >a {
             color: $text-link-color;
         }
+    }
+
+    >input {
+        appearance: none;
+        width: 25px;
+        height: 18px;
+        border: 2px solid $main-color;
+        border-radius: 2px;
+        cursor: pointer;
+        position: relative;
+
+        &:checked {
+            background-color: transparent;
+            /* Checkbox bleibt transparent */
+            border-color: $main-color;
+        }
+
+        &:checked::after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: -1px;
+            width: 3px;
+            height: 10px;
+            border: solid $main-color;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
     }
 }
 
@@ -115,8 +148,63 @@ label {
     box-sizing: border-box
 }
 
+.missing-field-div {
+    padding-bottom: 30px;
+    color: red;
+}
+
 .submit-btn {
     @include btn();
     color: $placeholder-text;
     font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    transition: color 0.3s ease;
+
+    // Stil für den Button, wenn das Formular gültig ist
+    &.validSubmitBtn {
+        color: $main-color;
+        border-color: $main-color;
+        cursor: pointer;
+
+        // Definiere die Animation nur bei einem gültigen Button
+        .submit-text {
+            animation: slide 2s ease-in-out infinite;
+        }
+    }
+
+    &.invalidSubmitBtn {
+        color: $placeholder-text;
+        border-color: $placeholder-text;
+    }
+
+    // Animation für den Sliding-Effekt
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        40% {
+            transform: translateX(-140%);
+        }
+
+        41% {
+            transform: translateX(140%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+.term-missing-msg {
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
+}
+
+.missing-msg {
+    color: rgb(199, 80, 51);
+    font-size:14px;
 }

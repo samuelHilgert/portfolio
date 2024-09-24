@@ -35,20 +35,21 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    console.log('Form submitted:', ngForm);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            // console.log('success form send: ', response);
+            console.log('Success: ', response);
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error('send error: ', error);
+            console.error('Send error: ', error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('Send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) { // ist nur zum Testen da, da es ansonsten nicht im localhost funktioniert. Dann auch mailTest rausnehemn in der Abfrage
-      console.log('test mode activated: form send access: ', this.contactData);
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      console.log('Test mode: form submission success', this.contactData);
       ngForm.resetForm();
     }
   }

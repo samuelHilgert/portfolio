@@ -52,7 +52,13 @@
     "form_mail": "What's your email?",
     "form_message": "How can i help you?",
     "term": "I've read the",
-    "term_end": "and agree to the processing of my data as outlined."
+    "term_end": "and agree to the processing of my data as outlined.",
+    "privacy": "privacy policy",
+    "form_name_required": "Name is required.",
+    "form_email_required": "Email is required.",
+    "form_email_invalid": "Please enter a valid email address.",
+    "form_message_required": "Message is required.",
+    "missingTerm": "You must accept the terms to proceed."
   },
   "footer": {
     "legal-notice": "Legal Notice"
