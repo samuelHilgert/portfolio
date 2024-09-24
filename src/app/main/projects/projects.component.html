@@ -7,6 +7,7 @@
     <div class="content-rows-div">
       <div
         class="content-row"
+        (click)="openPopup = true"
         (mouseenter)="toggleArrow(1, true)"
         (mouseleave)="toggleArrow(1, false)"
       >
@@ -37,6 +38,7 @@
 
       <div
         class="content-row"
+        (click)="openPopup = true"
         (mouseenter)="toggleArrow(2, true)"
         (mouseleave)="toggleArrow(2, false)"
       >
@@ -65,6 +67,7 @@
 
       <div
         class="content-row"
+        (click)="openPopup = true"
         (mouseenter)="toggleArrow(3, true)"
         (mouseleave)="toggleArrow(3, false)"
       >
@@ -101,3 +104,8 @@
     </div>
   </div>
 </section>
+
+<app-popup-project   
+[ngStyle]="{ display: openPopup ? 'flex' : 'none' }" 
+>
+</app-popup-project>

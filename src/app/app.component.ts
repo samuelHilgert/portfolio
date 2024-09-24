@@ -5,6 +5,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from "./shared/footer/footer.component";
 import {TranslateModule} from "@ngx-translate/core";
+import { PopupProjectComponent } from './main/projects/popup-project/popup-project.component';
 
 @Component({
   selector: 'app-root',

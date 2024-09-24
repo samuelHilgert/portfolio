@@ -53,3 +53,12 @@
     transform: translateX(0);
   }
 }
+
+.btn-popup {
+  @include btn();
+
+  &:hover {
+    border-color: $button-border-hover;
+    color: $button-border-hover;
+  }
+}

@@ -55,3 +55,10 @@ $button-bg:transparent;
 /////////// form /////////// 
 $placeholder-text:rgba(255, 255, 255, 0.8);
 $caret: white;
+
+/////////// popup (projects) /////////// 
+$bg-filter: rgba(2, 2, 2, 0.6);
+$project-index: $main-color;
+$project-title: $main-text;
+$project-close-cross:white;
+$project-close-cross-hover:$main-color;

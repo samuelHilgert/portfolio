@@ -1,0 +1,107 @@
+@import './../../../../styles.scss';
+
+section {
+    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $bg-filter;
+    z-index: 99909;
+}
+
+.popup-container {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+    background: linear-gradient(to top right, $bg-linear-c-1, $bg-linear-c-2);
+    padding: 50px 50px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid $feedback-container-border;
+    border-radius: 20px;
+}
+
+.popup-content-box-left {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    width: 50%;
+    box-sizing: border-box;
+
+    >h1 {
+        color: $project-index !important;
+    }
+
+    >h3 {
+        color: $project-title !important;
+    }
+}
+
+.popup-content-box-right {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.popup-project-skills-box {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 0px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popup-project-btn-div {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popup-content-box-right {
+    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-end, $g: 24px);
+    width: 50%;
+    box-sizing: border-box;
+
+    >svg {
+        fill: $project-close-cross;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+            fill: $project-close-cross-hover;
+        }
+    }
+
+    >img {
+        width: 500px;
+        height: 360px;
+        border-radius: 30px;
+    }
+
+}
+
+.popup-right-next-div {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
+
+    >p {
+        color: $main-color;
+
+        &:hover {
+
+            color: $main-text;
+        }
+    }
+
+    >svg {
+        stroke: $main-color;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        >svg {
+            filter: brightness(1.2);
+            transform: translateX(8%);
+        }
+    }
+}
