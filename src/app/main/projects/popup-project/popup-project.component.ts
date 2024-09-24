@@ -31,12 +31,13 @@ export class PopupProjectComponent implements OnChanges {
     if (changes['project']) {
       this.getMatchingSkillImages();
     }
+    // console.log('Projekte: ', this.project);
   }
 
   loadSkillImages() {
     this.http.get<SkillImage[]>('assets/skills.json').subscribe((data: any) => {
       this.skillImagesList = data.skills;
-      console.log('Skill Images geladen:', this.skillImagesList);
+      // console.log('Skill Images geladen:', this.skillImagesList);
       // Hier erneut filtern, falls nötig
       this.getMatchingSkillImages();
     });
@@ -52,7 +53,7 @@ export class PopupProjectComponent implements OnChanges {
         projectSkillsArray.includes(skillImage.skill)
       );
 
-      console.log('Gefilterte Skill-Images:', this.matchingSkillImages);
+      // console.log('Gefilterte Skill-Images:', this.matchingSkillImages);
     }
   }
 

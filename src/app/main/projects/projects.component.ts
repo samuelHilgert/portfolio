@@ -5,12 +5,14 @@ import { PopupProjectComponent } from './popup-project/popup-project.component';
 import { HttpClient } from '@angular/common/http';
 
 export interface Project {
-  id: number;
-  title: string;
-  description: string;
-  skills: string;
-  imgStart: string;
-  imgGameplay: string;
+  id: number,
+  title: string,
+  description: string,
+  skills: string,
+  imgStart: string,
+  imgGameplay: string,
+  gitHub: string,
+  liveTest: string
 }
 
 @Component({
@@ -34,7 +36,7 @@ export class ProjectsComponent {
     this.http.get<Project[]>('assets/projects.json').subscribe((data: any) => {
       this.projectList = data.projects;
       // console.log(data.projects);
-      //console.log(this.projectList);
+      // console.log(this.projectList);
     });
   }
 

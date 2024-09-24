@@ -6,23 +6,29 @@
             "description": "",
             "skills": "Angular, TypeScript, HTML, CSS, Firebase",
             "imgStart": "assets/img/projects/start/join_start.png",
-            "imgGameplay": "assets/img/projects/example/join_example.png"
+            "imgGameplay": "assets/img/projects/example/join_example.png",
+            "gitHub": "https://github.com/samuelHilgert/join.git",
+            "liveTest":"https://join.samuelhilgert.com"
         },
         {
             "id": 2,
-            "title": "El-Pollo-Loco",
+            "title": "El Pollo Loco",
             "description": "",
             "skills": "HTML, CSS, JavaScript",
             "imgStart": "assets/img/projects/start/el-pollo-loco_start.png",
-            "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.png"
+            "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.png",
+            "gitHub": "https://github.com/samuelHilgert/el-pollo-loco.git",
+            "liveTest":"https://el-pollo-loco.samuelhilgert.com"
         },
         {
             "id": 3,
-            "title": "DA-Bubble",
+            "title": "DA Bubble",
             "description": "",
             "skills": "Angular, Firebase, TypeScript",
             "imgStart": "assets/img/projects/start/da-bubble_start.png",
-            "imgGameplay": "assets/img/projects/example/da-bubble_examplepng.png"
+            "imgGameplay": "assets/img/projects/example/da-bubble_examplepng.png",
+            "gitHub": "#",
+            "liveTest":"#"
         }
     ]
 }
