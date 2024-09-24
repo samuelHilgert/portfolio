@@ -157,46 +157,17 @@ label {
     @include btn();
     color: $placeholder-text;
     font-size: 16px;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: center;
-    transition: color 0.3s ease;
 
     // Stil für den Button, wenn das Formular gültig ist
     &.validSubmitBtn {
         color: $main-color;
         border-color: $main-color;
         cursor: pointer;
-
-        // Definiere die Animation nur bei einem gültigen Button
-        .submit-text {
-            animation: slide 2s ease-in-out infinite;
-        }
     }
 
     &.invalidSubmitBtn {
         color: $placeholder-text;
         border-color: $placeholder-text;
-    }
-
-    // Animation für den Sliding-Effekt
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-
-        40% {
-            transform: translateX(-140%);
-        }
-
-        41% {
-            transform: translateX(140%);
-        }
-
-        100% {
-            transform: translateX(0);
-        }
     }
 }
 
