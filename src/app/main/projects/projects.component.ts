@@ -1,10 +1,11 @@
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { PopupProjectComponent } from './popup-project/popup-project.component';
+import { HttpClient } from '@angular/common/http';
 
 interface Project {
-  index: number;
+  id: number;
   title: string;
   description: string;
   skills: string;
@@ -17,25 +18,26 @@ interface Project {
   standalone: true,
   imports: [TranslateModule, NgIf, CommonModule, PopupProjectComponent],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'], 
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
   openPopup: boolean = false;
-  arrowState: { [key: number]: boolean} = {};
+  arrowState: { [key: number]: boolean } = {};
+  project: Project[] = [];
 
-  project: Project = {
-    index: 0,
-    title: "",
-    description: "",
-    skills: "",
-    imgStart: "",
-    imgGameplay: ""
-  };
+  constructor(private http: HttpClient) {
+    this.loadProjectDataFromJson();
+  }
 
-  constructor() {}
+  loadProjectDataFromJson() {
+    this.http.get<Project[]>('assets/projects.json').subscribe((data: any) => {
+      this.project = data.projects;
+      // console.log(data.projects);
+      console.log(this.project);
+    });
+  }
 
   toggleArrow(index: number, show: boolean) {
     this.arrowState[index] = show;
-    console.log(this.project);
   }
 }

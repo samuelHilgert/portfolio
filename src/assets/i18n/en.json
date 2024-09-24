@@ -30,7 +30,7 @@
     "text": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "button": "Let's Talk"
   },
-  "projects": {
+  "projectSection": {
     "title": "Portfolio",
     "subtitle": "Featured Projects",
     "intro": "Here you will find a selection of my completed projects – click on the projects to see my skills in action."
@@ -56,5 +56,16 @@
   },
   "footer": {
     "legal-notice": "Legal Notice"
-  }
+  },
+  "projects": [
+    {
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    {
+      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    {
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    }
+  ]
 }

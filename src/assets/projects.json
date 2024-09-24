@@ -1,26 +1,28 @@
-[
-    {
-        "index": 1,
-        "title": "Join",
-        "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-        "skills": "",
-        "imgStart": "assets/images/project1-start.jpg",
-        "imgGameplay": "assets/images/project1-gameplay.jpg"
-    },
-    {
-        "index": 2,
-        "title": "El-Pollo-Loco",
-        "description": "This is the description for project 2.",
-        "skills": "",
-        "imgStart": "assets/images/project2-start.jpg",
-        "imgGameplay": "assets/images/project2-gameplay.jpg"
-    },
-    {
-        "index": 3,
-        "title": "DA Bubble",
-        "description": "This is the description for project 2.",
-        "skills": "",
-        "imgStart": "assets/images/project2-start.jpg",
-        "imgGameplay": "assets/images/project2-gameplay.jpg"
-    }
-]
+{
+    "projects": [
+        {
+            "id": 0,
+            "title": "Join",
+            "description": "",
+            "skills": "Angular, TypeScript, HTML, CSS, Firebase",
+            "imgStart": "assets/img/projects/start/join_start.png",
+            "imgGameplay": "assets/img/projects/example/join_example.png"
+        },
+        {
+            "id": 1,
+            "title": "El-Pollo-Loco",
+            "description": "",
+            "skills": "HTML, CSS, JavaScript",
+            "imgStart": "assets/img/projects/start/el-pollo-loco_start.png",
+            "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.png"
+        },
+        {
+            "id": 2,
+            "title": "DA-Bubble",
+            "description": "",
+            "skills": "Angular, Firebase, TypeScript",
+            "imgStart": "assets/img/projects/start/da-bubble_start.png",
+            "imgGameplay": "assets/img/projects/example/da-bubble_examplepng.png"
+        }
+    ]
+}

@@ -70,7 +70,6 @@ section {
     height: 100%;
     width: auto;
     box-sizing: border-box;
-    background-color: yellow;
 }
 
 .review-col {
@@ -98,20 +97,4 @@ section {
             $main-color 1px,
             transparent 2px,
             transparent 10px);
-
-    &:first-child {
-        top: 0;
-        z-index: 3;
-    }
-
-    &:nth-child(2) {
-
-        top: 80px;
-        z-index: 2;
-    }
-
-    &:last-child {
-        top: 155px;
-        z-index: 1;
-    }
 }

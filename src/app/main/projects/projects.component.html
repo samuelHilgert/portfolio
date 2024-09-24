@@ -1,20 +1,21 @@
 <section id="projects">
   <div class="content-box-projects">
-    <h4>{{ "projects.title" | translate }}</h4>
-    <h3>{{ "projects.subtitle" | translate }}</h3>
-    <p>{{ "projects.intro" | translate }}</p>
+    <h4>{{ "projectSection.title" | translate }}</h4>
+    <h3>{{ "projectSection.subtitle" | translate }}</h3>
+    <p>{{ "projectSection.intro" | translate }}</p>
 
     <div class="content-rows-div">
       <div
         class="content-row"
+        *ngFor="let proj of project; let i = index"
         (click)="openPopup = true"
-        (mouseenter)="toggleArrow(1, true)"
-        (mouseleave)="toggleArrow(1, false)"
+        (mouseenter)="toggleArrow(i, true)"
+        (mouseleave)="toggleArrow(i, false)"
       >
         <div class="content-row-title">
-          <h4>Join</h4>
+          <h4>{{ proj.title }}</h4>
           <svg
-            *ngIf="arrowState[1]"
+            *ngIf="arrowState[i]"
             width="30"
             height="30"
             fill="none"
@@ -28,69 +29,9 @@
           </svg>
         </div>
         <div class="used-skills-div">
-          <div><p>Angular</p></div>
-          <div><p>TypeScript</p></div>
-          <div><p>HTML</p></div>
-          <div><p>CSS</p></div>
-          <div><p>Firebase</p></div>
-        </div>
-      </div>
-
-      <div
-        class="content-row"
-        (click)="openPopup = true"
-        (mouseenter)="toggleArrow(2, true)"
-        (mouseleave)="toggleArrow(2, false)"
-      >
-        <div class="content-row-title">
-          <h4>El Pollo Loco</h4>
-          <svg
-            *ngIf="arrowState[2]"
-            width="30"
-            height="30"
-            fill="none"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M7 17L17 7" />
-            <path d="M7 7h10v10" />
-          </svg>
-        </div>
-        <div class="used-skills-div">
-          <div><p>HTML</p></div>
-          <div><p>CSS</p></div>
-          <div><p>Javascript</p></div>
-        </div>
-      </div>
-
-      <div
-        class="content-row"
-        (click)="openPopup = true"
-        (mouseenter)="toggleArrow(3, true)"
-        (mouseleave)="toggleArrow(3, false)"
-      >
-        <div class="content-row-title">
-          <h4>DA Bubble</h4>
-          <svg
-            *ngIf="arrowState[3]"
-            width="30"
-            height="30"
-            fill="none"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M7 17L17 7" />
-            <path d="M7 7h10v10" />
-          </svg>
-        </div>
-        <div class="used-skills-div">
-          <div><p>Angular</p></div>
-          <div><p>Firebase</p></div>
-          <div><p>TypeScript</p></div>
+          <div *ngFor="let skill of proj.skills.split(', ')">
+            <p>{{ skill }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -98,14 +39,21 @@
 
   <div class="review-container">
     <div class="review-col">
-      <div [ngStyle]="{ display: arrowState[1] ? 'flex' : 'none' }" class="diagonal-lines"><img src="./../../../assets/img/join.png" alt="" /></div>
-      <div [ngStyle]="{ display: arrowState[2] ? 'flex' : 'none' }" class="diagonal-lines"><img src="./../../../assets/img/el-pollo-loco.png" alt="" /></div>
-      <div [ngStyle]="{ display: arrowState[3] ? 'flex' : 'none' }" class="diagonal-lines"><img src="./../../../assets/img/bubble.png" alt="" /></div>
+      <div *ngFor="let proj of project; let i = index">
+        <div
+          [ngStyle]="{
+            display: arrowState[i] ? 'flex' : 'none',
+            top: i === 1 ? '75px' : i === 2 ? '160px' : '0'
+          }"
+          class="diagonal-lines"
+        >
+          <img [src]="'./' + proj.imgStart" alt="{{ proj.title }}" />
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<app-popup-project   
-[ngStyle]="{ display: openPopup ? 'flex' : 'none' }" 
->
-</app-popup-project>
+<app-popup-project
+  [ngStyle]="{ display: openPopup ? 'flex' : 'none' }"
+></app-popup-project>

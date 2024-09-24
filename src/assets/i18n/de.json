@@ -30,7 +30,7 @@
     "text": "Sie dürfen mich gerne kontaktieren. Ich freue mich auf neue Herausforderungen und Gelegenheiten mein Wissen zu erweitern.",
     "button": "Kontakt aufnehmen"
   },
-  "projects": {
+  "projectSection": {
     "title": "Portfolio",
     "subtitle": "Ausgewählte Projekte",
     "intro": "Hier finden Sie eine Auswahl meiner abgeschlossenen Projekte – Klicken Sie auf das jeweilige Projekt, um meine Fähigkeiten in Aktion zu sehen."
@@ -56,5 +56,16 @@
   },
   "footer": {
     "legal-notice": "Impressum"
-  }
+  },
+  "projects": [
+    {
+      "description": "Ein Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+    },
+    {
+      "description": "Ein Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco einzusammeln, um gegen das verrückte Huhn zu kämpfen."
+    },
+    {
+      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Channel-Struktur."
+    }
+  ]
 }
