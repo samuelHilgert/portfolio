@@ -1,15 +1,23 @@
 <section id="projectPopup">
   <div class="popup-container">
     <div class="popup-content-box-left">
-      <h1>{{ project.id }}</h1>
+      <h1>0{{ project.id }}</h1>
       <h3>{{ project.title }}</h3>
-      <p class="popup-project-headline">{{ "popup-project.headline" | translate }}</p>
+      <p class="popup-project-headline">
+        {{ "popup-project.headline" | translate }}
+      </p>
       <p>{{ "projects." + project.id + ".description" | translate }}</p>
+
       <div class="popup-project-skills-box">
-        <div *ngFor="let skill of project.skills.split(', ')">
-          <p>{{ skill }}</p>
+        <div
+          class="popup-project-skill"
+          *ngFor="let skillImage of matchingSkillImages"
+        >
+          <img [src]="skillImage.img" alt="{{ skillImage.skill }}" />
+          <p>{{ skillImage.skill }}</p>
         </div>
       </div>
+
       <div class="popup-project-btn-div">
         <a class="btn-popup" href="#"><span>GitHub</span></a>
         <a class="btn-popup" href="#"><span>Live Test</span></a>

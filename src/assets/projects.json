@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": 0,
+            "id": 1,
             "title": "Join",
             "description": "",
             "skills": "Angular, TypeScript, HTML, CSS, Firebase",
@@ -9,7 +9,7 @@
             "imgGameplay": "assets/img/projects/example/join_example.png"
         },
         {
-            "id": 1,
+            "id": 2,
             "title": "El-Pollo-Loco",
             "description": "",
             "skills": "HTML, CSS, JavaScript",
@@ -17,7 +17,7 @@
             "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.png"
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "DA-Bubble",
             "description": "",
             "skills": "Angular, Firebase, TypeScript",

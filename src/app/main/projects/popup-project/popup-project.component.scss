@@ -51,6 +51,14 @@ section {
     box-sizing: border-box;
 }
 
+.popup-project-skill {
+    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 4px);
+    >img {
+        width:30px;
+        height:30px;
+    }
+}
+
 .popup-project-btn-div {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
     width: 100%;
