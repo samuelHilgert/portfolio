@@ -1,0 +1,26 @@
+[
+    {
+        "index": 1,
+        "title": "Join",
+        "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+        "skills": "",
+        "imgStart": "assets/images/project1-start.jpg",
+        "imgGameplay": "assets/images/project1-gameplay.jpg"
+    },
+    {
+        "index": 2,
+        "title": "El-Pollo-Loco",
+        "description": "This is the description for project 2.",
+        "skills": "",
+        "imgStart": "assets/images/project2-start.jpg",
+        "imgGameplay": "assets/images/project2-gameplay.jpg"
+    },
+    {
+        "index": 3,
+        "title": "DA Bubble",
+        "description": "This is the description for project 2.",
+        "skills": "",
+        "imgStart": "assets/images/project2-start.jpg",
+        "imgGameplay": "assets/images/project2-gameplay.jpg"
+    }
+]

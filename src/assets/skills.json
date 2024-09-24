@@ -1,0 +1,49 @@
+{
+    "skills": [
+      {
+        "skill": "HTML",
+        "img": "assets/img/skills/HTML.svg"
+      },
+      {
+        "skill": "CSS",
+        "img": "assets/img/skills/CSS.svg"
+      },
+      {
+        "skill": "JavaScript",
+        "img": "assets/img/skills/JS.svg"
+      },
+      {
+        "skill": "Material Design",
+        "img": "assets/img/skills/MaterialDesign.svg"
+      },
+      {
+        "skill": "TypeScript",
+        "img": "assets/img/skills/TypeScript.svg"
+      },
+      {
+        "skill": "Angular",
+        "img": "assets/img/skills/Angular.svg"
+      },
+      {
+        "skill": "Firebase",
+        "img": "assets/img/skills/Firebase.svg"
+      },
+      {
+        "skill": "GIT",
+        "img": "assets/img/skills/GIT.svg"
+      },
+      {
+        "skill": "Rest-Api",
+        "img": "assets/img/skills/Rest-Api.svg"
+      },
+      {
+        "skill": "Scrum",
+        "img": "assets/img/skills/Scrum.svg"
+      },
+      {
+        "skill": "Growth Mindset",
+        "img": "assets/img/skills/Growth_mindset.svg"
+      }
+    ]
+  }
+  

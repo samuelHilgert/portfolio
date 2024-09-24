@@ -18,67 +18,13 @@
   </div>
 
   <div class="skills-container">
-    <div class="skills-col">
+
+    <div class="skills-div" *ngFor="let skill of skills">
       <div class="skill">
-        <img src="./../../../assets/img/HTML.svg" alt="" />
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/TypeScript.svg" alt="" />
-        <p>TypeScript</p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/Rest-Api.svg" alt="" />
-        <p>Rest-Api</p>
+        <img [src]="skill.img" [alt]="skill.skill" />
+        <p>{{ skill.skill }}</p>
       </div>
     </div>
 
-    <div class="skills-col">
-      <div class="skill">
-        <img src="./../../../assets/img/CSS.svg" alt="" />
-        <p>CSS</p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/Angular.svg" alt="" />
-        <p>Angular</p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/Scrum.svg" alt="" />
-        <p>Scrum</p>
-      </div>
-    </div>
-
-    <div class="skills-col">
-      <div class="skill">
-        <img src="./../../../assets/img/JS.svg" alt="" />
-        <p>JavaScript</p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/Firebase.svg" alt="" />
-        <p>Firebase</p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/Growth_mindset.svg" alt="" />
-        <p>
-          Growth <br />
-          mindset
-        </p>
-      </div>
-    </div>
-
-    <div class="skills-col">
-      <div class="skill">
-        <img src="./../../../assets/img/MaterialDesign.svg" alt="" />
-        <p>
-          Material <br />
-          Design
-        </p>
-      </div>
-      <div class="skill">
-        <img src="./../../../assets/img/GIT.svg" alt="" />
-        <p>GIT</p>
-      </div>
-      <div class="skill"></div>
-    </div>
   </div>
 </section>

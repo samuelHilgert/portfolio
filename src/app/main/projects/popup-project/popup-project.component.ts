@@ -11,4 +11,5 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class PopupProjectComponent {
   @Input() openPopup: boolean = false;
 
+  constructor() {}
 }
