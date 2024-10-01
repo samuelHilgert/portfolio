@@ -79,5 +79,41 @@
     {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
     }
-  ]
+  ],
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "preamble": "Preamble",
+    "preamble-text-1": "With the following privacy policy, we would like to inform you about which types of your personal data (hereinafter also referred to as 'data' for short) we process for which purposes and to what extent. The privacy policy applies to all personal data processing activities carried out by us, both in the context of providing our services and in particular on our websites, in mobile applications, as well as within external online presences, such as our social media profiles (hereinafter collectively referred to as 'online offering').",
+    "preamble-text-2": "The terms used are not gender-specific.",
+    "preamble-text-3": "As of: July 2024",
+    "content-overview": "Content Overview",
+    "content-overview-text-1": "Preamble",
+    "content-overview-text-2": "Responsible",
+    "content-overview-text-3": "Overview of processing",
+    "content-overview-text-4": "Relevant legal bases",
+    "content-overview-text-5": "Security measures",
+    "content-overview-text-6": "Transfer of personal data",
+    "content-overview-text-7": "International data transfers",
+    "content-overview-text-8": "General information on data storage and deletion",
+    "content-overview-text-9": "Rights of data subjects",
+    "content-overview-text-10": "Business services",
+    "content-overview-text-11": "Provision of the online offer and web hosting",
+    "content-overview-text-12": "Use of cookies",
+    "content-overview-text-13": "Contact and request management",
+    "content-overview-text-14": "Social media presences",
+    "content-overview-text-15": "Plugins and embedded functions as well as content",
+    "responsible": "Responsible",
+    "responsible-name": "Samuel Hilgert",
+    "responsible-adress": "Eichendorffstraße 22",
+    "responsible-city": "68519 Viernheim",
+    "responsible-country": "Germany",
+    "responsible-mail": "mail@samuelhilgert.com",
+    "overview-of-processing": "Overview of processing",
+    "overview-of-processing-text-1": "The following overview summarizes the types of data processed and the purposes of their processing and refers to the data subjects.",
+    "overview-of-processing-subline1": "Types of processed data",
+    "overview-of-processing-type-1": "",
+    "overview-of-processing-type-2": "",
+    "overview-of-processing-type-3": "",
+    "overview-of-processing-type-4": ""
+  }
 }

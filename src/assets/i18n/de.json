@@ -79,5 +79,35 @@
     {
       "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Channel-Struktur."
     }
-  ]
+  ],
+  "privacy-policy": {
+    "title": "Datenschutzerklärung",
+    "preamble": "Präambel",
+    "preamble-text-1": "Mit der folgenden Datenschutzerklärung möchten wir Sie darüber informieren, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als 'Daten' bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Websites, in mobilen Applikationen sowie innerhalb externer Online-Präsenzen, wie z. B. unsere Social-Media-Profile (nachfolgend zusammenfassend als 'Online-Angebot' bezeichnet).",
+    "preamble-text-2": "Die verwendeten Begriffe sind geschlechtsneutral.",
+    "preamble-text-3": "Stand: Juli 2024",
+    "content-overview": "Inhaltsverzeichnis",
+    "content-overview-text-1": "Präambel",
+    "content-overview-text-2": "Verantwortlicher",
+    "content-overview-text-3": "Übersicht der Verarbeitungen",
+    "content-overview-text-4": "Relevante Rechtsgrundlagen",
+    "content-overview-text-5": "Sicherheitsmaßnahmen",
+    "content-overview-text-6": "Übermittlung personenbezogener Daten",
+    "content-overview-text-7": "Internationale Datenübermittlungen",
+    "content-overview-text-8": "Allgemeine Informationen zur Datenspeicherung und Löschung",
+    "content-overview-text-9": "Rechte der betroffenen Personen",
+    "content-overview-text-10": "Geschäftsdienstleistungen",
+    "content-overview-text-11": "Bereitstellung des Online-Angebots und Webhosting",
+    "content-overview-text-12": "Verwendung von Cookies",
+    "content-overview-text-13": "Kontakt- und Anfragenmanagement",
+    "content-overview-text-14": "Soziale Medien Präsenzen",
+    "content-overview-text-15": "Plugins und eingebettete Funktionen sowie Inhalte",
+    "responsible": "Verantwortlicher",
+    "responsible-name": "Samuel Hilgert",
+    "responsible-adress": "Eichendorffstraße 22",
+    "responsible-city": "68519 Viernheim",
+    "responsible-country": "Deutschland",
+    "responsible-mail": "mail@samuelhilgert.com",
+    "overview-of-processing": "Overview of processing"
+  }
 }
