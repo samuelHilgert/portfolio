@@ -111,9 +111,13 @@
     "overview-of-processing": "Overview of processing",
     "overview-of-processing-text-1": "The following overview summarizes the types of data processed and the purposes of their processing and refers to the data subjects.",
     "overview-of-processing-subline1": "Types of processed data",
-    "overview-of-processing-type-1": "",
-    "overview-of-processing-type-2": "",
-    "overview-of-processing-type-3": "",
-    "overview-of-processing-type-4": ""
+    "overview-of-processing-type-1": "Inventory data",
+    "overview-of-processing-type-2": "Payment data",
+    "overview-of-processing-type-3": "Contact data",
+    "overview-of-processing-type-4": "Content data",
+    "overview-of-processing-type-5": "Contract data",
+    "overview-of-processing-type-6": "Usage data",
+    "overview-of-processing-type-7": "Meta, communication and procedural data",
+    "overview-of-processing-type-8": "Protocol data"
   }
 }

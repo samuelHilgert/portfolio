@@ -108,6 +108,16 @@
     "responsible-city": "68519 Viernheim",
     "responsible-country": "Deutschland",
     "responsible-mail": "mail@samuelhilgert.com",
-    "overview-of-processing": "Overview of processing"
+    "overview-of-processing": "Übersicht der Verarbeitungen",
+    "overview-of-processing-text-1": "Die folgende Übersicht fasst die Arten der verarbeiteten Daten sowie die Zwecke ihrer Verarbeitung zusammen und bezieht sich auf die betroffenen Personen.",
+    "overview-of-processing-subline1": "Arten der verarbeiteten Daten",
+    "overview-of-processing-type-1": "Bestandsdaten",
+    "overview-of-processing-type-2": "Zahlungsdaten",
+    "overview-of-processing-type-3": "Kontaktdaten",
+    "overview-of-processing-type-4": "Inhaltsdaten",
+    "overview-of-processing-type-5": "Vertragsdaten",
+    "overview-of-processing-type-6": "Nutzungsdaten",
+    "overview-of-processing-type-7": "Meta-, Kommunikations- und Verfahrensdaten",
+    "overview-of-processing-type-8": "Protokolldaten"
   }
 }
