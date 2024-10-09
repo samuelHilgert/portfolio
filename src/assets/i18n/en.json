@@ -119,5 +119,16 @@
     "overview-of-processing-type-6": "Usage data",
     "overview-of-processing-type-7": "Meta, communication and procedural data",
     "overview-of-processing-type-8": "Protocol data"
+  },
+  "legal-notice": {
+    "title": "Imprint",
+    "responsible": "Responsible",
+    "responsible-name": "Samuel Hilgert",
+    "responsible-adress": "Eichendorffstraße 22",
+    "responsible-city": "68519 Viernheim",
+    "responsible-country": "Germany",
+    "authorized-representative": "Authorized representative: Samuel Hilgert",
+    "responsible-mail": "mail@samuelhilgert.com",
+    "link-privacy-policy": "To the privacy policy"
   }
 }

@@ -119,5 +119,16 @@
     "overview-of-processing-type-6": "Nutzungsdaten",
     "overview-of-processing-type-7": "Meta-, Kommunikations- und Verfahrensdaten",
     "overview-of-processing-type-8": "Protokolldaten"
+  },
+  "legal-notice": {
+    "title": "Impressum",
+    "responsible": "Verantwortlicher",
+    "responsible-name": "Samuel Hilgert",
+    "responsible-adress": "Eichendorffstraße 22",
+    "responsible-city": "68519 Viernheim",
+    "responsible-country": "Deutschland",
+    "authorized-representative": "Vertretungsberechtigt: Samuel Hilgert",
+    "responsible-mail": "mail@samuelhilgert.com",
+    "link-privacy-policy": "Zur Datenschutzerklärung"
   }
 }
