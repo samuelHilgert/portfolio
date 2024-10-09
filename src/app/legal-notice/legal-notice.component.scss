@@ -1,29 +1,29 @@
 @import './../../styles.scss';
-
 section {
     @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    padding: 0 20px;
+    padding: 20px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
     background-color: $bg-filter;
     z-index: 99999;
-    overflow: scroll;
 }
 
 .popup-container {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+    position: relative;
     background: linear-gradient(to top right, $bg-linear-c-1, $bg-linear-c-2);
-    padding: 50px 50px;
-    height: auto;
+    padding: 50px;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid $feedback-container-border;
     border-radius: 20px;
+    overflow: scroll;
 }
 
 .popup-content {
@@ -44,6 +44,8 @@ section {
 
 .paragraph {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 a {

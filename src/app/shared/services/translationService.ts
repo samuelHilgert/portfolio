@@ -27,4 +27,14 @@ export class TranslationService {
     // console.log('Eingestellte Sprache: ', lang);
     this.translate.use(lang);
   }
+
+  setOverflowSettings(type : string) {
+    if(type == 'default') {
+      // console.log('Scrollen verfügbar');
+      document.body.style.overflow = '';
+    } else if (type == 'popup') {
+      // console.log('Scrollen nicht verfügbar');
+      document.body.style.overflow = 'hidden';
+    }
+  }
 }

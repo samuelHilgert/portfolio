@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../shared/services/translationService';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -9,6 +10,11 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })
-export class PrivacyPolicyComponent {
+export class PrivacyPolicyComponent implements OnInit {
+  constructor(private translationService: TranslationService) {}
+
+  ngOnInit(): void {
+    this.translationService.setOverflowSettings('popup');
+  }
 
 }
