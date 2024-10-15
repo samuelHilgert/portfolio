@@ -11,7 +11,7 @@
       class="form-input"
       [(ngModel)]="contactData.name"
       type="text"
-      placeholder="Your name goes here"
+      [placeholder]="'contact.form_name_example' | translate"
       id="name"
       name="name"
       required
@@ -33,7 +33,7 @@
       type="email"
       id="email"
       name="email"
-      placeholder="youremail@email.com"
+      [placeholder]="'contact.form_mail_example' | translate"
       pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
       required
       #email="ngModel"
@@ -60,7 +60,7 @@
       minlength="4"
       id="message"
       name="message"
-      placeholder="Hello Lukas, I am interested in..."
+      [placeholder]="'contact.form_message_example' | translate"
       required
       #message="ngModel"
     ></textarea>

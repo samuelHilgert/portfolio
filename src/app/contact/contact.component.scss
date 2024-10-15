@@ -11,8 +11,7 @@ section {
     height: auto;
 
     span {
-        @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 8px);
-        >p {
+        >span {
             color: $text-link-color;
         }
     }
