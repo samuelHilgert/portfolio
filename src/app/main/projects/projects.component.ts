@@ -11,6 +11,7 @@ export interface Project {
   skills: string;
   imgStart: string;
   imgGameplay: string;
+  linksAvailable: boolean;
   gitHub: string;
   liveTest: string;
 }
