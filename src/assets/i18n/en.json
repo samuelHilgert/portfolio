@@ -67,7 +67,8 @@
     "legal-notice": "Legal Notice"
   },
   "popup-project": {
-    "headline": "What is this project about?"
+    "headline": "What is this project about?",
+    "next-project-text": "Next project"
   },
   "projects": [
     {

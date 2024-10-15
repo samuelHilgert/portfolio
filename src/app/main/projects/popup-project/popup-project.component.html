@@ -32,7 +32,7 @@
       </svg>
       <img [src]="'./' + project.imgGameplay" alt="{{ project.title }}" />
       <div class="popup-right-next-div"  (click)="loadNextProject()">
-        <p>Next project</p>
+        <p>{{ "popup-project.next-project-text" | translate }}</p>
         <svg
           class="feedback-arrow"
           width="30"
