@@ -7,7 +7,7 @@ section {
 
 .content-box-projects {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width: 880px;
+    width:100%;
     height: auto;
 }
 
@@ -68,7 +68,7 @@ section {
 .review-container {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
     height: 100%;
-    width: auto;
+    width: 500px;
     box-sizing: border-box;
 }
 

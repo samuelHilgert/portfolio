@@ -2,16 +2,12 @@
 
 section {
     @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    width: 100%;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
 .banner-container {
     @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     position: absolute;
-    width: 100%;
-    box-sizing: border-box;
     left: 0;
     right: 0;
     bottom: 0;
@@ -21,13 +17,14 @@ section {
     transform: rotate(-3deg);
     transform-origin: top left;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .banner {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
     animation: slide-left 20s linear infinite;
     white-space: nowrap;
-    min-width: 110%; // Setze die Breite auf 140%, damit der Inhalt nicht abgeschnitten wird
+    width:100%;
     box-sizing: border-box;
     padding: 0 12px;
     position: relative;
@@ -44,10 +41,10 @@ section {
 
 @keyframes slide-left {
     0% {
-        transform: translateX(100%);
+        transform: translateX(120%);
     }
 
     100% {
-        transform: translateX(-140%); // Behalte die 140%, damit der Text durchläuft
+        transform: translateX(-100%);
     }
 }

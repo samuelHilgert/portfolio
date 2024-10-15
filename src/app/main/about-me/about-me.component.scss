@@ -21,7 +21,8 @@ section {
 
 .content-box-border {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
-    width: 568px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 32px;
     border-radius: 30px;
     border: 1px solid $content-box-border;
