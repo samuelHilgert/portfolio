@@ -12,6 +12,7 @@
       [(ngModel)]="contactData.name"
       type="text"
       [placeholder]="'contact.form_name_example' | translate"
+      pattern="^[A-Za-zÄÖÜäöüß ]{3,}$"
       id="name"
       name="name"
       required
@@ -62,6 +63,7 @@
       name="message"
       [placeholder]="'contact.form_message_example' | translate"
       required
+      maxlength="500"
       #message="ngModel"
     ></textarea>
     <!-- Fehlermeldung für Nachricht -->
