@@ -23,6 +23,8 @@ export class ContactformComponent {
 
   mailTest = false;
 
+  sendSuccess = false;
+
   post = {
     endPoint: 'https://samuelhilgert.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -35,22 +37,29 @@ export class ContactformComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    console.log('Form submitted:', ngForm);
+    // console.log('Form submitted:', ngForm);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log('Success: ', response);
+            // console.log('Success: ', response);
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error('Send error: ', error);
+            // console.error('Send error: ', error);
           },
-          complete: () => console.info('Send post complete'),
+          complete: () =>  {
+            this.sendSuccess = true;
+            // console.info('Send post complete ' , this.sendSuccess);
+            setTimeout(() => {
+              this.sendSuccess = false;
+            }, 3000);
+          }
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log('Test mode: form submission success', this.contactData);
+      // console.log('Test mode: form submission success', this.contactData);
       ngForm.resetForm();
     }
   }
 }
+
