@@ -39,7 +39,7 @@ export class FeedbackComponent {
     this.animationClass = '';  // Entferne die Klasse
     setTimeout(() => {
       this.animationDirection = direction;
-      this.animationClass = direction === 'next' ? 'move-right' : 'move-left'; // Füge die neue Klasse hinzu
+      this.animationClass = direction === 'next' ? 'move-left' : 'move-right'; // Füge die neue Klasse hinzu
 
       if (direction === 'prev') {
         this.currentFeedbackIndex =
