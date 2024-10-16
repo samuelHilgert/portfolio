@@ -65,7 +65,8 @@
     "form_email_required": "Email fehlt.",
     "form_email_invalid": "Bitte gib eine gültige E-Mail Adresse an.",
     "form_message_required": "Eine Nachricht fehlt.",
-    "missingTerm": "Du musst die Datenschutzrichtlinien akzeptieren."
+    "missingTerm": "Du musst die Datenschutzrichtlinien akzeptieren.",
+    "success-mail-msg": "E-Mail erfolgreich versendet!"
   },
   "footer": {
     "legal-notice": "Impressum"

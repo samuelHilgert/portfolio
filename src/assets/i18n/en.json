@@ -64,7 +64,8 @@
     "form_email_required": "Email is required.",
     "form_email_invalid": "Please enter a valid email address.",
     "form_message_required": "Message is required.",
-    "missingTerm": "You must accept the terms to proceed."
+    "missingTerm": "You must accept the terms to proceed.",
+    "success-mail-msg": "Email successfully sent!"
   },
   "footer": {
     "legal-notice": "Legal Notice"
