@@ -17,17 +17,17 @@ export class FeedbackComponent {
   feedbackList = [
     {
       author: 'L. Pan',
-      role: 'Team Partner',
+      role: 'feedback.l_pan_role',
       messageKey: 'feedback.l_pan',
     },
     {
       author: 'G. Heinrich',
-      role: 'Frontend Developer',
+      role: 'feedback.g_heinrich_role',
       messageKey: 'feedback.g_heinrich',
     },
     {
       author: 'E. Henriks',
-      role: 'Customer',
+      role: 'feedback.e_henriks_role',
       messageKey: 'feedback.e_henriks',
     },
   ];

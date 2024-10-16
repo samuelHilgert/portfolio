@@ -38,9 +38,13 @@
   "feedback": {
     "title": "Was meine Kollegen über mich sagen",
     "l_pan": "Die Zusammenarbeit mit Samuel war großartig! Seine Fähigkeit, komplexe Frontend-Probleme zu lösen, hat unser Projekt entscheidend vorangebracht. Immer kreativ und zuverlässig!",
+    "l_pan_role": "Team Partner",
     "g_heinrich": "Samuel bringt nicht nur technisches Wissen mit, sondern auch ein hervorragendes Gespür für Benutzererfahrung. Seine Designs sind ansprechend und intuitiv, was unseren Nutzern sehr zugutekommt.",
-    "e_henriks": "Es ist immer eine Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen."
+    "g_heinrich_role": "Frontend Entwickler",
+    "e_henriks": "Es ist immer eine Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen.",
+    "e_henriks_role": "Kunde"
   },
+
   "contact": {
     "title": "Kontaktiere mich",
     "subtitle": "Lassen Sie uns zusammenarbeiten",
