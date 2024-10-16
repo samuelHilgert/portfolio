@@ -16,8 +16,8 @@
             "title": "El Pollo Loco",
             "description": "",
             "skills": "HTML, CSS, JavaScript",
-            "imgStart": "assets/img/projects/start/el-pollo-loco_start.png",
-            "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.png",
+            "imgStart": "assets/img/projects/start/el-pollo-loco_start.jpeg",
+            "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.jpeg",
             "linksAvailable": true,
             "gitHub": "https://github.com/samuelHilgert/el-pollo-loco.git",
             "liveTest":"https://el-pollo-loco.samuelhilgert.com"

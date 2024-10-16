@@ -2,6 +2,9 @@
 
 section {
     @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
+    >h1 {
+        text-align: center;
+    }
 }
 
 .headline-btns-div {
