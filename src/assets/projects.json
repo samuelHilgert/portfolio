@@ -32,28 +32,6 @@
             "linksAvailable": false,
             "gitHub": "",
             "liveTest":""
-        },
-        {
-            "id": 4,
-            "title": "Immobilienmakler",
-            "description": "",
-            "skills": "HTML, CSS, JavaScript",
-            "imgStart": "assets/img/projects/start/hilgert-immobilien_start.jpeg",
-            "imgGameplay": "assets/img/projects/hilgert-immobilien_example.jpeg",
-            "linksAvailable": true,
-            "gitHub": "https://github.com/samuelHilgert/Hilgert-Immobilien",
-            "liveTest":"https://www.hilgert-immobilien.de"
-        },
-        {
-            "id": 5,
-            "title": "Wedding Page",
-            "description": "",
-            "skills": "HTML, CSS, JavaScript",
-            "imgStart": "assets/img/projects/start/lenathans-hochzeit_start.jpeg",
-            "imgGameplay": "assets/img/projects/lenathans-hochzeit_example.jpeg",
-            "linksAvailable": true,
-            "gitHub": "https://github.com/samuelHilgert/lenathans-hochzeit",
-            "liveTest":"https://www.lenathans-hochzeit.de"
         }
     ]
 }
