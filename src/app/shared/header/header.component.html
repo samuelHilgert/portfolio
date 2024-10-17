@@ -28,6 +28,32 @@
         </div>
       </div>
     </a>
+
+    <img
+      (click)="openPopupBurgerMenu()"
+      class="burger-menu-icon"
+      src="./../../../assets/img/menu.svg"
+      alt=""
+    />
+    <div class="popupBurgerMenu" *ngIf="openBurgerMenu">
+      <div class="contentBurgerMenu">
+        <app-navbar></app-navbar>
+        <div class="custom-toggle">
+          <input
+            type="checkbox"
+            id="languageToggle"
+            class="toggle-checkbox"
+            [(ngModel)]="isEnglish"
+            (change)="toggleLanguage()"
+          />
+          <label for="languageToggle" class="toggle-label">
+            <span class="toggle-text-left">EN</span>
+            <span class="toggle-ball"></span>
+            <span class="toggle-text-right">DE</span>
+          </label>
+        </div>
+      </div>
+    </div>
   </header>
 
   <app-headline></app-headline>

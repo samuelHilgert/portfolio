@@ -4,6 +4,38 @@ section {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
     padding: 96px 112px;
 
+    @include respond-to(desktop-large) {
+        @include dFlex($d: flex, $fd: column !important, $jc: flex-start, $ai: flex-start, $g: 502px);
+      }
+
+      @include respond-to(desktop) {
+ 
+      }
+
+      @include respond-to(desktop-small) {
+
+      }
+    
+      @include respond-to(tablet-large) {
+
+      }
+
+      @include respond-to(tablet-small) {
+
+      }
+    
+      @include respond-to(smartphone-large) {
+
+      }
+      
+      @include respond-to(smartphone-medium) {
+    
+      }
+
+      @include respond-to(smartphone-small) {
+   
+      }
+
     >img {
         &:first-child {
             width: 568px;
@@ -13,6 +45,7 @@ section {
         }
     }
 }
+
 
 .content-box {
     @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);

@@ -2,6 +2,10 @@
 
 nav {
     @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
+
+    @include respond-to(smartphone-large) {
+        @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 24px);
+    }
 }
 
 a {

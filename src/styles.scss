@@ -64,3 +64,42 @@ $portfolio-theme: mat.define-light-theme((
   border: 1px solid #00000000;
 }
 
+// Variables for breakpoints
+$breakpoint-desktop-large: 1920px;
+$breakpoint-desktop: 1440px;
+$breakpoint-desktop-small: 1024px;
+$breakpoint-tablet-large: 1024px;
+$breakpoint-tablet-small: 768px;
+$breakpoint-smartphone-large: 600px;
+$breakpoint-smartphone-medium: 375px;
+$breakpoint-smartphone-small: 320px;
+
+// Mixins for media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == desktop-large {
+    @media (min-width: $breakpoint-desktop-large) { @content; }
+  }
+  @else if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) { @content; }
+  }
+  @else if $breakpoint == desktop-small {
+    @media (max-width: $breakpoint-desktop-small) { @content; }
+  }
+  @else if $breakpoint == tablet-large {
+    @media (max-width: $breakpoint-tablet-large) { @content; }
+  }
+  @else if $breakpoint == tablet-small {
+    @media (max-width: $breakpoint-tablet-small) { @content; }
+  }
+  @else if $breakpoint == smartphone-large {
+    @media (max-width: $breakpoint-smartphone-large) { @content; }
+  }
+  @else if $breakpoint == smartphone-medium {
+    @media (max-width: $breakpoint-smartphone-medium) { @content; }
+  }
+  @else if $breakpoint == smartphone-small {
+    @media (max-width: $breakpoint-smartphone-small) { @content; }
+  }
+}
+
+
