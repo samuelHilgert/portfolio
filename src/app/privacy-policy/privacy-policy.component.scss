@@ -62,9 +62,16 @@ section {
     }
 }
 
-
 .paragraph {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
     width: 100%;
     box-sizing: border-box;
 }
+
+// ==================
+// RESPONSIVE STYLES
+// ==================
+
+// @include styles.respond-to(smartphone-medium) {
+
+// }

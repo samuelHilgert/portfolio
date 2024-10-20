@@ -3,12 +3,18 @@
 
 nav {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
-
-    @include styles.respond-to(smartphone-large) {
-        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 24px);
-    }
 }
 
 a {
     @include styles.navLinks();
+}
+
+// ==================
+// RESPONSIVE STYLES
+// ==================
+
+@include styles.respond-to(smartphone-medium) {
+    nav {
+        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 24px);
+    }
 }

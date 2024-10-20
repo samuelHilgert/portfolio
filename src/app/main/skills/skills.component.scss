@@ -9,12 +9,14 @@ section {
 
 .content-box-skills {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .content-box-border {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
-  width: 568px;
-  height: auto;
+  width: 100%;
+  box-sizing: border-box;
   padding: 32px;
   border-radius: 30px;
   border: 1px solid styles.$content-box-border;
@@ -32,20 +34,24 @@ section {
   span {
     >a {
       color: styles.$text-link-color;
-      cursor:text;
+      cursor: text;
     }
   }
 
   >a:last-child {
     @include styles.btn();
   }
+
+  > p:first-of-type {
+    text-align: justify;
+}
 }
 
 .skills-container {
-  display:flex;
+  display: flex;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   gap: 10px;
   margin-top: 52px;
   width: 100%;
@@ -56,7 +62,7 @@ section {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
   box-sizing: border-box;
   height: 100%;
-  height:auto;
+  height: auto;
   box-sizing: border-box;
 }
 
@@ -72,5 +78,37 @@ section {
 
   >p {
     text-align: center;
+  }
+}
+
+// ==================
+// RESPONSIVE STYLES
+// ==================
+
+@include styles.respond-to(smartphone-medium) {
+  section {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 40px);
+    padding: 96px 16px;
+    padding-bottom:0px;
+  }
+
+  h3 {
+    font-size: styles.$h3-mobile-size;
+    letter-spacing: styles.$h3-mobile-letter-spacing;
+  }
+
+  h4 {
+    font-size: styles.$h4-mobile-size;
+    line-height: styles.$h4-mobile-line-height;
+  }
+
+  .skills-container {
+    gap: 16px;
+    margin-top: 0px;
+  }
+
+  .skill {
+    height: 110px;
+    width: 100px;
   }
 }

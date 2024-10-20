@@ -40,6 +40,10 @@ section {
     }
 }
 
+// ==================
+// ANIMATION
+// ==================
+
 @keyframes slide-left {
     0% {
         transform: translateX(110%);
@@ -48,4 +52,17 @@ section {
     100% {
         transform: translateX(-160%);
     }
+}
+
+// ==================
+// RESPONSIVE STYLES
+// ==================
+
+@include styles.respond-to(smartphone-medium) {
+
+    .banner {
+        font-size: styles.$banner-text-mobile-size;
+        line-height: styles.$banner-text-mobile-line-height;
+    }
+
 }

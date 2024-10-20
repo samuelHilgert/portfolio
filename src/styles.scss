@@ -88,9 +88,8 @@ $breakpoint-desktop: 1440px;
 $breakpoint-desktop-small: 1024px;
 $breakpoint-tablet-large: 1024px;
 $breakpoint-tablet-small: 768px;
-$breakpoint-smartphone-large: 600px;
-$breakpoint-smartphone-medium: 375px;
-$breakpoint-smartphone-small: 320px;
+$breakpoint-smartphone-medium: 600px;
+$breakpoint-smartphone-small: 375px;
 
 // Mixins for media queries
 @mixin respond-to($breakpoint) {
@@ -108,9 +107,6 @@ $breakpoint-smartphone-small: 320px;
   }
   @else if $breakpoint == tablet-small {
     @media (max-width: $breakpoint-tablet-small) { @content; }
-  }
-  @else if $breakpoint == smartphone-large {
-    @media (max-width: $breakpoint-smartphone-large) { @content; }
   }
   @else if $breakpoint == smartphone-medium {
     @media (max-width: $breakpoint-smartphone-medium) { @content; }

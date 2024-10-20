@@ -94,6 +94,10 @@ hr {
   z-index: 4;
 }
 
+// ==================
+// ANIMATION
+// ==================
+
 @keyframes moveLeft {
   0% {
     transform: translateX(100%);
@@ -121,3 +125,11 @@ hr {
 .move-right {
   animation: moveRight 0.4s ease forwards;
 }
+
+// ==================
+// RESPONSIVE STYLES
+// ==================
+
+// @include styles.respond-to(smartphone-medium) {
+
+// }
