@@ -1,15 +1,16 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
-    background-color: $footer-bg-c;
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    background-color: styles.$footer-bg-c;
     padding: 0px 112px;
     padding-bottom: 52px;
     padding-top: 48px;
 }
 
 .footer-left {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
 
     >img {
         height: 60px;
@@ -18,20 +19,20 @@ section {
 }
 
 .footer-left-text {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
 }
 
 .footer-center {
-    color: $footer-center-c;
+    color: styles.$footer-center-c;
 }
 
 .footer-right {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
-    color:$main-text;
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
+    color: styles.$main-text;
     >a {
-        color:$main-text;
+        color: styles.$main-text;
         &:visited, :hover {
-            color:$main-text;
+            color: styles.$main-text;
         }
     }
 

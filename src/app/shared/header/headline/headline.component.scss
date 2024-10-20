@@ -1,14 +1,35 @@
-@import './../../../../styles.scss';
+// @import './../../../../styles.scss';
+@use './../../../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
-    >h1 {
+    @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
+
+    h1,
+    h2 {
         text-align: center;
+    }
+
+    @include styles.respond-to(smartphone-large) {
+        margin-bottom: 100px;
+
+        >h1 {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 62px;
+            letter-spacing: -2%;
+        }
+
+        >h2 {
+            font-family: Fira Code;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+        }
     }
 }
 
 .headline-btns-div {
-    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
     z-index: 3;
 }
-

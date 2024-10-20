@@ -1,18 +1,19 @@
-@import './../../styles.scss';
+// @import './../../styles.scss';
+@use './../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
     padding: 96px 112px;
 }
 
 .content-box-contact {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
     width: 880px;
     height: auto;
 
     span {
         >span {
-            color: $text-link-color;
+            color: styles.$text-link-color;
         }
     }
 }

@@ -1,11 +1,12 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 section {
-  @include dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
   height: 100vh;
   width: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to top right, $bg-linear-c-1, $bg-linear-c-2);
+  background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
 }
 
 header {
@@ -15,17 +16,28 @@ header {
   right: 0;
   padding: 0 96px;
   padding-top: 48px;
-  @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 24px);
+  @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 24px);
 
-  @include respond-to(smartphone-large) {
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+  @include styles.respond-to(smartphone-large) {
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
     padding: 0 16px;
     padding-top: 32px;
 
+    .logo-name {
+      display: none;
+    }
+
+    .logo-div {
+      >img {
+        height: 50px;
+        width: auto;
+      }
+    }
+
     >.burger-menu-icon {
-      width: 48px;
+      width: 32px;
       height: auto;
-      display:block;
+      display: block;
 
       &:hover {
         fill: green;
@@ -41,9 +53,9 @@ header {
 }
 
 .topline {
-  @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 24px);
+  @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 24px);
 
-  @include respond-to(smartphone-large) {
+  @include styles.respond-to(smartphone-large) {
     display: none;
   }
 }
@@ -65,8 +77,8 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: $toggle-bg-c;
-  border: 1px solid $toggle-border;
+  background-color: styles.$toggle-bg-c;
+  border: 1px solid styles.$toggle-border;
   border-radius: 30px;
   cursor: pointer;
   position: relative;
@@ -79,7 +91,7 @@ header {
   left: 2px;
   width: 35px;
   height: 26px;
-  background-color: $toggle-ball;
+  background-color: styles.$toggle-ball;
   border-radius: 30px;
   transition: transform 0.3s ease;
 }
@@ -93,7 +105,7 @@ header {
   font-size: 12px;
   font-weight: bold;
   z-index: 1;
-  color: $toggle-inline-text;
+  color: styles.$toggle-inline-text;
 }
 
 .toggle-text-left {
@@ -110,27 +122,27 @@ header {
 
 .popupBurgerMenu {
   position: relative;
-  right:16px;
-  top:64px;
+  right: 16px;
+  top: 64px;
   height: auto;
   width: 450px;
-  background: linear-gradient(to top right, $bg-linear-c-1, $bg-linear-c-2);
+  background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
   padding: 32px 0;
-  padding-left:74px;
+  padding-left: 74px;
   border-radius: 30px;
-  border: 1px solid $content-box-border;
+  border: 1px solid styles.$content-box-border;
   z-index: 99999;
   box-sizing: border-box;
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+  @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
 }
 
 .contentBurgerMenu {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-  width:100%;
-  height:100%;
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
 .burger-menu-icon {
-  display:none;
+  display: none;
 }

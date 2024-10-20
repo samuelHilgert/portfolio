@@ -1,39 +1,49 @@
-@import './../../../../styles.scss';
+// @import './../../../../styles.scss';
+@use './../../../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-end, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-end, $g: 0px);
     position: absolute;
     left: 0;
     right: 0;
     bottom: -10px;
     padding: 0px 112px;
+
+    @include styles.respond-to(smartphone-large) {
+        padding: 0px 24px;
+    }
 }
 
 .left {
-    @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-end, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-end, $g: 0px);
 
     hr {
         border: none;
         height: 210px;
         width: 2px;
-        background-color: $hr-color;
+        background-color: styles.$hr-color;
     }
 }
 
 .right {
-    @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: center, $g: 8px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-end, $g: 8px);
     width: 0;
     box-sizing: border-box;
 
-    >div {
+    >div:first-child {
         position: relative;
         top: -130px;
+        right:-100px;
+
+        @include styles.respond-to(smartphone-large) {
+            display: none;
+        }
 
         >a {
             transform: rotate(270deg);
             white-space: nowrap;
             display: inline-block;
-            color: $a-visited-color;
+            color: styles.$a-visited-color;
         }
     }
 
@@ -49,6 +59,8 @@ section {
         border: none;
         height: 200px;
         width: 2px;
-        background-color: $hr-color;
+        background-color: styles.$hr-color;
     }
+
+
 }

@@ -1,7 +1,8 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 section {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
   padding: 96px 0px;
   overflow: hidden;
   position: relative;
@@ -25,31 +26,31 @@ section {
 }
 
 .feedback-container {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
   flex-basis: calc((100% - 136px) / 3);
   position: relative;
   height: auto;
   flex: 1;
   padding: 32px 32px;
   border-radius: 30px;
-  border: 1px solid $feedback-container-border;
-  background: $feedback-container-bg;
+  border: 1px solid styles.$feedback-container-border;
+  background: styles.$feedback-container-bg;
 
   &:nth-child(2) {
     filter: brightness(1.15);
-    background-color: $feedback-current-container-bg;
+    background-color: styles.$feedback-current-container-bg;
   }
 }
 
 .author-div {
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 48px);
+  @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 48px);
 
   width: 100%;
   box-sizing: border-box;
 }
 
 .slide-arrows-div {
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 10px);
+  @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 10px);
   padding-top: 50px;
 }
 
@@ -59,7 +60,7 @@ section {
 
   &:hover {
     transition: transform 0.3s ease;
-    stroke: $feedback-arrow-hover;
+    stroke: styles.$feedback-arrow-hover;
     cursor: pointer;
     transform: scale(1.1) translateX(3px);
   }
@@ -77,7 +78,7 @@ hr {
 
 .filter-left {
   position: absolute;
-  background: linear-gradient(to right, $feedback-container-linear1, $feedback-container-linear2);
+  background: linear-gradient(to right, styles.$feedback-container-linear1, styles.$feedback-container-linear2);
   left: 0;
   width: 15%;
   height: 100%;
@@ -86,7 +87,7 @@ hr {
 
 .filter-right {
   position: absolute;
-  background: linear-gradient(to left, $feedback-container-linear1, $feedback-container-linear2);
+  background: linear-gradient(to left, styles.$feedback-container-linear1, styles.$feedback-container-linear2);
   right: 0;
   width: 15%;
   height: 100%;

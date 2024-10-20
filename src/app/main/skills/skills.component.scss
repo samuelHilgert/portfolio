@@ -1,42 +1,43 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 
 section {
-  @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
+  @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
   padding: 96px 112px;
 }
 
 .content-box-skills {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
 }
 
 .content-box-border {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
   width: 568px;
   height: auto;
   padding: 32px;
   border-radius: 30px;
-  border: 1px solid $content-box-border;
-  background: $content-box-bg;
+  border: 1px solid styles.$content-box-border;
+  background: styles.$content-box-bg;
 
   >a {
     &:last-child {
       &:hover {
-        color: $main-color;
-        border-color: $main-color;
+        color: styles.$main-color;
+        border-color: styles.$main-color;
       }
     }
   }
 
   span {
     >a {
-      color: $text-link-color;
+      color: styles.$text-link-color;
       cursor:text;
     }
   }
 
   >a:last-child {
-    @include btn();
+    @include styles.btn();
   }
 }
 
@@ -52,7 +53,7 @@ section {
 }
 
 .skills-div {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
   box-sizing: border-box;
   height: 100%;
   height:auto;
@@ -60,7 +61,7 @@ section {
 }
 
 .skill {
-  @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 8px);
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 8px);
   height: 130px;
   width: 120px;
 

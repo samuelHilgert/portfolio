@@ -1,17 +1,18 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 .content-rows-div {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
     width: 100%;
     box-sizing: border-box;
 }
 
 .content-row {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
     width: 100%;
     box-sizing: border-box;
-    border-top: 1px solid $contact-form-row-border;
-    border-bottom: 1px solid $contact-form-row-border;
+    border-top: 1px solid styles.$contact-form-row-border;
+    border-bottom: 1px solid styles.$contact-form-row-border;
     padding: 40px 32px;
     cursor: pointer;
 
@@ -33,12 +34,12 @@
 
     &:hover {
         filter: brightness(1.1);
-        border-color: lighten($contact-form-row-border, 25%);
+        border-color: lighten(styles.$contact-form-row-border, 25%);
     }
 }
 
 label {
-    color: $main-color;
+    color: styles.$main-color;
 }
 
 .form-input {
@@ -46,31 +47,31 @@ label {
     border: none;
     width: 100%;
     box-sizing: border-box;
-    color: $placeholder-text;
+    color: styles.$placeholder-text;
 
     &::placeholder {
-        color: $placeholder-text;
+        color: styles.$placeholder-text;
     }
 
     &::-webkit-input-placeholder {
-        color: $placeholder-text;
+        color: styles.$placeholder-text;
     }
 
     &::-moz-placeholder {
-        color: $placeholder-text;
+        color: styles.$placeholder-text;
     }
 
     &:-ms-input-placeholder {
-        color: $placeholder-text;
+        color: styles.$placeholder-text;
     }
 
     &::-ms-input-placeholder {
-        color: $placeholder-text;
+        color: styles.$placeholder-text;
     }
 
     &:focus-visible {
         outline: none;
-        caret-color: $caret;
+        caret-color: styles.$caret;
 
         &::placeholder {
             color: transparent;
@@ -95,20 +96,20 @@ label {
 }
 
 .terms-div {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
     padding: 40px 0;
     width: 100%;
     box-sizing: border-box;
 }
 
 .terms-row {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
 
     span {
-        color: $placeholder-text;
+        color: styles.$placeholder-text;
 
         >a {
-            color: $text-link-color;
+            color: styles.$text-link-color;
         }
     }
 
@@ -116,7 +117,7 @@ label {
         appearance: none;
         width: 25px;
         height: 18px;
-        border: 2px solid $main-color;
+        border: 2px solid styles.$main-color;
         border-radius: 2px;
         cursor: pointer;
         position: relative;
@@ -124,7 +125,7 @@ label {
         &:checked {
             background-color: transparent;
             /* Checkbox bleibt transparent */
-            border-color: $main-color;
+            border-color: styles.$main-color;
         }
 
         &:checked::after {
@@ -134,7 +135,7 @@ label {
             top: -1px;
             width: 3px;
             height: 10px;
-            border: solid $main-color;
+            border: solid styles.$main-color;
             border-width: 0 2px 2px 0;
             transform: rotate(45deg);
         }
@@ -143,7 +144,7 @@ label {
 }
 
 .submit-row {
-    @include dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
     width: 100%;
     box-sizing: border-box
 }
@@ -154,25 +155,25 @@ label {
 }
 
 .submit-btn {
-    @include btn();
-    color: $placeholder-text;
+    @include styles.btn();
+    color: styles.$placeholder-text;
     font-size: 16px;
 
     // Stil für den Button, wenn das Formular gültig ist
     &.validSubmitBtn {
-        color: $main-color;
-        border-color: $main-color;
+        color: styles.$main-color;
+        border-color: styles.$main-color;
         cursor: pointer;
     }
 
     &.invalidSubmitBtn {
-        color: $placeholder-text;
-        border-color: $placeholder-text;
+        color: styles.$placeholder-text;
+        border-color: styles.$placeholder-text;
     }
 }
 
 .term-missing-msg {
-    @include dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
 }
 
 .missing-msg {
@@ -182,5 +183,5 @@ label {
 
 .success-email-message {
     margin-top:30px;
-    color: $text-link-color;
+    color: styles.$text-link-color;
 }

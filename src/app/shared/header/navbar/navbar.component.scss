@@ -1,13 +1,14 @@
-@import './../../../../styles.scss';
+// @import './../../../../styles.scss';
+@use './../../../../styles.scss' as styles;
 
 nav {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
 
-    @include respond-to(smartphone-large) {
-        @include dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 24px);
+    @include styles.respond-to(smartphone-large) {
+        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 24px);
     }
 }
 
 a {
-    @include navLinks();
+    @include styles.navLinks();
 }

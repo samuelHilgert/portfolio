@@ -1,40 +1,9 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
     padding: 96px 112px;
-
-    @include respond-to(desktop-large) {
-        @include dFlex($d: flex, $fd: column !important, $jc: flex-start, $ai: flex-start, $g: 502px);
-      }
-
-      @include respond-to(desktop) {
- 
-      }
-
-      @include respond-to(desktop-small) {
-
-      }
-    
-      @include respond-to(tablet-large) {
-
-      }
-
-      @include respond-to(tablet-small) {
-
-      }
-    
-      @include respond-to(smartphone-large) {
-
-      }
-      
-      @include respond-to(smartphone-medium) {
-    
-      }
-
-      @include respond-to(smartphone-small) {
-   
-      }
 
     >img {
         &:first-child {
@@ -44,24 +13,41 @@ section {
             border-radius: 30px;
         }
     }
+
+    @include styles.respond-to(smartphone-large) {
+        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 40px);
+        padding: 96px 16px;
+        padding-bottom:0px;
+
+        >img {
+            &:first-child {
+                width: 358px;
+                height: 358px;
+            }
+        }
+    }
 }
 
 
 .content-box {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
     padding-top: 52px;
+
+    @include styles.respond-to(smartphone-large) {
+        padding-top: 0px;
+    }
 }
 
 .content-box-border {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
     width: 100%;
     box-sizing: border-box;
     padding: 32px;
     border-radius: 30px;
-    border: 1px solid $content-box-border;
-    background: $content-box-bg;
+    border: 1px solid styles.$content-box-border;
+    background: styles.$content-box-bg;
 }
 
 .content-row {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
 }

@@ -1,47 +1,48 @@
-@import './../../../styles.scss';
+// @import './../../../styles.scss';
+@use './../../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 90px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 90px);
     padding: 96px 112px;
 }
 
 .content-box-projects {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width:100%;
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    width: 100%;
     height: auto;
 }
 
 .content-rows-div {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
     width: 100%;
     box-sizing: border-box;
 }
 
 .content-row {
-    @include dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
     width: 100%;
     box-sizing: border-box;
-    border-top: 1px solid $row-div-border;
+    border-top: 1px solid styles.$row-div-border;
     padding: 40px 32px;
 
     h4 {
         font-weight: 700;
-        color: $project-title;
+        color: styles.$project-title;
     }
 
     &:last-child {
-        border-bottom: 1px solid $row-div-border;
+        border-bottom: 1px solid styles.$row-div-border;
     }
 
     &:hover {
         filter: brightness(1.15);
-        background-color: $row-div-hover-fill;
+        background-color: styles.$row-div-hover-fill;
         cursor: pointer;
     }
 }
 
 .content-row-title {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 4px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 4px);
 
     >svg {
         position: relative;
@@ -50,12 +51,12 @@ section {
 }
 
 .used-skills-div {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
 
     >div {
         display: flex;
         padding-right: 12px;
-        border-right: 1px solid $skills-div-border;
+        border-right: 1px solid styles.$skills-div-border;
 
         &:last-child {
             display: flex;
@@ -66,7 +67,7 @@ section {
 }
 
 .review-container {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
     height: 100%;
     width: 500px;
     box-sizing: border-box;
@@ -93,8 +94,8 @@ section {
     height: 200px;
     border-radius: 20px 20px 10px 20px;
     background: repeating-linear-gradient(135deg,
-            $main-color,
-            $main-color 1px,
+            styles.$main-color,
+            styles.$main-color 1px,
             transparent 2px,
             transparent 10px);
 }

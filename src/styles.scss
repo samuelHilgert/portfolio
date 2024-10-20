@@ -1,47 +1,65 @@
+// styles.scss (globale Datei)
+@forward './app/shared/styles/button.scss';
+@forward './app/shared/styles/colors.scss';
+@forward './app/shared/styles/fonts.scss';
+@forward './app/shared/styles/logo.scss';
+@forward './app/shared/styles/standard.scss';
+@forward './app/shared/styles/text-links.scss';
+@forward './app/shared/styles/responsive.scss';
+
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+
+// @use '@angular/material' as mat; // auskommentiert
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat.core();
+
+// @include mat.core(); // auskommentiert
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$portfolio-primary: mat.define-palette(mat.$indigo-palette);
-$portfolio-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// $portfolio-primary: mat.define-palette(mat.$indigo-palette); // auskommentiert
+// $portfolio-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400); // auskommentiert
 
 // The warn palette is optional (defaults to red).
-$portfolio-warn: mat.define-palette(mat.$red-palette);
+
+// $portfolio-warn: mat.define-palette(mat.$red-palette); // auskommentiert
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$portfolio-theme: mat.define-light-theme((
-  color: (
-    primary: $portfolio-primary,
-    accent: $portfolio-accent,
-    warn: $portfolio-warn,
-  ),
-  typography: mat.define-typography-config(),
-  density: 0
-));
+
+ // auskommentiert
+// $portfolio-theme: mat.define-light-theme((
+//   color: (
+//     primary: $portfolio-primary,
+//     accent: $portfolio-accent,
+//     warn: $portfolio-warn,
+//   ),
+//   typography: mat.define-typography-config(),
+//   density: 0
+// ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($portfolio-theme);
 
-@import './app/shared/styles/standard.scss';
-@import './app/shared/styles/fonts.scss';
-@import './app/shared/styles/colors.scss';
+// @include mat.all-component-themes($portfolio-theme);  // auskommentiert
 
-// elements
-@import './app/shared/styles/logo.scss';
-@import './app/shared/styles/button.scss';
+
+// @import './app/shared/styles/standard.scss';
+// @import './app/shared/styles/fonts.scss';
+// @import './app/shared/styles/colors.scss';
+
+// // elements
+// @import './app/shared/styles/logo.scss';
+// @import './app/shared/styles/button.scss';
 
 *{
   scroll-behavior: smooth;

@@ -1,4 +1,4 @@
-@import './colors.scss';
+@use './colors.scss' as *;
 
 @font-face {
     font-family: 'Fira Code';
@@ -9,6 +9,14 @@
     font-family: 'Karla';
     src: url('./../../../assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
 }
+
+// Standard h3 
+$h3-large-size: 64px;
+$h3-large-line-height: 64px;
+$h3-mobile-size: 56px;
+$h3-mobile-line-height: 44.8px;
+
+
 
 body {
     font-family: Karla;
@@ -48,80 +56,80 @@ h2 {
 
 h3 {
     font-family: Fira Code;
-    font-size: 64px;
+    font-size: $h3-large-size;
     font-weight: 700;
-    line-height: 64px;
+    line-height: $h3-large-line-height;
     letter-spacing: -0.03em;
     color: $main-color;
 }
 
-h4 {
-    font-family: Karla;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28.06px;
-    color: $main-color;
-}
+    h4 {
+        font-family: Karla;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.06px;
+        color: $main-color;
+    }
 
-h5 {
-    font-family: Fira Code;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 41.98px;
-    color: $main-color;
-}
+    h5 {
+        font-family: Fira Code;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 41.98px;
+        color: $main-color;
+    }
 
 
-@mixin navLinks () {
-    font-family: Fira Code;
-    color: $nav-links;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26.24px;
-    letter-spacing: -3%;
-    text-decoration: none;
+    @mixin navLinks () {
+        font-family: Fira Code;
+        color: $nav-links;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26.24px;
+        letter-spacing: -3%;
+        text-decoration: none;
 
-    &:visited {
+        &:visited {
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .banner {
+        font-family: Karla;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38.4px;
+        margin: 0;
+        color: $main-color;
+    }
+
+    a {
+        cursor: pointer;
         text-decoration: none;
     }
 
-    &:hover {
-        text-decoration: none;
+    .form-input {
+        font-family: Karla;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+
     }
-}
 
-.banner {
-    font-family: Karla;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38.4px;
-    margin: 0;
-    color: $main-color;
-}
+    .terms-text {
+        font-family: Karla;
+        font-size: 15px;
+        line-height: 18px;
+    }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.form-input {
-    font-family: Karla;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.6px;
-
-}
-
-.terms-text {
-    font-family: Karla;
-    font-size: 15px;
-    line-height: 18px;
-}
-
-.popup-project-headline {
-    font-family: Fira Code;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    color: $main-color;
-}
+    .popup-project-headline {
+        font-family: Fira Code;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        color: $main-color;
+    }

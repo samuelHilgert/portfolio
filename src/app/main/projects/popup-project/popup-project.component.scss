@@ -1,7 +1,8 @@
-@import './../../../../styles.scss';
+// @import './../../../../styles.scss';
+@use './../../../../styles.scss' as styles;
 
 section {
-    @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     position: fixed;
     left: 0;
     right: 0;
@@ -10,51 +11,51 @@ section {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-color: $bg-filter;
+    background-color: styles.$bg-filter;
     z-index: 99909;
 }
 
 .popup-container {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
-    background: linear-gradient(to top right, $bg-linear-c-1, $bg-linear-c-2);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+    background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
     padding: 50px 50px;
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid $feedback-container-border;
+    border: 1px solid styles.$feedback-container-border;
     border-radius: 20px;
 }
 
 .popup-content-box-left {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
     width: 50%;
     box-sizing: border-box;
 
     >h1 {
-        color: $project-index !important;
+        color: styles.$project-index !important;
     }
 
     >h3 {
-        color: $project-title !important;
+        color: styles.$project-title !important;
         padding-bottom:12px;
     }
 }
 
 .popup-content-box-right {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
     width: 50%;
     box-sizing: border-box;
 }
 
 .popup-project-skills-box {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
     padding-top:18px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .popup-project-skill {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 2px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 2px);
     >img {
         width:30px;
         height:30px;
@@ -65,24 +66,24 @@ section {
 }
 
 .popup-project-btn-div {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
     padding-top:18px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .popup-content-box-right {
-    @include dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-end, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-end, $g: 24px);
     width: 50%;
     box-sizing: border-box;
 
     >svg {
-        fill: $project-close-cross;
+        fill: styles.$project-close-cross;
 
         &:hover {
             cursor: pointer;
             transform: scale(1.3);
-            fill: $project-close-cross-hover;
+            fill: styles.$project-close-cross-hover;
         }
     }
 
@@ -96,19 +97,19 @@ section {
 }
 
 .popup-right-next-div {
-    @include dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
 
     >p {
-        color: $main-color;
+        color: styles.$main-color;
 
         &:hover {
 
-            color: $main-text;
+            color: styles.$main-text;
         }
     }
 
     >svg {
-        stroke: $main-color;
+        stroke: styles.$main-color;
     }
 
     &:hover {

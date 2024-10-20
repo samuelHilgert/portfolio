@@ -1,3 +1,5 @@
+@use './standard.scss' as *;
+
 .logo-div {
     @include dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     height:auto;
