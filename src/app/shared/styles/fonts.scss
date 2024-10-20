@@ -60,6 +60,19 @@ $banner-text-large-line-height: 38.4px;
 $banner-text-mobile-size: 24px;
 $banner-text-mobile-line-height: 28.8px;
 
+// Style for form label-text
+$form-label-text-large-size: 24px;
+$form-label-text-arge-line-height: 28.8px;
+$form-label-text-mobile-size: 20px;
+$form-label-text-mobile-line-height: 24px;
+
+// Style for form input-text
+$form-input-large-size: 18px;
+$form-input-large-line-height: 21.6px;
+$form-input-mobile-size: 16px;
+$form-input-mobile-line-height: 19.2px;
+
+
 // =======================================
 // DEFAULT SETTINGS FOR ALL DISPLAY SIZES
 // =======================================
@@ -153,12 +166,18 @@ a {
     text-decoration: none;
 }
 
+.form-text {
+    font-family: Fira Code;
+    font-weight: 500;
+    font-size: $form-input-large-size;
+    line-height: $form-input-large-line-height;
+}
+
 .form-input {
     font-family: Karla;
-    font-size: 18px;
     font-weight: 400;
-    line-height: 21.6px;
-
+    font-size: $form-input-large-size;
+    line-height: $form-input-large-line-height;
 }
 
 .terms-text {
@@ -166,6 +185,8 @@ a {
     font-size: 15px;
     line-height: 18px;
 }
+
+
 
 .popup-project-headline {
     font-family: Fira Code;

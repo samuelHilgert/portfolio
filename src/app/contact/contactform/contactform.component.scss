@@ -190,6 +190,14 @@ label {
 // RESPONSIVE STYLES
 // ==================
 
-// @include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(smartphone-medium) {
+    .form-text {
+        font-size: styles.$form-label-text-mobile-size;
+        line-height: styles.$form-label-text-mobile-line-height;
+    }
 
-// }
+    .form-input {
+        font-size: styles.$form-input-mobile-size;
+        line-height: styles.$form-input-mobile-line-height;
+    }
+}

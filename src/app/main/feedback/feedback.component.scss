@@ -138,6 +138,11 @@ hr {
 // ==================
 
 @include styles.respond-to(smartphone-medium) {
+  section {
+    padding: 96px 16px;
+    padding-bottom: 0px;
+  }
+
   .quotes-icon {
     left: -132px;
     top: 35px;
