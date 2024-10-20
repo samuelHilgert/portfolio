@@ -8,6 +8,12 @@ section {
   position: relative;
 }
 
+h5 {
+  text-align: center;
+  padding: 0 12px;
+  z-index: 9999;
+}
+
 .feedback-slider {
   display: flex;
   gap: 68px;
@@ -19,6 +25,8 @@ section {
 }
 
 .quotes-icon {
+  height: 64px;
+  width: auto;
   position: relative;
   left: -320px;
   top: 45px;
@@ -44,7 +52,6 @@ section {
 
 .author-div {
   @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 48px);
-
   width: 100%;
   box-sizing: border-box;
 }
@@ -130,6 +137,47 @@ hr {
 // RESPONSIVE STYLES
 // ==================
 
-// @include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(smartphone-medium) {
+  .quotes-icon {
+    left: -132px;
+    top: 35px;
+    height: 48px;
+  }
 
-// }
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 14px);
+    width: auto;
+
+    >div {
+      width: 200px;
+      height: 250px;
+
+      &:nth-child(2) {
+        width: 358px;
+        height: 360px;
+      }
+    }
+  }
+
+  .feedback-container {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: space-between, $g: 80px);
+    padding:40px;
+  }
+
+  .filter-left {
+    width: 5%;
+  }
+  
+  .filter-right {
+    width: 5%;
+  }
+
+  .author-div {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 16px);
+
+    >hr {
+      min-width:50px;
+    }
+  }
+  
+}
