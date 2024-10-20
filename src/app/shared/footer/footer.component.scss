@@ -2,18 +2,26 @@
 @use './../../../styles.scss' as styles;
 
 section {
-    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 32px);
     background-color: styles.$footer-bg-c;
     padding: 0px 112px;
     padding-bottom: 52px;
     padding-top: 48px;
 }
 
+.footer-top {
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .footer-left {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+}
 
+.logo-div {
     >img {
-        height: 60px;
+        height: 72px;
         width: auto;
     }
 }
@@ -26,12 +34,19 @@ section {
     color: styles.$footer-center-c;
 }
 
+.footer-bottom {
+    display: none;
+}
+
 .footer-right {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 8px);
     color: styles.$main-text;
+
     >a {
         color: styles.$main-text;
-        &:visited, :hover {
+
+        &:visited,
+        :hover {
             color: styles.$main-text;
         }
     }
@@ -41,6 +56,36 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-// @include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(smartphone-medium) {
+    section {
+        padding: 0px 16px;
+        padding-bottom: 38px;
+        margin-top:-1px;
+    }
 
-// }
+    .footer-center {
+        display: none;
+    }
+
+    .footer-bottom {
+        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+        width: 100%;
+        box-sizing: border-box;
+        color: styles.$footer-center-c;
+    }
+
+    .logo-div {
+        >img {
+            height: 68px;
+            width: auto;
+        }
+    }
+
+    .logo-text {
+        >p {
+            font-size: 24px !important;
+        }
+
+    }
+
+}

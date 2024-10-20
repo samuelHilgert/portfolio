@@ -37,7 +37,7 @@ section {
 
     >h3 {
         color: styles.$project-title !important;
-        padding-bottom:12px;
+        padding-bottom: 12px;
     }
 }
 
@@ -49,25 +49,27 @@ section {
 
 .popup-project-skills-box {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
-    padding-top:18px;
+    padding-top: 18px;
     width: 100%;
     box-sizing: border-box;
 }
 
 .popup-project-skill {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 2px);
+
     >img {
-        width:30px;
-        height:30px;
+        width: 30px;
+        height: 30px;
     }
+
     >p {
-        padding-right:8px;
+        padding-right: 8px;
     }
 }
 
 .popup-project-btn-div {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
-    padding-top:18px;
+    padding-top: 18px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -123,16 +125,66 @@ section {
 }
 
 .disabled-link {
-    color: grey; 
-    pointer-events: none; 
-    text-decoration: none; 
-    cursor: default; 
-  }
+    color: grey;
+    pointer-events: none;
+    text-decoration: none;
+    cursor: default;
+}
 
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
-// @include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(smartphone-medium) {
+    section {
+        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    }
 
-// }
+    .popup-container {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 12px 24px;
+    }
+
+    .popup-content-box-left {
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 40px;
+    }
+
+    .popup-content-box-right {
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top:-15px;
+
+        >svg {
+            margin-left: calc(100% - 20px);
+            padding-bottom: 30px;
+        }
+
+        >img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+    }
+
+    .popup-right-next-div {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 20px;
+        padding-right: 40px;
+    }
+
+    .popup-project-id {
+        font-size: styles.$popup-project-id-mobile-size;
+        line-height: styles.$popup-project-id-mobile-line-height;
+    }
+
+}

@@ -72,6 +72,11 @@ $form-input-large-line-height: 21.6px;
 $form-input-mobile-size: 16px;
 $form-input-mobile-line-height: 19.2px;
 
+// Style for popup-project-id
+$popup-project-id-large-size: 128px;
+$popup-project-id-large-line-height: 100px;
+$popup-project-id-mobile-size: 72px;
+$popup-project-id-mobile-line-height: 72px;
 
 // =======================================
 // DEFAULT SETTINGS FOR ALL DISPLAY SIZES
@@ -186,8 +191,6 @@ a {
     line-height: 18px;
 }
 
-
-
 .popup-project-headline {
     font-family: Fira Code;
     font-size: 24px;
@@ -195,3 +198,24 @@ a {
     line-height: 28.8px;
     color: $main-color;
 }
+
+.footer-brand {
+    font-family: Fira Code;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+}
+
+.popup-project-id {
+    font-family: Karla;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: $popup-project-id-large-size;
+    line-height: $popup-project-id-large-line-height;
+    color: $main-color;
+}
+
+
+
+
+

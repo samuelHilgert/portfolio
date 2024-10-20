@@ -27,7 +27,6 @@ section {
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 40px);
         padding: 96px 16px;
-        padding-bottom: 0px;
     }
 
     .content-box-contact {

@@ -6,7 +6,7 @@ section {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -10px;
+    bottom: -8px;
     padding: 0px 112px;
 }
 
@@ -62,6 +62,7 @@ section {
 @include styles.respond-to(smartphone-medium) {
     section {
         padding: 0px 24px;
+        bottom: -8px;
     }
 
     .right {
