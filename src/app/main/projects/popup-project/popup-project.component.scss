@@ -133,6 +133,18 @@ section {
     cursor: default;
 }
 
+.btn-popup {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 2px);
+}
+
+.btn-popup-link-arrow {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke-width: 1;
+}
+
 // ==================
 // RESPONSIVE STYLES
 // ==================
@@ -198,7 +210,7 @@ section {
     }
 
     .popup-project-skills-box {
-        height:auto;
+        height: auto;
         flex-wrap: wrap;
     }
 

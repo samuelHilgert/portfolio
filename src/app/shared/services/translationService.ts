@@ -32,9 +32,11 @@ export class TranslationService {
     if(type == 'default') {
       // console.log('Scrollen verfügbar');
       document.body.style.overflow = '';
+      document.body.style.position = '';
     } else if (type == 'popup') {
       // console.log('Scrollen nicht verfügbar');
       document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed'; 
     }
   }
 }

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { PopupProjectComponent } from './popup-project/popup-project.component';
 import { HttpClient } from '@angular/common/http';
+import { TranslationService } from '../../shared/services/translationService';
 
 export interface Project {
   id: number;
@@ -19,7 +20,12 @@ export interface Project {
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [TranslateModule, NgIf, CommonModule, PopupProjectComponent],
+  imports: [
+    TranslateModule,
+    NgIf,
+    CommonModule,
+    PopupProjectComponent
+  ],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
@@ -29,7 +35,10 @@ export class ProjectsComponent {
   projectList: Project[] = [];
   selectedProject: Project | null = null;
 
-  constructor(private http: HttpClient) {
+  constructor(
+    private http: HttpClient,
+    private translationService: TranslationService
+  ) {
     this.loadProjectDataFromJson();
   }
 
@@ -49,6 +58,7 @@ export class ProjectsComponent {
   openProjectPopup(i: number) {
     // console.log('Selected Project Index:', i);
     // console.log('Project List:', this.projectList);
+    this.translationService.setOverflowSettings('popup');
 
     if (this.projectList.length > 0) {
       this.selectedProject = this.projectList[i]; // Wähle das Projekt basierend auf dem Index aus
@@ -62,6 +72,7 @@ export class ProjectsComponent {
   closeProjectPopup() {
     this.openPopup = false;
     this.selectedProject = null;
+    this.translationService.setOverflowSettings('default');
   }
 
   // Methode, um zum nächsten Projekt zu wechseln
