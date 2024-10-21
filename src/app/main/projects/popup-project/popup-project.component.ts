@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 interface SkillImage {
   skill: string;
   img: string;
+  img_green: string;
 }
 
 @Component({
