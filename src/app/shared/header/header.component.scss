@@ -120,6 +120,7 @@ header {
 // ==================
 
 @include styles.respond-to(smartphone-medium) {
+
   .topline {
     display: none;
   }

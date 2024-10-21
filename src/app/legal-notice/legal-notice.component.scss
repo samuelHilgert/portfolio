@@ -45,12 +45,12 @@ section {
 }
 
 .top {
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
-    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
-
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-end, $g: 0px);
+    
     >h1 {
-        font-size:84px;
+        font-size: 84px;
     }
 
     >svg {
@@ -75,11 +75,53 @@ a {
     color: styles.$text-link-color;
 }
 
-
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
-// @include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(smartphone-medium) {
 
-// }
+    .legal-notice-title {
+        h1 {
+            font-size: 42px;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 42px;
+            width: 100%;
+        }
+    }
+
+    .paragraph {
+        p {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        ul {
+            width: 100%;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+
+            li {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        h3 {
+            font-size: 28px;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            line-height: 28px;
+            width: 100%;
+        }
+    }
+
+}
