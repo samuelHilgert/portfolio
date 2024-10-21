@@ -24,6 +24,10 @@ header {
   }
 }
 
+.logo-name {
+  line-height:21px;
+}
+
 .topline {
   @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 24px);
 }
