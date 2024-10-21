@@ -89,11 +89,11 @@ header {
 }
 
 .popupBurgerMenu {
-  position: relative;
+  position: absolute;
   right: 16px;
-  top: 64px;
+  top: 96px;
   height: auto;
-  width: 450px;
+  width: 60%;
   background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
   padding: 32px 0;
   padding-left: 74px;

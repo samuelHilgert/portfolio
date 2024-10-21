@@ -1,5 +1,7 @@
 <section id="projectPopup" (click)="closePopupOnClickOutside($event)">
-  <div class="popup-container" (click)="$event.stopPropagation()">
+  <div class="popup-container-all" (click)="$event.stopPropagation()">
+
+  <div class="popup-container">
     <div class="popup-content-box-left">
       <div class="popup-div-project-title">
         <span class="popup-project-id">0{{ project.id }}</span>
@@ -50,17 +52,16 @@
         >
           <span>Live Test</span>
           <svg
-          [attr.stroke]="project.linksAvailable ? '#3DCFB6' : 'grey'"
-          class="btn-popup-link-arrow"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          viewBox="0 0 25 25"
-        >
-          <path d="M7 17L17 7" />
-          <path d="M7 7h10v10" />
-        </svg>
-          </a
-        >
+            [attr.stroke]="project.linksAvailable ? '#3DCFB6' : 'grey'"
+            class="btn-popup-link-arrow"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            viewBox="0 0 25 25"
+          >
+            <path d="M7 17L17 7" />
+            <path d="M7 7h10v10" />
+          </svg>
+        </a>
       </div>
     </div>
 
@@ -71,22 +72,26 @@
         />
       </svg>
       <img [src]="'./' + project.imgGameplay" alt="{{ project.title }}" />
-      <div class="popup-right-next-div" (click)="loadNextProject()">
-        <p>{{ "popup-project.next-project-text" | translate }}</p>
-        <svg
-          class="feedback-arrow"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M4 12h16" />
-          <path d="M14 6l6 6-6 6" />
-        </svg>
-      </div>
     </div>
   </div>
+
+  <div class="popup-content-box-bottom">
+    <div class="popup-right-next-div" (click)="loadNextProject()">
+      <p>{{ "popup-project.next-project-text" | translate }}</p>
+      <svg
+        class="feedback-arrow"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M4 12h16" />
+        <path d="M14 6l6 6-6 6" />
+      </svg>
+    </div>
+  </div>
+</div>
 </section>

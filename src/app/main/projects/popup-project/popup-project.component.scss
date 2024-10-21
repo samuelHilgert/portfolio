@@ -15,15 +15,22 @@ section {
     z-index: 99909;
 }
 
-.popup-container {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
-    background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
-    padding: 50px 50px;
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
+
+.popup-container-all {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
     border: 1px solid styles.$feedback-container-border;
     border-radius: 20px;
+    overflow: auto;
+    box-sizing: border-box;
+    background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
+    padding: 50px;
+    margin:3px;
+    height: 90%;
+    width:100%;
+}
+
+.popup-container {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
 }
 
 .popup-content-box-left {
@@ -145,6 +152,12 @@ section {
     stroke-width: 1;
 }
 
+.popup-content-box-bottom {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-start, $g: 0px);
+    width:100%;
+    box-sizing: border-box;
+}
+
 // ==================
 // RESPONSIVE STYLES
 // ==================
@@ -154,6 +167,14 @@ section {
         @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     }
 
+    .popup-container-all {
+        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
+        padding: 5px;
+        margin:0px;
+        height: 95%;
+        width:100%;
+    }
+
     .popup-container {
         flex-direction: column-reverse;
         gap: 24px;
@@ -161,11 +182,10 @@ section {
     }
 
     .popup-content-box-left {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 32px);
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
         width: 100%;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-bottom: 40px;
     }
 
     .popup-content-box-right {
@@ -188,12 +208,8 @@ section {
         }
     }
 
-    .popup-right-next-div {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding-bottom: 20px;
-        padding-right: 40px;
+    .popup-content-box-bottom {
+        padding: 20px 24px;
     }
 
     .popup-div-project-content {
@@ -207,6 +223,11 @@ section {
     .popup-project-id {
         font-size: styles.$popup-project-id-mobile-size;
         line-height: styles.$popup-project-id-mobile-line-height;
+    }
+
+    .popup-project-name {
+        font-size: styles.$popup-project-name-mobile-size;
+        line-height: styles.$popup-project-name-mobile-line-height;
     }
 
     .popup-project-skills-box {

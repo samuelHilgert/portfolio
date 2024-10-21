@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Angular Material Modul importieren
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeadlineComponent } from './headline/headline.component';
@@ -30,9 +30,13 @@ export class HeaderComponent {
   isEnglish: boolean = true;
   openBurgerMenu: boolean = false;
 
+  @ViewChild('popupBurgerMenu') popupBurgerMenu!: ElementRef; // Referenz zum Popup-Menü
+
   constructor(
     private translate: TranslateService,
-    private translationService: TranslationService
+    private translationService: TranslationService,
+    private eRef: ElementRef
+
   ) {
     // this.translate.setDefaultLang('de');
 
@@ -63,7 +67,19 @@ export class HeaderComponent {
     this.translationService.initializeLanguage();
   }
 
+  @HostListener('document:click', ['$event'])
+  clickOutside(event: Event) {
+    // Prüfen, ob der Klick außerhalb des Containers `popupBurgerMenu` war
+    if (this.openBurgerMenu && this.popupBurgerMenu && !this.popupBurgerMenu.nativeElement.contains(event.target)) {
+      this.openBurgerMenu = false;
+    }
+  }
+
   openPopupBurgerMenu() {
-   this.openBurgerMenu = true;
+    if(this.openBurgerMenu) {
+      this.openBurgerMenu = false;
+    } else {
+      this.openBurgerMenu = true;
+    }
   }
 }
