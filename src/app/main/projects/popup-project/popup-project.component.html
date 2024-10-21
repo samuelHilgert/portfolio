@@ -1,38 +1,45 @@
 <section id="projectPopup" (click)="closePopupOnClickOutside($event)">
   <div class="popup-container" (click)="$event.stopPropagation()">
     <div class="popup-content-box-left">
-      <span class="popup-project-id">0{{ project.id }}</span>
-      <h3>{{ project.title }}</h3>
-      <p class="popup-project-headline">
-        {{ "popup-project.headline" | translate }}
-      </p>
-      <p>{{ "projects." + project.id + ".description" | translate }}</p>
+      <div class="popup-div-project-title">
+        <span class="popup-project-id">0{{ project.id }}</span>
+        <span class="popup-project-name">{{ project.title }}</span>
+      </div>
 
-      <div class="popup-project-skills-box">
-        <div
-          class="popup-project-skill"
-          *ngFor="let skillImage of matchingSkillImages"
-        >
-          <img [src]="skillImage.img" alt="{{ skillImage.skill }}" />
-          <p>{{ skillImage.skill }}</p>
+      <div class="popup-div-project-content">
+        <p class="popup-project-headline">
+          {{ "popup-project.headline" | translate }}
+        </p>
+        <p>{{ "projects." + project.id + ".description" | translate }}</p>
+
+        <div class="popup-project-skills-box">
+          <div
+            class="popup-project-skill"
+            *ngFor="let skillImage of matchingSkillImages"
+          >
+            <img [src]="skillImage.img" alt="{{ skillImage.skill }}" />
+            <p>{{ skillImage.skill }}</p>
+          </div>
         </div>
       </div>
 
       <div class="popup-project-btn-div">
-          <a 
-          class="btn-popup" 
-          [ngClass]="{ 'disabled-link': project.linksAvailable == false }" 
-          [attr.href]="project.linksAvailable ? project.gitHub : null" 
+        <a
+          class="btn-popup"
+          [ngClass]="{ 'disabled-link': project.linksAvailable == false }"
+          [attr.href]="project.linksAvailable ? project.gitHub : null"
           target="_blank"
         >
-          <span>GitHub</span></a>
-          <a 
-          class="btn-popup" 
-          [ngClass]="{ 'disabled-link': project.linksAvailable == false }" 
-          [attr.href]="project.linksAvailable ? project.liveTest : null" 
+          <span>GitHub</span></a
+        >
+        <a
+          class="btn-popup"
+          [ngClass]="{ 'disabled-link': project.linksAvailable == false }"
+          [attr.href]="project.linksAvailable ? project.liveTest : null"
           target="_blank"
         >
-          <span>Live Test</span></a>
+          <span>Live Test</span></a
+        >
       </div>
     </div>
 
@@ -43,7 +50,7 @@
         />
       </svg>
       <img [src]="'./' + project.imgGameplay" alt="{{ project.title }}" />
-      <div class="popup-right-next-div"  (click)="loadNextProject()">
+      <div class="popup-right-next-div" (click)="loadNextProject()">
         <p>{{ "popup-project.next-project-text" | translate }}</p>
         <svg
           class="feedback-arrow"

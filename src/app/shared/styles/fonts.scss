@@ -78,6 +78,12 @@ $popup-project-id-large-line-height: 100px;
 $popup-project-id-mobile-size: 72px;
 $popup-project-id-mobile-line-height: 72px;
 
+// Style for popup-project-name
+$popup-project-name-large-size: 64px;
+$popup-project-name-large-line-height: 51.2px;
+$popup-project-name-mobile-size: 56px;
+$popup-project-name-mobile-line-height: 44.8px;
+
 // =======================================
 // DEFAULT SETTINGS FOR ALL DISPLAY SIZES
 // =======================================
@@ -212,7 +218,16 @@ a {
     letter-spacing: -0.02em;
     font-size: $popup-project-id-large-size;
     line-height: $popup-project-id-large-line-height;
-    color: $main-color;
+    color: $project-index;
+}
+
+.popup-project-name {
+    font-family: Fira Code;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    font-size: $popup-project-name-large-size;
+    line-height: $popup-project-name-large-line-height;
+    color: $project-title;
 }
 
 

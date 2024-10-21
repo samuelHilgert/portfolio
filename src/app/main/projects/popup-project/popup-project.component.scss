@@ -27,18 +27,21 @@ section {
 }
 
 .popup-content-box-left {
-    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 40px);
     width: 50%;
     box-sizing: border-box;
+}
 
-    >h1 {
-        color: styles.$project-index !important;
-    }
+.popup-div-project-title {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+    width: 100%;
+    box-sizing: border-box;
+}
 
-    >h3 {
-        color: styles.$project-title !important;
-        padding-bottom: 12px;
-    }
+.popup-div-project-content {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .popup-content-box-right {
@@ -49,7 +52,6 @@ section {
 
 .popup-project-skills-box {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
-    padding-top: 18px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -147,7 +149,7 @@ section {
     }
 
     .popup-content-box-left {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 32px);
         width: 100%;
         align-items: flex-start;
         justify-content: flex-start;
@@ -159,7 +161,7 @@ section {
         width: 100%;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-top:-15px;
+        padding-top: -15px;
 
         >svg {
             margin-left: calc(100% - 20px);
@@ -182,9 +184,22 @@ section {
         padding-right: 40px;
     }
 
+    .popup-div-project-content {
+        gap: 20px;
+    }
+
+    .popup-div-project-title {
+        gap: 8px;
+    }
+
     .popup-project-id {
         font-size: styles.$popup-project-id-mobile-size;
         line-height: styles.$popup-project-id-mobile-line-height;
+    }
+
+    .popup-project-skills-box {
+        height:auto;
+        flex-wrap: wrap;
     }
 
 }
