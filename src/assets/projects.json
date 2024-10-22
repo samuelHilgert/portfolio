@@ -7,9 +7,9 @@
             "skills": "Angular, TypeScript, HTML, CSS, Firebase",
             "imgStart": "assets/img/projects/start/join_start.png",
             "imgGameplay": "assets/img/projects/example/join_example.png",
-            "linksAvailable": true,
             "gitHub": "https://github.com/samuelHilgert/join.git",
             "liveTest":"https://join.samuelhilgert.com"
+
         },
         {
             "id": 2,
@@ -18,7 +18,6 @@
             "skills": "HTML, CSS, JavaScript",
             "imgStart": "assets/img/projects/start/el-pollo-loco_start.jpeg",
             "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.jpeg",
-            "linksAvailable": true,
             "gitHub": "https://github.com/samuelHilgert/el-pollo-loco.git",
             "liveTest":"https://el-pollo-loco.samuelhilgert.com"
         },
@@ -29,7 +28,6 @@
             "skills": "Angular, Firebase, TypeScript",
             "imgStart": "assets/img/projects/start/da-bubble_start.png",
             "imgGameplay": "assets/img/projects/example/da-bubble_example.png",
-            "linksAvailable": false,
             "gitHub": "",
             "liveTest":""
         }
