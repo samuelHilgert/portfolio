@@ -1,0 +1,6 @@
+
+# Verbieten aller rechtlichen Seiten 
+
+User-agent: *
+Disallow: /privacy-policy.component.html
+Disallow: /legal-notice.component.html
