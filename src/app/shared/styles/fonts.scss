@@ -154,24 +154,6 @@ h5 {
     color: $main-color;
 }
 
-@mixin navLinks () {
-    font-family: Fira Code;
-    color: $nav-links;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26.24px;
-    letter-spacing: -3%;
-    text-decoration: none;
-
-    &:visited {
-        text-decoration: none;
-    }
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
 a {
     cursor: pointer;
     text-decoration: none;
@@ -230,7 +212,26 @@ a {
     color: $project-title;
 }
 
+// ====================
+//  FONT STYLES MIXIN
+// ====================
 
+@mixin navLinks () {
+    font-family: Fira Code;
+    color: $nav-links;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26.24px;
+    letter-spacing: -3%;
+    text-decoration: none;
 
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
 
 

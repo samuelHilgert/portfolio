@@ -99,3 +99,23 @@ section {
         }
     }
 }
+
+@include styles.respond-to(smartphone-medium-height) {
+    .left hr {
+        height: 240px;
+    }
+
+    .right hr {
+        height: 150px;
+    }
+}
+
+@include styles.respond-to(smartphone-small-height) {
+    .left hr {
+        height: 200px;
+    }
+
+    .right hr {
+        height: 110px;
+    }
+}

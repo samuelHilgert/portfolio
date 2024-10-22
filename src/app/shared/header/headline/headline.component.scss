@@ -22,7 +22,7 @@ section {
 @include styles.respond-to(smartphone-medium) {
 
     section {
-        margin-bottom: 200px;
+        margin-bottom: 160px;
     }
 
     h1 {
@@ -35,5 +35,11 @@ section {
         font-size: styles.$h2-mobile-size;
         line-height: styles.$h2-mobile-line-height;
         text-align: left;
+    }
+}
+
+@include styles.respond-to(smartphone-small) {
+    .headline-btns-div {
+        gap:28px;
     }
 }

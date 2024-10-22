@@ -87,7 +87,7 @@ section {
 
 @include styles.respond-to(smartphone-medium) {
   section {
-    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 40px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 40px);
     padding: 96px 16px;
     padding-bottom:0px;
   }
@@ -110,5 +110,11 @@ section {
   .skill {
     height: 110px;
     width: 100px;
+  }
+}
+
+@include styles.respond-to(smartphone-small) {
+  .content-box-border {
+      padding: 20px;
   }
 }

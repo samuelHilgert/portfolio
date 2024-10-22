@@ -155,7 +155,7 @@ hr {
 
     >div {
       width: 200px;
-      height: 250px;
+      min-height: 170px;
 
       &:nth-child(2) {
         width: 358px;
@@ -166,23 +166,48 @@ hr {
 
   .feedback-container {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: space-between, $g: 80px);
-    padding:40px;
+    padding: 40px;
   }
 
   .filter-left {
-    width: 5%;
+    width: 10%;
   }
-  
+
   .filter-right {
-    width: 5%;
+    width: 10%;
   }
 
   .author-div {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 16px);
 
     >hr {
-      min-width:50px;
+      min-width: 50px;
     }
   }
-  
+
+}
+
+@include styles.respond-to(smartphone-small) {
+  .feedback-container {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: space-between, $g: 70px);
+    padding: 10px 20px;
+
+    &:nth-child(2) {
+      width: 258px;
+      height: 360px;
+    }
+  }
+
+  .quotes-icon {
+    left: -112px;
+  }
+
+  .filter-left {
+    width: 5%;
+  }
+
+  .filter-right {
+    width: 5%;
+  }
+
 }

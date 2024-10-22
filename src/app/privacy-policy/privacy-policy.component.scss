@@ -25,7 +25,7 @@ section {
     box-sizing: border-box;
     border: 1px solid styles.$feedback-container-border;
     border-radius: 10px;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .popup-content {
@@ -89,6 +89,10 @@ section {
     }
 }
 
+ul {
+    padding-left: 25px;
+}
+
 .popup-content {
     width:100%;
     height:auto;
@@ -124,4 +128,19 @@ section {
         width:100%;
     }
 }
+}
+
+@include styles.respond-to(smartphone-small) {
+
+    section {
+        padding: 10px;
+    }
+
+    .popup-container {
+        padding: 20px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
 }

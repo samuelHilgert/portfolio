@@ -125,3 +125,16 @@ a {
     }
 
 }
+
+
+@include styles.respond-to(smartphone-small) {
+
+    section {
+        padding: 10px;
+    }
+
+    .popup-container {
+        padding: 20px;
+    }
+
+}

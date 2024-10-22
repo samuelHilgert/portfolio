@@ -140,3 +140,16 @@ section {
         }
     }
 }
+
+@include styles.respond-to(smartphone-small) {
+.used-skills-div {
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+}
+
+

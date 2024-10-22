@@ -51,8 +51,8 @@ section {
 
         >img {
             &:first-child {
-                width: 358px;
-                height: 358px;
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -75,4 +75,10 @@ section {
         line-height: styles.$h4-mobile-line-height;
     }
 
+}
+
+@include styles.respond-to(smartphone-small) {
+    .content-box-border {
+        padding: 20px;
+    }
 }

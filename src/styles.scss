@@ -70,11 +70,12 @@
 ::-webkit-scrollbar {
   width: 4px;
   height: 10px;
+  border-radius: 10px; 
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #3DCFB6;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,13 +84,17 @@
 }
 
 // Variables for breakpoints
-$breakpoint-desktop-large: 1920px;
-$breakpoint-desktop: 1440px;
-$breakpoint-desktop-small: 1024px;
+
+$breakpoint-desktop-large: 1920px; //min-width
+$breakpoint-desktop-normal: 1920px;
+$breakpoint-desktop-small: 1366px;
 $breakpoint-tablet-large: 1024px;
 $breakpoint-tablet-small: 768px;
-$breakpoint-smartphone-medium: 600px;
-$breakpoint-smartphone-small: 375px;
+$breakpoint-smartphone-medium: 576px;
+$breakpoint-smartphone-small: 385px;
+
+$breakpoint-smartphone-medium-height: 800px;
+$breakpoint-smartphone-small-height: 700px;
 
 // Mixins for media queries
 @mixin respond-to($breakpoint) {
@@ -97,7 +102,7 @@ $breakpoint-smartphone-small: 375px;
     @media (min-width: $breakpoint-desktop-large) { @content; }
   }
   @else if $breakpoint == desktop {
-    @media (max-width: $breakpoint-desktop) { @content; }
+    @media (max-width: $breakpoint-desktop-normal) { @content; }
   }
   @else if $breakpoint == desktop-small {
     @media (max-width: $breakpoint-desktop-small) { @content; }
@@ -114,6 +119,13 @@ $breakpoint-smartphone-small: 375px;
   @else if $breakpoint == smartphone-small {
     @media (max-width: $breakpoint-smartphone-small) { @content; }
   }
+  @else if $breakpoint == smartphone-medium-height {
+    @media (max-height: $breakpoint-smartphone-medium-height) { @content; }
+  }
+  @else if $breakpoint == smartphone-small-height {
+    @media (max-height: $breakpoint-smartphone-small-height) { @content; }
+  }
+
 }
 
 

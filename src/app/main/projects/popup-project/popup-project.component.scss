@@ -24,9 +24,9 @@ section {
     box-sizing: border-box;
     background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
     padding: 50px;
-    margin:3px;
+    margin: 3px;
     height: 90%;
-    width:100%;
+    width: 100%;
 }
 
 .popup-container {
@@ -154,7 +154,7 @@ section {
 
 .popup-content-box-bottom {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-start, $g: 0px);
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -170,9 +170,9 @@ section {
     .popup-container-all {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
         padding: 5px;
-        margin:0px;
+        margin: 0px;
         height: 95%;
-        width:100%;
+        width: 100%;
     }
 
     .popup-container {
@@ -235,4 +235,20 @@ section {
         flex-wrap: wrap;
     }
 
+}
+
+@include styles.respond-to(smartphone-small) {
+    section {
+        padding: 0 10px;
+    }
+
+    .popup-container {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 12px 5px;
+    }
+
+    .popup-project-btn-div {
+        gap:12px;
+    }
 }
