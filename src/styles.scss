@@ -86,8 +86,7 @@
 // Variables for breakpoints
 
 $breakpoint-desktop-large: 1920px; //min-width
-$breakpoint-desktop-normal: 1920px;
-$breakpoint-desktop-small: 1366px;
+$breakpoint-desktop-normal: 1366px;
 $breakpoint-tablet-large: 1024px;
 $breakpoint-tablet-small: 768px;
 $breakpoint-smartphone-medium: 576px;
@@ -101,11 +100,8 @@ $breakpoint-smartphone-small-height: 700px;
   @if $breakpoint == desktop-large {
     @media (min-width: $breakpoint-desktop-large) { @content; }
   }
-  @else if $breakpoint == desktop {
+  @else if $breakpoint == desktop-normal {
     @media (max-width: $breakpoint-desktop-normal) { @content; }
-  }
-  @else if $breakpoint == desktop-small {
-    @media (max-width: $breakpoint-desktop-small) { @content; }
   }
   @else if $breakpoint == tablet-large {
     @media (max-width: $breakpoint-tablet-large) { @content; }

@@ -19,10 +19,10 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(tablet-small) {
 
     section {
-        margin-bottom: 160px;
+        margin-bottom: 220px;
     }
 
     h1 {
@@ -38,8 +38,14 @@ section {
     }
 }
 
+@include styles.respond-to(smartphone-medium) {
+    section {
+        margin-bottom: 160px;
+    }
+}
+
 @include styles.respond-to(smartphone-small) {
     .headline-btns-div {
-        gap:28px;
+        gap: 28px;
     }
 }

@@ -1,20 +1,40 @@
 // @import './../../../../styles.scss';
 @use './../../../../styles.scss' as styles;
 
+section {
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-evenly, $ai: center, $g: 0px);
+}
+
 nav {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-evenly, $ai: center, $g: 8%);
+    width:100%;
+    box-sizing: border-box;
+
 }
 
 a {
     @include styles.navLinks();
+    white-space: nowrap;
 }
 
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(tablet-small) { // 768px;
     nav {
-        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 24px);
+        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 16px);
+    }
+}
+
+@include styles.respond-to(smartphone-medium) { // 576px
+    nav {
+        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 12px);
+    }
+}
+
+@include styles.respond-to(smartphone-small) { // 385px 
+    nav {
+        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 8px);
     }
 }

@@ -104,7 +104,7 @@ label {
 
 .terms-row {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
-
+    
     span {
         color: styles.$placeholder-text;
 
@@ -115,8 +115,8 @@ label {
 
     >input {
         appearance: none;
-        width: 25px;
-        height: 18px;
+        min-width: 17px;
+        min-height: 17px;
         border: 2px solid styles.$main-color;
         border-radius: 2px;
         cursor: pointer;
@@ -178,11 +178,11 @@ label {
 
 .missing-msg {
     color: rgb(199, 80, 51);
-    font-size:14px;
+    font-size: 14px;
 }
 
 .success-email-message {
-    margin-top:30px;
+    margin-top: 30px;
     color: styles.$text-link-color;
 }
 
@@ -200,4 +200,13 @@ label {
         font-size: styles.$form-input-mobile-size;
         line-height: styles.$form-input-mobile-line-height;
     }
+
+    .terms-row {
+        
+        >input {
+            width: 30px !important;
+            height: 17px !important;
+        }
+    }
+
 }
