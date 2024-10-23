@@ -2,7 +2,7 @@
 @use './../../../../styles.scss' as styles;
 
 section {
-    @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 36px);
 
     h1,
     h2 {
@@ -13,16 +13,42 @@ section {
 .headline-btns-div {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
     z-index: 3;
+    gap: 78px;
 }
 
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(tablet-small) {
-
+@include styles.respond-to(desktop-normal) {     // 1366px;
     section {
-        margin-bottom: 220px;
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 38px);
+    }
+
+}
+
+@include styles.respond-to(tablet-large) {     // 1024px;
+    section {
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 32px);
+        margin-bottom: 120px;
+    }
+
+    h1 {
+        white-space: nowrap;
+        font-size: styles.$h1-mobile-large-size;
+        line-height: styles.$h1-mobile-large-line-height;
+        letter-spacing: styles.$h1-mobile-large-letter-spacing;
+    }
+
+    .headline-btns-div {
+        gap: 56px;
+    }
+}
+
+@include styles.respond-to(tablet-small) {     // 768px;
+    section {
+        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
+        margin-bottom: 180px;
     }
 
     h1 {
@@ -38,14 +64,30 @@ section {
     }
 }
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(smartphone-medium) {     // 576px
     section {
-        margin-bottom: 160px;
+        margin-bottom: 100px;
     }
 }
 
-@include styles.respond-to(smartphone-small) {
+@include styles.respond-to(smartphone-small) {     // 385px 
+    section {
+        margin-bottom: 120px;
+    }
+
     .headline-btns-div {
         gap: 28px;
     }
+
+    h1 {
+        font-size: styles.$h1-mobile-small-size;
+        line-height: styles.$h1-mobile-small-line-height;
+        letter-spacing: styles.$h1-mobile-small-letter-spacing;
+    }
+
+    h2 {
+        font-size: styles.$h2-mobile-small-size;
+        line-height: styles.$h2-mobile-small-line-height;
+    }
+
 }

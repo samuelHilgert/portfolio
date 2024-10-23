@@ -167,6 +167,7 @@ header {
 }
 
 @include styles.respond-to(tablet-large) {   // 1024px;
+  
   header {
     padding: 0 80px;
     padding-top: 48px;
