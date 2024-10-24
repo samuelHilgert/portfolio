@@ -82,4 +82,6 @@ export class HeaderComponent {
       this.openBurgerMenu = true;
     }
   }
+
+  
 }

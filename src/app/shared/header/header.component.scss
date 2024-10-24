@@ -35,7 +35,7 @@ header {
 .custom-toggle {
   display: inline-block;
   position: relative;
-  width: 80px;
+  width: 100px;
   height: 30px;
 }
 
@@ -47,7 +47,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 100%;
   background-color: styles.$toggle-bg-c;
   border: 1px solid styles.$toggle-border;
@@ -60,8 +59,8 @@ header {
 .toggle-ball {
   position: absolute;
   top: 2px;
-  left: 2px;
-  width: 35px;
+  left: 5px;
+  width: 50%;
   height: 26px;
   background-color: styles.$toggle-ball;
   border-radius: 30px;
@@ -74,18 +73,18 @@ header {
   top: 50%;
   transform: translateY(-50%);
   font-family: Arial, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   z-index: 1;
   color: styles.$toggle-inline-text;
 }
 
 .toggle-text-left {
-  left: 10px;
+  left: 15px;
 }
 
 .toggle-text-right {
-  right: 10px;
+  right: 15px;
 }
 
 .toggle-checkbox:checked+.toggle-label .toggle-ball {
@@ -127,7 +126,8 @@ header {
 // ==================
 
 
-@include styles.respond-to(desktop-large) {  // 1920px;
+@include styles.respond-to(desktop-large) {
+  // 1920px;
 
   header {
     padding: 0 112px;
@@ -146,7 +146,8 @@ header {
   }
 }
 
-@include styles.respond-to(desktop-normal) {   // 1366px;
+@include styles.respond-to(desktop-normal) {
+  // 1366px;
 
   header {
     padding: 0 92px;
@@ -166,8 +167,9 @@ header {
 
 }
 
-@include styles.respond-to(tablet-large) {   // 1024px;
-  
+@include styles.respond-to(tablet-large) {
+  // 1024px;
+
   header {
     padding: 0 80px;
     padding-top: 48px;
@@ -186,7 +188,9 @@ header {
 
 }
 
-@include styles.respond-to(tablet-small) {  // 768px;
+@include styles.respond-to(tablet-small) {
+
+  // 768px;
   .topline {
     display: none;
   }
@@ -213,11 +217,18 @@ header {
   }
 
   .custom-toggle {
-    padding-right: 40px;
+    padding-right: 0px;
+  }
+
+  .toggle-text-left,
+  .toggle-text-right {
+    font-size: 14px;
   }
 }
 
-@include styles.respond-to(smartphone-medium) { // 576px
+@include styles.respond-to(smartphone-medium) {
+
+  // 576px
   .popupBurgerMenu {
     right: 24px;
     top: 86px;
@@ -240,12 +251,24 @@ header {
   }
 
   .custom-toggle {
-    padding-right: 38px;
+    width: 90px;
+    padding-right: 8px;
   }
 
+
+  .toggle-ball {
+    width: 45%;
+  }
+
+  .toggle-text-left,
+  .toggle-text-right {
+    font-size: 12px;
+  }
 }
 
-@include styles.respond-to(smartphone-small) { // 385px 
+@include styles.respond-to(smartphone-small) {
+
+  // 385px 
   header {
     padding: 8px 16px;
 
@@ -268,6 +291,26 @@ header {
   }
 
   .custom-toggle {
-    padding-right: 42px;
+    width: 80px;
+    padding-left: 16px;
+  }
+
+  .toggle-ball {
+    width: 45;
+    left:2px;
+    box-sizing: border-box;
+  }
+
+  .toggle-text-left {
+    left: 12px;
+  }
+  
+  .toggle-text-right {
+    right: 10px;
+  }
+
+  .toggle-text-left,
+  .toggle-text-right {
+    font-size: 10px;
   }
 }
