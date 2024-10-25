@@ -68,10 +68,29 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(desktop-normal) {
+    // 1366px;
     section {
-        padding: 0px 24px;
-        bottom: -8px;
+        padding: 0px 78px;
+    }
+}
+
+@include styles.respond-to(tablet-large) {
+    // 1024px;
+    section {
+        padding: 0px 62px;
+    }
+}
+
+@include styles.respond-to(tablet-small) {
+    // 768px;
+}
+
+@include styles.respond-to(smartphone-medium) {
+    // 576px
+
+    section {
+        padding: 0px 38px;
     }
 
     .left {
@@ -97,6 +116,15 @@ section {
         >a:first-child {
             display:block;
         }
+    }
+}
+
+
+@include styles.respond-to(smartphone-small) {
+    // 385px
+
+    section {
+        padding: 0px 24px;
     }
 }
 

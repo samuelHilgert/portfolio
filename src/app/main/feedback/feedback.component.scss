@@ -137,6 +137,24 @@ hr {
 // RESPONSIVE STYLES
 // ==================
 
+@include styles.respond-to(desktop-normal) {
+  // 1366px;
+
+  section {
+    padding: 96px 92px;
+    padding-top: 72px;
+  }
+}
+
+@include styles.respond-to(tablet-large) {
+  // 1024px;
+
+  section {
+    padding: 80px;
+    padding-top: 72px;
+  }
+}
+
 @include styles.respond-to(smartphone-medium) {
   section {
     padding: 96px 16px;

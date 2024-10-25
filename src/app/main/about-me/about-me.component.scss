@@ -29,7 +29,7 @@ section {
     border: 1px solid styles.$content-box-border;
     background: styles.$content-box-bg;
 
-    > p:first-of-type {
+    >p:first-of-type {
         text-align: justify;
     }
 }
@@ -42,27 +42,57 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(desktop-normal) {
+
+    // 1366px;
     section {
-        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 40px);
-        padding: 96px 16px;
-        padding-bottom: 0px;
-        margin-top:-1px;
+        padding: 96px 92px;
+        padding-top:124px;
+    }
+}
+
+@include styles.respond-to(tablet-large) {
+
+    // 1024px;
+    section {
+        padding: 80px;
+        padding-top:112px;
+        gap: 48px;
+
+        >img {
+            &:first-child {
+                width: 410px;
+                height: 410px;
+            }
+        }
+    }
+}
+
+@include styles.respond-to(tablet-small) {
+
+    // 768px;
+    section {
+        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+        padding: 80px;
+        padding-top:108px;
 
         >img {
             &:first-child {
                 width: 100%;
+                box-sizing: border-box;
                 height: auto;
             }
         }
     }
+}
 
-    .content-box {
-        padding-top: 0px;
-    }
+@include styles.respond-to(smartphone-medium) {
+    // 576px
 
-    .content-box-border {
-        gap:16px;
+    section {
+        gap: 24px;
+        padding: 52px;
+        padding-top:94px;
     }
 
     h3 {
@@ -78,6 +108,13 @@ section {
 }
 
 @include styles.respond-to(smartphone-small) {
+    // 385px
+    section {
+        gap: 12px;
+        padding: 24px;
+        padding-top:68px;
+    }
+
     .content-box-border {
         padding: 20px;
     }

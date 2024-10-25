@@ -42,9 +42,9 @@ section {
     @include styles.btn();
   }
 
-  > p:first-of-type {
+  >p:first-of-type {
     text-align: justify;
-}
+  }
 }
 
 .skills-container {
@@ -85,11 +85,41 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(desktop-normal) {
+  // 1366px;
+
   section {
-    @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 40px);
-    padding: 96px 16px;
-    padding-bottom:0px;
+    padding: 96px 92px;
+    padding-top: 72px;
+  }
+}
+
+@include styles.respond-to(tablet-large) {
+  // 1024px;
+
+  section {
+    padding: 80px;
+    padding-top: 72px;
+    gap: 48px;
+  }
+}
+
+@include styles.respond-to(tablet-small) {
+  // 768px;
+
+  section {
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+    padding: 80px;
+    padding-top: 58px;
+  }
+}
+
+@include styles.respond-to(smartphone-medium) {
+  // 576px
+
+  section {
+    padding: 52px;
+    padding-top: 58px;
   }
 
   h3 {
@@ -114,7 +144,23 @@ section {
 }
 
 @include styles.respond-to(smartphone-small) {
+  // 385px
+
+  section {
+      padding: 24px;
+      padding-top: 58px;
+  }
+
   .content-box-border {
       padding: 20px;
+  }
+
+  .skills-container {
+    gap: 48px;
+  }
+
+  .skill {
+    height: 80px;
+    width: 70px;
   }
 }
