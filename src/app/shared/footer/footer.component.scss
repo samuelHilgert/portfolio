@@ -118,40 +118,32 @@ section {
 
 @include styles.respond-to(smartphone-small) {
     // 385px
-  
+
     section {
         padding: 78px 24px;
         padding-top: 52px;
     }
 
-    .footer-left {
-        align-items: center;
-        width:100%;
-        box-sizing: border-box;
-    }
-
-    .footer-left-text {
-        align-items: center;
-    }
-
     .footer-top {
-        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
+        @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 32px);
     }
 
-    .footer-right {
-        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 24px);
-        width:100%;
-        box-sizing: border-box;
-        
-        >a {
-            color: styles.$main-text;
-            white-space: nowrap;
-            text-decoration: underline;
+    .logo-div {
+        >img {
+            height: 58px;
+            width: auto;
+        }
+    }
+
+    .logo-text {
+        >p {
+            font-size: 16px !important;
+            line-height: 10px  !important;
         }
     }
 
     .footer-bottom {
-        padding-top:32px;
+        padding-top: 32px;
     }
-  
-  }
+
+}
