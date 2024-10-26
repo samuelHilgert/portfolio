@@ -3,7 +3,8 @@
 
 section {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
-  padding: 96px 0px;
+  padding: 96px 92px;
+  padding-top: 72px;
   overflow: hidden;
   position: relative;
 }
@@ -15,21 +16,20 @@ h5 {
 }
 
 .feedback-slider {
-  display: flex;
-  gap: 68px;
+  @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 68px);
   width: 140%;
+  height: auto;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  justify-content: center;
 }
 
 .quotes-icon {
-  height: 64px;
   width: auto;
   position: relative;
-  left: -320px;
-  top: 45px;
+  left: -217px;
+  top: 35px;
+  height: 48px;
   z-index: 2;
 }
 
@@ -37,7 +37,7 @@ h5 {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 38px);
   flex-basis: calc((100% - 136px) / 3);
   position: relative;
-  height: auto;
+  height: 200px;
   flex: 1;
   padding: 32px 32px;
   border-radius: 30px;
@@ -46,7 +46,9 @@ h5 {
 
   &:nth-child(2) {
     filter: brightness(1.15);
+    height: 250px;
     background-color: styles.$feedback-current-container-bg;
+    padding-top:60px;
   }
 }
 
@@ -81,6 +83,7 @@ h5 {
 
 hr {
   flex: 1;
+  min-width: 100px;
 }
 
 .filter-left {
@@ -137,15 +140,6 @@ hr {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(desktop-normal) {
-  // 1366px;
-
-  section {
-    padding: 96px 92px;
-    padding-top: 72px;
-  }
-}
-
 @include styles.respond-to(tablet-large) {
   // 1024px;
 
@@ -153,38 +147,79 @@ hr {
     padding: 80px;
     padding-top: 72px;
   }
-}
-
-@include styles.respond-to(smartphone-medium) {
-  section {
-    padding: 96px 16px;
-    padding-bottom: 0px;
-  }
-
-  .quotes-icon {
-    left: -132px;
-    top: 35px;
-    height: 48px;
-  }
 
   .feedback-slider {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 14px);
-    width: auto;
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
+    width: 160%;
+  }
 
-    >div {
-      width: 200px;
-      min-height: 170px;
 
-      &:nth-child(2) {
-        width: 358px;
-        height: 360px;
-      }
+  .feedback-container {
+    height: 250px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top:60px;
     }
   }
 
+  .quotes-icon {
+    left: -179px;
+    top: 35px;
+    height: 48px;
+  }
+}
+
+@include styles.respond-to(tablet-small) {
+  // 768px;
+
+  section {
+    padding: 80px;
+    padding-top: 72px;
+  }
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 200%;
+  }
+
   .feedback-container {
-    @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: space-between, $g: 80px);
+    height: 260px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top:60px;
+    }
+  }
+
+  .quotes-icon {
+    left: -162px;
+    top: 38px;
+    height: 48px;
+  }
+}
+
+@include styles.respond-to(smartphone-medium) {
+  // 576px
+
+  section {
+    padding: 80px;
+    padding-top: 72px;
+  }
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
+    width: 300%;
+  }
+
+  .feedback-container {
     padding: 40px;
+    height: 200px;
+
+    &:nth-child(2) {
+      height: 240px;
+      padding-top:60px;
+    }
   }
 
   .filter-left {
@@ -203,29 +238,67 @@ hr {
     }
   }
 
-}
-
-@include styles.respond-to(smartphone-small) {
-  .feedback-container {
-    @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: space-between, $g: 70px);
-    padding: 10px 20px;
-
-    &:nth-child(2) {
-      width: 258px;
-      height: 360px;
-    }
+  h5 {
+    font-size: styles.$h5-mobile-size;
   }
 
   .quotes-icon {
-    left: -112px;
-  }
-
-  .filter-left {
-    width: 5%;
-  }
-
-  .filter-right {
-    width: 5%;
+    left: -172px;
+    top: 38px;
+    height: 48px;
   }
 
 }
+
+@include styles.respond-to(smartphone-small) {
+  // 385px
+
+  section {
+    padding: 80px;
+    padding-top: 72px;
+  }
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
+    width: 380%;
+  }
+
+  .feedback-container {
+    padding: 20px;
+    height: 280px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top:60px;
+      gap:40px;
+    }
+  }
+
+  .filter-left {
+    width: 10%;
+  }
+
+  .filter-right {
+    width: 10%;
+  }
+
+  .author-div {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 16px);
+
+    >hr {
+      min-width: 50px;
+    }
+  }
+
+  h5 {
+    font-size: styles.$h5-mobile-size;
+  }
+
+  .quotes-icon {
+    left: -106px;
+    top: 25px;
+    height: 32px;
+  }
+}
+
+

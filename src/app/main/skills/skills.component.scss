@@ -4,7 +4,8 @@
 
 section {
   @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
-  padding: 96px 112px;
+  padding: 96px 92px;
+  padding-top: 72px;
 }
 
 .content-box-skills {
@@ -84,15 +85,6 @@ section {
 // ==================
 // RESPONSIVE STYLES
 // ==================
-
-@include styles.respond-to(desktop-normal) {
-  // 1366px;
-
-  section {
-    padding: 96px 92px;
-    padding-top: 72px;
-  }
-}
 
 @include styles.respond-to(tablet-large) {
   // 1024px;

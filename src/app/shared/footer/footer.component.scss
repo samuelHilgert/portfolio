@@ -4,9 +4,7 @@
 section {
     @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 32px);
     background-color: styles.$footer-bg-c;
-    padding: 0px 112px;
-    padding-bottom: 52px;
-    padding-top: 48px;
+    padding: 96px 92px;
 }
 
 .footer-top {
@@ -56,11 +54,41 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
+@include styles.respond-to(tablet-large) {
+    // 1024px;
+
     section {
-        padding: 0px 16px;
-        padding-bottom: 38px;
-        margin-top:-1px;
+        padding: 80px;
+        gap: 48px;
+        margin-top: -1px;
+    }
+}
+
+@include styles.respond-to(tablet-small) {
+    // 768px;
+
+    section {
+        gap: 32px;
+        padding-top: 58px;
+    }
+}
+
+@include styles.respond-to(smartphone-medium) {
+    // 576px
+
+    section {
+        padding: 52px;
+        padding-top: 58px;
+    }
+
+    h3 {
+        font-size: styles.$h3-mobile-size;
+        letter-spacing: styles.$h3-mobile-letter-spacing;
+    }
+
+    h4 {
+        font-size: styles.$h4-mobile-size;
+        line-height: styles.$h4-mobile-line-height;
     }
 
     .footer-center {
@@ -85,7 +113,19 @@ section {
         >p {
             font-size: 24px !important;
         }
+    }
+}
 
+@include styles.respond-to(smartphone-small) {
+    // 385px
+  
+    section {
+        padding: 78px 24px;
+        padding-top: 52px;
     }
 
-}
+    .footer-top {
+        gap:12px;
+    }
+  
+  }

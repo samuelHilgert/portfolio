@@ -3,7 +3,8 @@
 
 section {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
-    padding: 96px 112px;
+    padding: 96px 92px;
+    padding-top:124px;
 
     >img {
         &:first-child {
@@ -41,15 +42,6 @@ section {
 // ==================
 // RESPONSIVE STYLES
 // ==================
-
-@include styles.respond-to(desktop-normal) {
-
-    // 1366px;
-    section {
-        padding: 96px 92px;
-        padding-top:124px;
-    }
-}
 
 @include styles.respond-to(tablet-large) {
 
