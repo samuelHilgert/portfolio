@@ -24,7 +24,7 @@ section {
 }
 
 .content-row {
-    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 0px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 32px);
     width: 100%;
     box-sizing: border-box;
     border-top: 1px solid styles.$row-div-border;
@@ -56,7 +56,7 @@ section {
 }
 
 .used-skills-div {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-start, $g: 12px);
 
     >div {
         display: flex;
@@ -109,6 +109,24 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
+
+@media screen and (max-width: 1187px) {
+    // 1187px;
+
+    .content-row {
+        gap:48px;
+    }
+
+    .used-skills-div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+}
+
 @include styles.respond-to(tablet-large) {
     // 1024px;
 
@@ -116,6 +134,20 @@ section {
         padding: 80px;
         padding-top: 72px;
         gap: 48px;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    // 952px;
+
+    section {
+        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+        padding: 80px;
+        padding-top: 58px;
+    }
+    
+    .review-container {
+        display: none;
     }
 }
 
@@ -133,8 +165,13 @@ section {
     }
 }
 
-@include styles.respond-to(smartphone-medium) {
-    // 576px
+@media screen and (max-width: 700px) {
+    // 700px;
+    
+    h3 {
+        font-size: styles.$h3-mobile-size;
+        letter-spacing: styles.$h3-mobile-letter-spacing;
+    }
 
     section {
         padding: 52px;
@@ -166,6 +203,12 @@ section {
             }
         }
     }
+}
+
+@include styles.respond-to(smartphone-medium) {
+    // 576px
+
+ 
 }
 
 @include styles.respond-to(smartphone-small) {

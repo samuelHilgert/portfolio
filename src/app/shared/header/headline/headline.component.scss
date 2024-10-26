@@ -25,7 +25,15 @@ section {
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 38px);
     }
+}
 
+@media screen and (max-width: 1119px) {   // 1119px;
+    h1 {
+        white-space: nowrap;
+        font-size: styles.$h1-mobile-large-size;
+        line-height: styles.$h1-mobile-large-line-height;
+        letter-spacing: styles.$h1-mobile-large-letter-spacing;
+    }
 }
 
 @include styles.respond-to(tablet-large) {     // 1024px;
@@ -34,19 +42,18 @@ section {
         margin-bottom: 120px;
     }
 
-    h1 {
-        white-space: nowrap;
-        font-size: styles.$h1-mobile-large-size;
-        line-height: styles.$h1-mobile-large-line-height;
-        letter-spacing: styles.$h1-mobile-large-letter-spacing;
-    }
-
     .headline-btns-div {
         gap: 56px;
     }
 }
 
-@include styles.respond-to(tablet-small) {     
+@media screen and (max-width: 960px) {   // 960px;
+    h1 {
+        font-size: 82px;
+    }
+}
+
+@include styles.respond-to(tablet-small) {    // 768px  
     // 768px;
 
     section {
@@ -67,9 +74,19 @@ section {
     }
 }
 
+@media screen and (max-width: 960px) {   // 600px;
+    h1 {
+        font-size: 52px;
+    }
+}
+
 @include styles.respond-to(smartphone-medium) {     // 576px
     section {
         margin-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 42px;
     }
 }
 

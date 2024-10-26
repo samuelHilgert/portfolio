@@ -5,7 +5,6 @@
 @forward './app/shared/styles/logo.scss';
 @forward './app/shared/styles/standard.scss';
 @forward './app/shared/styles/text-links.scss';
-@forward './app/shared/styles/responsive.scss';
 
 
 // Custom Theming for Angular Material
@@ -91,7 +90,6 @@ $breakpoint-tablet-large: 1024px;
 $breakpoint-tablet-small: 768px;
 $breakpoint-smartphone-medium: 576px;
 $breakpoint-smartphone-small: 385px;
-
 $breakpoint-smartphone-medium-height: 800px;
 $breakpoint-smartphone-small-height: 531px;
 

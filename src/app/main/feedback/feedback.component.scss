@@ -22,13 +22,14 @@ h5 {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  margin-top:48px;
 }
 
 .quotes-icon {
   width: auto;
   position: relative;
-  left: -217px;
-  top: 35px;
+  left: -20%;
+  top: 80px;
   height: 48px;
   z-index: 2;
 }
@@ -140,6 +141,69 @@ hr {
 // RESPONSIVE STYLES
 // ==================
 
+@media screen and (max-width: 1800px) {
+  // 1800px;
+
+  .quotes-icon {
+    left: -19.5%;
+  }
+}
+
+@media screen and (max-width: 1655px) {
+  // 1655px;
+
+  .quotes-icon {
+    left: -19%;
+  }
+}
+
+@media screen and (max-width: 1482px) {
+  // 1482px;
+
+  .quotes-icon {
+    left: -18%;
+  }
+}
+
+@media screen and (max-width: 1284px) {
+  // 1284px
+
+  .quotes-icon {
+    left: -17%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  // 1210px;
+
+  .feedback-container {
+    height: 250px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  // 1170px;
+
+  .feedback-container {
+    height: 260px;
+
+    &:nth-child(2) {
+      height: 310px;
+      padding-top: 60px;
+    }
+  }
+
+  .quotes-icon {
+    left: -16%;
+  }
+
+}
+
 @include styles.respond-to(tablet-large) {
   // 1024px;
 
@@ -153,21 +217,45 @@ hr {
     width: 160%;
   }
 
+  .quotes-icon {
+    left: -20%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  // 910px;
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 170%;
+  }
+
+  .quotes-icon {
+    left: -22%;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  // 852px;
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 180%;
+  }
 
   .feedback-container {
-    height: 250px;
+    height: 280px;
 
     &:nth-child(2) {
-      height: 300px;
+      height: 320px;
       padding-top: 60px;
     }
   }
 
   .quotes-icon {
-    left: -179px;
-    top: 35px;
-    height: 48px;
+    left: -23%;
   }
+
 }
 
 @include styles.respond-to(tablet-small) {
@@ -193,10 +281,53 @@ hr {
   }
 
   .quotes-icon {
-    left: -162px;
-    top: 38px;
-    height: 48px;
+    left: -26%;
   }
+}
+
+@media screen and (max-width: 720px) {
+  // 720px
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 220%;
+  }
+
+  .feedback-container {
+    height: 280px;
+
+    &:nth-child(2) {
+      height: 320px;
+      padding-top: 60px;
+    }
+  }
+
+  .quotes-icon {
+    left: -28%;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  // 632px
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 260%;
+  }
+
+  .feedback-container {
+    height: 260px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top: 60px;
+    }
+  }
+
+  .quotes-icon {
+    left: -33%;
+  }
+
 }
 
 @include styles.respond-to(smartphone-medium) {
@@ -209,15 +340,15 @@ hr {
 
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
-    width: 300%;
+    width: 260%;
   }
 
   .feedback-container {
     padding: 40px;
-    height: 200px;
+    height: 260px;
 
     &:nth-child(2) {
-      height: 240px;
+      height: 300px;
       padding-top: 60px;
     }
   }
@@ -242,13 +373,69 @@ hr {
     font-size: styles.$h5-mobile-size;
   }
 
-  .quotes-icon {
-    left: -172px;
-    top: 38px;
-    height: 48px;
+}
+
+@media screen and (max-width: 520px) {
+  // 520px
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 280%;
+  }
+
+  .feedback-container {
+    height: 310px;
+
+    &:nth-child(2) {
+      height: 350px;
+    }
   }
 
 }
+
+@media screen and (max-width: 460px) {
+  // 460px
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 360%;
+  }
+  
+  .quotes-icon {
+    left: -44%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  // 440px
+
+  .quotes-icon {
+    left: -43%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  // 400px
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
+    width: 360%;
+  }
+
+  .feedback-container {
+    height: 320px;
+    padding: 20px;
+
+    &:nth-child(2) {
+      height: 360px;
+    }
+  }
+
+  .quotes-icon {
+    left: -42%;
+  }
+}
+
 
 @include styles.respond-to(smartphone-small) {
   // 385px
@@ -260,16 +447,15 @@ hr {
 
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
-    width: 380%;
+    width: 390%;
   }
 
   .feedback-container {
     padding: 20px;
-    height: 280px;
+    height: 320px;
 
     &:nth-child(2) {
-      height: 300px;
-      padding-top: 60px;
+      height: 360px;
       gap: 40px;
     }
   }
@@ -296,110 +482,35 @@ hr {
   }
 
   .quotes-icon {
-    left: -106px;
-    top: 25px;
-    height: 32px;
+    left: -46%;
   }
 }
 
-@include styles.respond-to(smartphone-small-height) {
-
-  // height  531px
-
-  section {
-    padding-bottom: 40px;
-  }
-
-  h5 {
-    width: calc(100vw - 100px);
-    padding-bottom: 14px;
-  }
+@media screen and (max-width: 340px) {
+  // 340px
 
   .feedback-slider {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 14px);
-    width: 450%;
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
+    width: 420%;
   }
 
   .feedback-container {
-    padding: 20px;
-    height: 280px;
+    padding: 15px;
+    height: 320px;
 
     &:nth-child(2) {
-      height: 300px;
-      padding-top: 50px;
+      height: 360px;
       gap: 40px;
     }
-
-    >p {
-      font-size: 14px;
-    }
   }
 
-  .author-div {
-    >p {
-      font-size: 14px;
-    }
+  .filter-left {
+    width: 20%;
   }
 
-  .slide-arrows-div {
-    padding-top: 22px;
-  }
-
-
-  .quotes-icon {
-    left: -91px;
-    top: 23px;
-    height: 32px;
+  .filter-right {
+    width: 20%;
   }
 
 }
 
-@media screen and (max-width: 390px) and (max-height: 844px) {
-  section {
-    padding-bottom: 40px;
-    font-size: styles.$standard-text-mobile-small-size;
-    line-height: styles.$standard-text-mobile-line-small-height;
-  }
-
-  h5 {
-    width: calc(100vw - 100px);
-    padding-bottom: 14px;
-  }
-
-  .feedback-slider {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 14px);
-    width: 410%;
-  }
-
-  .feedback-container {
-    padding: 20px;
-    height: 260px;
-
-    &:nth-child(2) {
-      height: 280px;
-      padding-top: 60px;
-      gap: 40px;
-    }
-
-    >p {
-      font-size: 14px;
-    }
-  }
-
-  .author-div {
-    >p {
-      font-size: 14px;
-    }
-  }
-
-  .slide-arrows-div {
-    padding-top: 22px;
-  }
-
-  .quotes-icon {
-    left: -118px;
-    top: 23px;
-    height: 32px;
-  }
-
-}

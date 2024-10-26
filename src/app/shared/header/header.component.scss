@@ -3,7 +3,8 @@
 
 section {
   @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
-  height: 100svh;;
+  height: 100svh;
+  ;
   margin-bottom: -1px;
   width: 100%;
   box-sizing: border-box;
@@ -189,9 +190,8 @@ header {
 
 }
 
-@include styles.respond-to(tablet-small) {
-
-  // 768px;
+@media screen and (max-width: 980px) {
+  // 980px;
   .topline {
     display: none;
   }
@@ -225,6 +225,12 @@ header {
   .toggle-text-right {
     font-size: 14px;
   }
+}
+
+
+@include styles.respond-to(tablet-small) {
+  // 768px;
+
 }
 
 @include styles.respond-to(smartphone-medium) {
@@ -298,14 +304,14 @@ header {
 
   .toggle-ball {
     width: 45;
-    left:2px;
+    left: 2px;
     box-sizing: border-box;
   }
 
   .toggle-text-left {
     left: 12px;
   }
-  
+
   .toggle-text-right {
     right: 10px;
   }

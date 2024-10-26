@@ -18,7 +18,7 @@ section {
     padding: 12px 0;
     transform: rotate(-3deg);
     transform-origin: bottom left;   
-    width:101%;
+    max-width: 100%; 
     overflow: hidden;
     z-index: 10000;
 }
@@ -72,8 +72,6 @@ section {
 @media screen and (max-width: 390px) and (max-height: 844px) {
 
     .banner-container {
-        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-        position: absolute;
         height: 30px;
     }
 

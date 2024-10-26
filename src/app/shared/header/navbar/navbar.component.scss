@@ -28,8 +28,9 @@ a {
     }
 }
 
-
-@include styles.respond-to(tablet-small) { // 768px;
+@media screen and (max-width: 980px) {
+    // 980px;
+    
     a {
         font-size: 20px;
     }
@@ -37,6 +38,10 @@ a {
     nav {
         @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 16px);
     }
+}
+
+@include styles.respond-to(tablet-small) { // 768px;
+
 }
 
 @include styles.respond-to(smartphone-medium) { // 576px

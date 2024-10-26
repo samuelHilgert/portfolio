@@ -53,7 +53,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 69px;
+  gap: 48px;
   margin-top: 52px;
   width: 100%;
   box-sizing: border-box;
@@ -62,7 +62,6 @@ section {
 .skills-div {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
   box-sizing: border-box;
-  height: 100%;
   height: auto;
   box-sizing: border-box;
   margin-top: 20px;
@@ -87,8 +86,8 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(tablet-large) {
-  // 1024px;
+@media screen and (max-width: 1230px) {
+  // 1230px;
 
   section {
     padding: 80px;
@@ -97,13 +96,109 @@ section {
   }
 }
 
-@include styles.respond-to(tablet-small) {
-  // 768px;
+@include styles.respond-to(tablet-large) {
+  // 1024px;
+
+}
+
+@media screen and (max-width: 1140px) {
+
+  // 1140px;
+  .skills-container {
+    gap: 12px;
+  }
+
+  h3 {
+    white-space: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 1060px) {
+  // 1060px;
+
+  .skills-container {
+    gap: 0px;
+  }
+
+  section {
+    gap: 24px;
+    padding-right: 0px;
+  }
+
+  .skills-div {
+    width: 120px;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  // 990px;
 
   section {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
     padding: 80px;
     padding-top: 58px;
+  }
+
+  .skills-container {
+    gap: 42px;
+    margin-top: 18px;
+  }
+
+  .skills-div {
+    width: 100px;
+  }
+
+}
+
+@include styles.respond-to(tablet-small) {
+  // 768px;
+
+  .skills-container {
+    gap: 32px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  // 700px;
+  .skills-div {
+    width: 90px;
+  }
+
+  .skills-container {
+    gap: 28px;
+  }
+
+  h3 {
+    font-size: styles.$h3-mobile-size;
+    letter-spacing: styles.$h3-mobile-letter-spacing;
+  }
+}
+
+@media screen and (max-width: 627px) {
+
+  // 627px;
+  .skills-container {
+    margin-top: 8px;
+  }
+
+  .skills-div {
+    width: 80px;
+  }
+
+  .skills-container {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+
+  // 586px;
+  .skills-container {
+    margin-top: 4px;
   }
 }
 
@@ -116,8 +211,7 @@ section {
   }
 
   h3 {
-    font-size: styles.$h3-mobile-size;
-    letter-spacing: styles.$h3-mobile-letter-spacing;
+    font-size: 52px;
   }
 
   h4 {
@@ -126,7 +220,7 @@ section {
   }
 
   .skills-container {
-    gap: 69px;
+    gap: 16px;
     margin-top: 0px;
   }
 
@@ -140,11 +234,37 @@ section {
   }
 }
 
+@media screen and (max-width: 500px) {
+
+  // 500px;
+  .skills-container {
+    gap: 24px;
+    margin-top: 0px;
+  }
+
+  .skill {
+    height: 72px;
+    width: 62px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  // 450px;
+  h3 {
+    white-space: wrap;
+  }
+}
+
 @include styles.respond-to(smartphone-small) {
   // 385px
 
   section {
-    padding: 24px;
+    gap: 8px;
     padding-top: 58px;
   }
 
@@ -221,5 +341,26 @@ section {
 
   h3 {
     font-size: styles.$h3-mobile-size-small-height;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  // 410px;
+
+  .skills-div {
+    width: 70px;
+    margin-top: 20px;
+  }
+
+  .skills-container {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  // 360px;
+
+  .skills-container {
+    gap: 48px;
   }
 }

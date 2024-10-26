@@ -5,6 +5,7 @@ section {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
     padding: 96px 92px;
     padding-top: 72px;
+    margin-bottom: -1px;
 }
 
 .content-box-contact {
@@ -34,14 +35,21 @@ section {
     }
 }
 
-@include styles.respond-to(tablet-small) {
-    // 768px;
-
+@media screen and (max-width: 990px) {
+    // 990px;
+    
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
         padding: 80px;
         padding-top:108px;
     }
+
+}
+
+@include styles.respond-to(tablet-small) {
+    // 768px;
+
+
 }
 
 @include styles.respond-to(smartphone-medium) {
