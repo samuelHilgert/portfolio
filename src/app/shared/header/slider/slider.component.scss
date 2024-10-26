@@ -27,11 +27,11 @@ section {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
     animation: slide-left 15s linear infinite;
     white-space: nowrap;
-    width: 100%;
+    width: 180%;
     box-sizing: border-box;
     padding: 0 12px;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .spacer-div {
@@ -70,6 +70,12 @@ section {
 }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
+
+    .banner-container {
+        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+        position: absolute;
+        height: 30px;
+    }
 
     .banner {
         font-size: styles.$banner-text-mobile-size;

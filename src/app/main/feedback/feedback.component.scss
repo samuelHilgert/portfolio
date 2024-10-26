@@ -357,6 +357,8 @@ hr {
 @media screen and (max-width: 390px) and (max-height: 844px) {
   section {
     padding-bottom: 40px;
+    font-size: styles.$standard-text-mobile-small-size;
+    line-height: styles.$standard-text-mobile-line-small-height;
   }
 
   h5 {
