@@ -67,9 +67,21 @@ section {
 }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
+
     .banner {
         font-size: styles.$banner-text-mobile-size;
         line-height: styles.$banner-text-mobile-line-height;
+    }
+
+
+    section {
+        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+        overflow: hidden;
+    }
+
+    .banner-container {
+        width: calc(100% - 4px);
+        box-sizing: border-box;
     }
 
 }
