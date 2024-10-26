@@ -8,7 +8,6 @@ section {
     right: 0;
     bottom: -8px;
     padding: 0px 96px;
-    z-index: 100;
 }
 
 .left {
@@ -18,7 +17,6 @@ section {
         height: 210px;
         width: 2px;
         background-color: styles.$hr-color;
-        z-index: 100;
     }
 }
 
@@ -62,7 +60,6 @@ section {
         height: 160px;
         width: 2px;
         background-color: styles.$main-text;
-        z-index: 100;
     }
 
 }
