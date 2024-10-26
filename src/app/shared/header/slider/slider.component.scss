@@ -4,6 +4,7 @@
 section {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     overflow: hidden;
+    z-index: 10000;
 }
 
 .banner-container {
@@ -18,17 +19,18 @@ section {
     transform: rotate(-3deg);
     transform-origin: top left;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .banner {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
-    animation: slide-left 20s linear infinite;
+    animation: slide-left 15s linear infinite;
     white-space: nowrap;
-    width: 100%;
+    width: 200%;
     box-sizing: border-box;
     padding: 0 12px;
     position: relative;
+    z-index: 10000;
 }
 
 .spacer-div {
