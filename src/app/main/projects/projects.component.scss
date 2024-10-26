@@ -183,5 +183,12 @@ section {
         flex-wrap: wrap;
         box-sizing: border-box;
     }
+}
 
+@include styles.respond-to(smartphone-small-height) {
+    // height  531px
+
+    h3 {
+        font-size: styles.$h3-mobile-size-small-height;
+    }
 }

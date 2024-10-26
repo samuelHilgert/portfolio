@@ -156,3 +156,25 @@ section {
     width: 70px;
   }
 }
+
+
+@include styles.respond-to(smartphone-small-height) {   
+// height  531px
+
+  .skills-container {
+    width:100%;
+    box-sizing: border-box;
+    padding:12px;
+    height:auto;
+  }
+
+  .skill {
+    margin-top:20px;
+    height: 50px;
+    width: 40px;
+  }
+
+  h3 {
+    font-size: styles.$h3-mobile-size-small-height;
+  }
+}

@@ -138,12 +138,16 @@ section {
     }
 }
 
-@include styles.respond-to(smartphone-small-height) {
+@include styles.respond-to(smartphone-small-height) {     // 385px 
     .left hr {
-        height: 200px;
+        height: 146px;
     }
 
     .right hr {
-        height: 110px;
+        height: 76px;
+    }
+
+    .right-links-icons {
+        gap:4px;
     }
 }

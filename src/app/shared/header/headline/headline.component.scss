@@ -89,5 +89,20 @@ section {
         font-size: styles.$h2-mobile-small-size;
         line-height: styles.$h2-mobile-small-line-height;
     }
-
 }
+
+@include styles.respond-to(smartphone-small-height) {     // 385px 
+    section {
+        margin-bottom: 80px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+        
+    .btn {
+        padding: 10px 12px;
+    }
+}
+

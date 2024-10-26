@@ -48,7 +48,7 @@ h5 {
     filter: brightness(1.15);
     height: 250px;
     background-color: styles.$feedback-current-container-bg;
-    padding-top:60px;
+    padding-top: 60px;
   }
 }
 
@@ -159,7 +159,7 @@ hr {
 
     &:nth-child(2) {
       height: 300px;
-      padding-top:60px;
+      padding-top: 60px;
     }
   }
 
@@ -188,7 +188,7 @@ hr {
 
     &:nth-child(2) {
       height: 300px;
-      padding-top:60px;
+      padding-top: 60px;
     }
   }
 
@@ -218,7 +218,7 @@ hr {
 
     &:nth-child(2) {
       height: 240px;
-      padding-top:60px;
+      padding-top: 60px;
     }
   }
 
@@ -269,8 +269,8 @@ hr {
 
     &:nth-child(2) {
       height: 300px;
-      padding-top:60px;
-      gap:40px;
+      padding-top: 60px;
+      gap: 40px;
     }
   }
 
@@ -292,6 +292,7 @@ hr {
 
   h5 {
     font-size: styles.$h5-mobile-size;
+    width: calc(100vw - 100px);
   }
 
   .quotes-icon {
@@ -301,4 +302,54 @@ hr {
   }
 }
 
+@include styles.respond-to(smartphone-small-height) {
 
+  // height  531px
+
+  section {
+    padding-bottom: 40px;
+  }
+
+  h5 {
+    width: calc(100vw - 100px);
+    padding-bottom: 14px;
+  }
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 14px);
+    width: 450%;
+  }
+
+  .feedback-container {
+    padding: 20px;
+    height: 280px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top: 50px;
+      gap: 40px;
+    }
+
+    >p {
+      font-size: 14px;
+    }
+  }
+
+  .author-div {
+    >p {
+      font-size: 14px;
+    }
+  }
+
+  .slide-arrows-div {
+    padding-top: 22px;
+  }
+
+
+  .quotes-icon {
+    left: -91px;
+    top: 23px;
+    height: 32px;
+  }
+
+}
