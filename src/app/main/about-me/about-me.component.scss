@@ -115,3 +115,20 @@ section {
         font-size: styles.$h3-mobile-size-small-height;
       }
 }
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+    // 385px
+    section {
+        gap: 12px;
+        padding: 24px;
+        padding-top:68px;
+    }
+
+    .content-box-border {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: styles.$h3-mobile-size-small-height;
+      }
+}

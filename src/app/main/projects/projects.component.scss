@@ -192,3 +192,10 @@ section {
         font-size: styles.$h3-mobile-size-small-height;
     }
 }
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+
+    h3 {
+        font-size: styles.$h3-mobile-size-small-height;
+    }
+}

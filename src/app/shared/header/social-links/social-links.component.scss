@@ -151,3 +151,18 @@ section {
         gap:4px;
     }
 }
+
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+    .left hr {
+        height: 146px;
+    }
+
+    .right hr {
+        height: 76px;
+    }
+
+    .right-links-icons {
+        gap:4px;
+    }
+}

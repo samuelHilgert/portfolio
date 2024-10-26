@@ -353,3 +353,52 @@ hr {
   }
 
 }
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+  section {
+    padding-bottom: 40px;
+  }
+
+  h5 {
+    width: calc(100vw - 100px);
+    padding-bottom: 14px;
+  }
+
+  .feedback-slider {
+    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 14px);
+    width: 450%;
+  }
+
+  .feedback-container {
+    padding: 20px;
+    height: 280px;
+
+    &:nth-child(2) {
+      height: 300px;
+      padding-top: 50px;
+      gap: 40px;
+    }
+
+    >p {
+      font-size: 14px;
+    }
+  }
+
+  .author-div {
+    >p {
+      font-size: 14px;
+    }
+  }
+
+  .slide-arrows-div {
+    padding-top: 22px;
+  }
+
+
+  .quotes-icon {
+    left: -91px;
+    top: 23px;
+    height: 32px;
+  }
+
+}
