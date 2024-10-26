@@ -75,15 +75,4 @@ section {
         line-height: styles.$banner-text-mobile-line-height;
     }
 
-
-    section {
-        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-        overflow: hidden;
-    }
-
-    .banner-container {
-        width: calc(100% - 4px);
-        box-sizing: border-box;
-    }
-
 }
