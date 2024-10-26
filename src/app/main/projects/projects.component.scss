@@ -195,6 +195,20 @@ section {
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
 
+    section {
+        padding: 24px;
+        padding-top: 92px;
+    }
+
+    
+    .used-skills-div {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
     h3 {
         font-size: styles.$h3-mobile-size-small-height;
     }

@@ -53,7 +53,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 69px;
   margin-top: 52px;
   width: 100%;
   box-sizing: border-box;
@@ -65,6 +65,7 @@ section {
   height: 100%;
   height: auto;
   box-sizing: border-box;
+  margin-top: 20px;
 }
 
 .skill {
@@ -125,8 +126,12 @@ section {
   }
 
   .skills-container {
-    gap: 16px;
+    gap: 69px;
     margin-top: 0px;
+  }
+
+  .skills-div {
+    margin-top: 4px;
   }
 
   .skill {
@@ -149,6 +154,10 @@ section {
 
   .skills-container {
     gap: 48px;
+  }
+
+  .skills-div {
+    margin-top: 12px;
   }
 
   .skill {
