@@ -41,7 +41,6 @@ section {
         color: styles.$project-title !important;
         padding-bottom: 12px;
     }
-
 }
 
 .top {
@@ -64,7 +63,6 @@ section {
     }
 }
 
-
 .paragraph {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
     width: 100%;
@@ -80,7 +78,6 @@ a {
 // ==================
 
 @include styles.respond-to(smartphone-medium) {
-
     .legal-notice-title {
         h1 {
             font-size: 42px;
@@ -90,7 +87,6 @@ a {
             line-height: 42px;
             width: 100%;
         }
-
     }
 
     .paragraph {
@@ -124,12 +120,9 @@ a {
             width: 100%;
         }
     }
-
 }
 
-
 @include styles.respond-to(smartphone-small) {
-
     section {
         padding: 10px;
     }
@@ -137,15 +130,10 @@ a {
     .popup-container {
         padding: 20px;
     }
-
 }
 
-
 @media screen and (max-width: 788px) {
-
-    // 788px
     h1 {
         font-size: 96px;
     }
-
 }

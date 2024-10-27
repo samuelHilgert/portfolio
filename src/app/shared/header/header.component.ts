@@ -1,11 +1,11 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Angular Material Modul importieren
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeadlineComponent } from './headline/headline.component';
 import { SliderComponent } from './slider/slider.component';
 import { SocialLinksComponent } from './social-links/social-links.component';
 import { FormsModule } from '@angular/forms';
-import { TranslateService } from '@ngx-translate/core'; // Importiere den TranslateService
+import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../services/translationService';
 import { CommonModule, NgIf } from '@angular/common';
@@ -26,32 +26,33 @@ import { CommonModule, NgIf } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
+
 export class HeaderComponent {
   isEnglish: boolean = true;
   openBurgerMenu: boolean = false;
 
-  @ViewChild('popupBurgerMenu') popupBurgerMenu!: ElementRef; // Referenz zum Popup-Menü
+  @ViewChild('popupBurgerMenu') popupBurgerMenu!: ElementRef;
 
   constructor(
     private translate: TranslateService,
     private translationService: TranslationService,
     private eRef: ElementRef
-
   ) {
-    // this.translate.setDefaultLang('de');
 
-    // Lade die Sprache aus dem localStorage und setze isEnglish
-    const storedLang = localStorage.getItem('lang') || 'de'; // Fallback auf 'de' wenn kein Wert vorhanden ist
-    this.isEnglish = storedLang === 'de'; // Setze isEnglish basierend auf dem Wert in localStorage
+    const storedLang = localStorage.getItem('lang') || 'de';
+    this.isEnglish = storedLang === 'de';
 
-    // // Setze die Sprache für die Übersetzungen
-    this.translate.setDefaultLang('de'); // Optional: Setze die Standardsprache
-    this.translate.use(storedLang); // Setze die aktuelle Sprache
+    this.translate.setDefaultLang('de');
+    this.translate.use(storedLang);
   }
 
   /**
-   * This function translate the language between german and english
-   *
+   * Toggles the language between German and English.
+   * This method updates the `isEnglish` state, changes the current
+   * language used in the application, and stores the selected 
+   * language in local storage for persistence. It also calls the 
+   * `initializeLanguage` method on the `TranslationService` to 
+   * apply the necessary translations.
    */
   toggleLanguage() {
     this.isEnglish = this.isEnglish;
@@ -67,6 +68,12 @@ export class HeaderComponent {
     this.translationService.initializeLanguage();
   }
 
+  /**
+   * Handles click events on the document. If the user clicks outside
+   * of the `popupBurgerMenu` and the burger menu is open, this method
+   * sets `openBurgerMenu` to false, effectively closing the menu.
+   * @param event The click event from the document.
+   */
   @HostListener('document:click', ['$event'])
   clickOutside(event: Event) {
     // Prüfen, ob der Klick außerhalb des Containers `popupBurgerMenu` war
@@ -75,6 +82,11 @@ export class HeaderComponent {
     }
   }
 
+  /**
+   * Toggles the visibility of the burger menu. If the menu is open, 
+   * it closes it; if it is closed, it opens the menu. This method 
+   * updates the `openBurgerMenu` state accordingly.
+   */
   openPopupBurgerMenu() {
     if(this.openBurgerMenu) {
       this.openBurgerMenu = false;
@@ -82,6 +94,4 @@ export class HeaderComponent {
       this.openBurgerMenu = true;
     }
   }
-
-  
 }

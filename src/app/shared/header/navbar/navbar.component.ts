@@ -8,6 +8,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
 
-}
+export class NavbarComponent {}

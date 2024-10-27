@@ -14,8 +14,8 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(),
-    provideRouter(routes), // Hinzugefügt: Router Provider
-    provideAnimationsAsync(), // Hinzugefügt: Animations Provider
+    provideRouter(routes),
+    provideAnimationsAsync(),
     importProvidersFrom([TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

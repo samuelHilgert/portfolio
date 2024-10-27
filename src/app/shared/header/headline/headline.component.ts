@@ -8,7 +8,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './headline.component.html',
   styleUrl: './headline.component.scss'
 })
-export class HeadlineComponent {
 
-
-}
+export class HeadlineComponent {}

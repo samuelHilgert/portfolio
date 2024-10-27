@@ -8,6 +8,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss'
 })
-export class SliderComponent {
 
-}
+export class SliderComponent {}

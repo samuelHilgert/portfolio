@@ -1,6 +1,5 @@
-// @import './../../../styles.scss';
-@use './../../../styles.scss' as styles;
 
+@use './../../../styles.scss' as styles;
 
 section {
   @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 72px);
@@ -87,8 +86,6 @@ section {
 // ==================
 
 @media screen and (max-width: 1230px) {
-  // 1230px;
-
   section {
     padding: 80px;
     padding-top: 72px;
@@ -96,14 +93,7 @@ section {
   }
 }
 
-@include styles.respond-to(tablet-large) {
-  // 1024px;
-
-}
-
 @media screen and (max-width: 1140px) {
-
-  // 1140px;
   .skills-container {
     gap: 12px;
   }
@@ -111,12 +101,9 @@ section {
   h3 {
     white-space: nowrap;
   }
-
 }
 
 @media screen and (max-width: 1060px) {
-  // 1060px;
-
   .skills-container {
     gap: 0px;
   }
@@ -129,12 +116,9 @@ section {
   .skills-div {
     width: 120px;
   }
-
 }
 
 @media screen and (max-width: 990px) {
-  // 990px;
-
   section {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
     padding: 80px;
@@ -149,12 +133,9 @@ section {
   .skills-div {
     width: 100px;
   }
-
 }
 
 @include styles.respond-to(tablet-small) {
-  // 768px;
-
   .skills-container {
     gap: 32px;
     margin-top: 12px;
@@ -162,8 +143,6 @@ section {
 }
 
 @media screen and (max-width: 700px) {
-
-  // 700px;
   .skills-div {
     width: 90px;
   }
@@ -179,8 +158,6 @@ section {
 }
 
 @media screen and (max-width: 627px) {
-
-  // 627px;
   .skills-container {
     margin-top: 8px;
   }
@@ -195,16 +172,12 @@ section {
 }
 
 @media screen and (max-width: 586px) {
-
-  // 586px;
   .skills-container {
     margin-top: 4px;
   }
 }
 
 @include styles.respond-to(smartphone-medium) {
-  // 576px
-
   section {
     padding: 52px;
     padding-top: 58px;
@@ -235,8 +208,6 @@ section {
 }
 
 @media screen and (max-width: 500px) {
-
-  // 500px;
   .skills-container {
     gap: 24px;
     margin-top: 0px;
@@ -253,16 +224,12 @@ section {
 }
 
 @media screen and (max-width: 450px) {
-
-  // 450px;
   h3 {
     white-space: wrap;
   }
 }
 
 @include styles.respond-to(smartphone-small) {
-  // 385px
-
   section {
     gap: 8px;
     padding-top: 58px;
@@ -286,10 +253,7 @@ section {
   }
 }
 
-
 @include styles.respond-to(smartphone-small-height) {
-  // height  531px
-
   .skills-container {
     width: 100%;
     box-sizing: border-box;
@@ -345,8 +309,6 @@ section {
 }
 
 @media screen and (max-width: 410px) {
-  // 410px;
-
   .skills-div {
     width: 70px;
     margin-top: 20px;
@@ -358,8 +320,6 @@ section {
 }
 
 @media screen and (max-width: 360px) {
-  // 360px;
-
   .skills-container {
     gap: 48px;
   }

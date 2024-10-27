@@ -11,6 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss'
 })
+
 export class ContactformComponent {
   http = inject(HttpClient);
 
@@ -22,7 +23,6 @@ export class ContactformComponent {
   }
 
   mailTest = false;
-
   sendSuccess = false;
 
   post = {
@@ -36,28 +36,29 @@ export class ContactformComponent {
     },
   };
 
+  /**
+   * Handles form submission, performs validation, and sends an HTTP POST request.
+   * Resets the form on success and toggles a success message display.
+   * 
+   * @param ngForm - Angular form object containing form state and control
+   */
   onSubmit(ngForm: NgForm) {
-    // console.log('Form submitted:', ngForm);
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            // console.log('Success: ', response);
             ngForm.resetForm();
           },
           error: (error) => {
-            // console.error('Send error: ', error);
           },
           complete: () =>  {
             this.sendSuccess = true;
-            // console.info('Send post complete ' , this.sendSuccess);
             setTimeout(() => {
               this.sendSuccess = false;
             }, 3000);
           }
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      // console.log('Test mode: form submission success', this.contactData);
       ngForm.resetForm();
     }
   }

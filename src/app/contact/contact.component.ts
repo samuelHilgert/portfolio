@@ -9,6 +9,5 @@ import { ContactformComponent } from './contactform/contactform.component';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
 
-}
+export class ContactComponent {}

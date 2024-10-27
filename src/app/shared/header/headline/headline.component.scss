@@ -8,7 +8,6 @@ section {
     h2 {
         text-align: center;
     }
-    
 }
 
 .headline-btns-div {
@@ -21,13 +20,13 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(desktop-normal) {     // 1366px;
+@include styles.respond-to(desktop-normal) { 
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 38px);
     }
 }
 
-@media screen and (max-width: 1119px) {   // 1119px;
+@media screen and (max-width: 1119px) { 
     h1 {
         white-space: nowrap;
         font-size: styles.$h1-mobile-large-size;
@@ -36,7 +35,7 @@ section {
     }
 }
 
-@include styles.respond-to(tablet-large) {     // 1024px;
+@include styles.respond-to(tablet-large) {  
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 32px);
         margin-bottom: 120px;
@@ -47,15 +46,13 @@ section {
     }
 }
 
-@media screen and (max-width: 960px) {   // 960px;
+@media screen and (max-width: 960px) { 
     h1 {
         font-size: 82px;
     }
 }
 
-@include styles.respond-to(tablet-small) {    // 768px  
-    // 768px;
-
+@include styles.respond-to(tablet-small) { 
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
         margin-bottom: 180px;
@@ -74,13 +71,13 @@ section {
     }
 }
 
-@media screen and (max-width: 960px) {   // 600px;
+@media screen and (max-width: 960px) { 
     h1 {
         font-size: 52px;
     }
 }
 
-@include styles.respond-to(smartphone-medium) {     // 576px
+@include styles.respond-to(smartphone-medium) {   
     section {
         margin-bottom: 100px;
     }
@@ -90,7 +87,7 @@ section {
     }
 }
 
-@include styles.respond-to(smartphone-small) {     // 385px 
+@include styles.respond-to(smartphone-small) {  
     section {
         margin-bottom: 120px;
     }
@@ -111,7 +108,7 @@ section {
     }
 }
 
-@include styles.respond-to(smartphone-small-height) {     // 385px 
+@include styles.respond-to(smartphone-small-height) {  
     section {
         margin-bottom: 80px;
     }

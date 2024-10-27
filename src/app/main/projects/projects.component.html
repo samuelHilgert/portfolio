@@ -11,7 +11,7 @@
         (click)="openProjectPopup(i)"
         (mouseenter)="toggleArrow(i, true)"
         (mouseleave)="toggleArrow(i, false)"
-      >
+        >
         <div class="content-row-title">
           <h4>{{ proj.title }}</h4>
           <svg
@@ -45,8 +45,7 @@
             display: arrowState[i] ? 'flex' : 'none',
             top: i === 1 ? '75px' : i === 2 ? '160px' : '0'
           }"
-          class="diagonal-lines"
-        >
+          class="diagonal-lines">
           <img [src]="'./' + proj.imgStart" alt="{{ proj.title }}" />
         </div>
       </div>
@@ -54,7 +53,6 @@
   </div>
 </section>
 
-<!-- Nur anzeigen, wenn openPopup true ist und selectedProject nicht null -->
 <app-popup-project
   *ngIf="openPopup && selectedProject"
   [ngStyle]="{ display: openPopup ? 'flex' : 'none' }"

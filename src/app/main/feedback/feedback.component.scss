@@ -142,40 +142,30 @@ hr {
 // ==================
 
 @media screen and (max-width: 1800px) {
-  // 1800px;
-
   .quotes-icon {
     left: -19.5%;
   }
 }
 
 @media screen and (max-width: 1655px) {
-  // 1655px;
-
   .quotes-icon {
     left: -19%;
   }
 }
 
 @media screen and (max-width: 1482px) {
-  // 1482px;
-
   .quotes-icon {
     left: -18%;
   }
 }
 
 @media screen and (max-width: 1284px) {
-  // 1284px
-
   .quotes-icon {
     left: -17%;
   }
 }
 
 @media screen and (max-width: 1210px) {
-  // 1210px;
-
   .feedback-container {
     height: 250px;
 
@@ -187,8 +177,6 @@ hr {
 }
 
 @media screen and (max-width: 1170px) {
-  // 1170px;
-
   .feedback-container {
     height: 260px;
 
@@ -205,8 +193,6 @@ hr {
 }
 
 @include styles.respond-to(tablet-large) {
-  // 1024px;
-
   section {
     padding: 80px;
     padding-top: 72px;
@@ -223,8 +209,6 @@ hr {
 }
 
 @media screen and (max-width: 910px) {
-  // 910px;
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 170%;
@@ -236,8 +220,6 @@ hr {
 }
 
 @media screen and (max-width: 852px) {
-  // 852px;
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 180%;
@@ -255,12 +237,9 @@ hr {
   .quotes-icon {
     left: -23%;
   }
-
 }
 
 @include styles.respond-to(tablet-small) {
-  // 768px;
-
   section {
     padding: 80px;
     padding-top: 72px;
@@ -286,8 +265,6 @@ hr {
 }
 
 @media screen and (max-width: 720px) {
-  // 720px
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 220%;
@@ -308,8 +285,6 @@ hr {
 }
 
 @media screen and (max-width: 632px) {
-  // 632px
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 260%;
@@ -327,12 +302,9 @@ hr {
   .quotes-icon {
     left: -33%;
   }
-
 }
 
 @include styles.respond-to(smartphone-medium) {
-  // 576px
-
   section {
     padding: 80px;
     padding-top: 72px;
@@ -372,12 +344,9 @@ hr {
   h5 {
     font-size: styles.$h5-mobile-size;
   }
-
 }
 
 @media screen and (max-width: 520px) {
-  // 520px
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 280%;
@@ -390,12 +359,9 @@ hr {
       height: 350px;
     }
   }
-
 }
 
 @media screen and (max-width: 460px) {
-  // 460px
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 360%;
@@ -407,16 +373,12 @@ hr {
 }
 
 @media screen and (max-width: 440px) {
-  // 440px
-
   .quotes-icon {
     left: -43%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  // 400px
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
     width: 360%;
@@ -438,8 +400,6 @@ hr {
 
 
 @include styles.respond-to(smartphone-small) {
-  // 385px
-
   section {
     padding: 80px;
     padding-top: 72px;
@@ -487,8 +447,6 @@ hr {
 }
 
 @media screen and (max-width: 340px) {
-  // 340px
-
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
     width: 420%;
@@ -511,6 +469,5 @@ hr {
   .filter-right {
     width: 20%;
   }
-
 }
 

@@ -9,6 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.scss'],
 })
+
 export class FeedbackComponent {
   currentFeedbackIndex: number = 0;
   animationDirection: string = 'next';
@@ -34,12 +35,18 @@ export class FeedbackComponent {
 
   constructor() {}
 
+  /**
+   * Updates the feedback display by toggling to the next or previous feedback.
+   * Resets the animation class, sets the animation direction, and updates
+   * the current feedback index based on the direction.
+   *
+   * @param direction The direction to toggle ('next' or 'prev')
+   */
   toggleFeedback(direction: string): void {
-    // Setze die Animationsklasse neu für das Sliden
-    this.animationClass = '';  // Entferne die Klasse
+    this.animationClass = '';
     setTimeout(() => {
       this.animationDirection = direction;
-      this.animationClass = direction === 'next' ? 'move-left' : 'move-right'; // Füge die neue Klasse hinzu
+      this.animationClass = direction === 'next' ? 'move-left' : 'move-right';
 
       if (direction === 'prev') {
         this.currentFeedbackIndex =
@@ -52,9 +59,14 @@ export class FeedbackComponent {
             ? this.currentFeedbackIndex + 1
             : 0;
       }
-    }, 10); // Ein kurzer Timeout, um die Klasse zu entfernen und wieder hinzuzufügen
+    }, 10);
   }
 
+  /**
+   * Returns the CSS class for the current animation.
+   * 
+   * @returns The current animation CSS class
+   */
   getAnimationClass() {
     return this.animationClass;
   }

@@ -18,9 +18,16 @@ import { TranslationService } from './shared/services/translationService';
 })
 
 export class AppComponent implements OnInit {
+
   constructor(private translationService: TranslationService) {}
+
   title = 'portfolio';
   
+  /**
+   * Lifecycle hook that is called after the component has been initialized.
+   * This method calls `initializeLanguage` from the TranslationService to set up
+   * the initial language configuration for the application.
+   */
   ngOnInit(): void {
     this.translationService.initializeLanguage();
   }

@@ -1,12 +1,9 @@
 <form
   class="content-rows-div"
   (ngSubmit)="onSubmit(contactForm)"
-  #contactForm="ngForm"
->
+  #contactForm="ngForm">
   <div class="content-row">
-    <label class="form-text" for="name">{{
-      "contact.form_name" | translate
-    }}</label>
+    <label class="form-text" for="name">{{ "contact.form_name" | translate }}</label>
     <input
       class="form-input"
       [(ngModel)]="contactData.name"
@@ -18,16 +15,13 @@
       required
       #name="ngModel"
     />
-    <!-- Fehlermeldung für Name -->
     <span class="missing-msg" *ngIf="contactForm.submitted && name.invalid">
       {{ "contact.form_name_required" | translate }}
     </span>
   </div>
 
   <div class="content-row">
-    <label class="form-text" for="email">{{
-      "contact.form_mail" | translate
-    }}</label>
+    <label class="form-text" for="email">{{ "contact.form_mail" | translate }}</label>
     <input
       class="form-input"
       [(ngModel)]="contactData.email"
@@ -39,22 +33,14 @@
       required
       #email="ngModel"
     />
-    <!-- Fehlermeldung für E-Mail -->
     <span *ngIf="contactForm.submitted && email.invalid">
-      <!-- Zeige die spezifische Fehlermeldung basierend auf der Validierung -->
-      <span class="missing-msg" *ngIf="email.errors?.['required']">{{
-        "contact.form_email_required" | translate
-      }}</span>
-      <span class="missing-msg" *ngIf="email.errors?.['pattern']">{{
-        "contact.form_email_invalid" | translate
-      }}</span>
+      <span class="missing-msg" *ngIf="email.errors?.['required']">{{ "contact.form_email_required" | translate }}</span>
+      <span class="missing-msg" *ngIf="email.errors?.['pattern']">{{ "contact.form_email_invalid" | translate }}</span>
     </span>
   </div>
 
   <div class="content-row">
-    <label class="form-text" for="message">{{
-      "contact.form_message" | translate
-    }}</label>
+    <label class="form-text" for="message">{{ "contact.form_message" | translate }}</label>
     <textarea
       class="form-input"
       [(ngModel)]="contactData.message"
@@ -66,7 +52,6 @@
       maxlength="500"
       #message="ngModel"
     ></textarea>
-    <!-- Fehlermeldung für Nachricht -->
     <span class="missing-msg" *ngIf="contactForm.submitted && message.invalid">
       {{ "contact.form_message_required" | translate }}
     </span>
@@ -92,11 +77,9 @@
     </div>
 
     <div class="term-missing-msg">
-      <!-- Fehlermeldung für Terms Checkbox -->
       <span
         class="missing-msg"
-        *ngIf="contactForm.submitted && acceptTerms.invalid"
-      >
+        *ngIf="contactForm.submitted && acceptTerms.invalid">
         {{ "contact.missingTerm" | translate }}
       </span>
     </div>
@@ -104,17 +87,16 @@
 
   <div class="submit-row">
     <input
-      [ngClass]="{
-        validSubmitBtn: contactForm.valid,
-        invalidSubmitBtn: !contactForm.valid
-      }"
+      [ngClass]="{ validSubmitBtn: contactForm.valid, invalidSubmitBtn: !contactForm.valid }"
       class="submit-btn form-label"
       type="submit"
       value="Say Hello :)"
-    />
+      />
   </div>
 </form>
 
-<div class="success-email-message" [ngStyle]="{ display: sendSuccess ? 'flex' : 'none' }">
+<div
+  class="success-email-message"
+  [ngStyle]="{ display: sendSuccess ? 'flex' : 'none' }">
   <p>{{ "contact.success-mail-msg" | translate }}</p>
 </div>

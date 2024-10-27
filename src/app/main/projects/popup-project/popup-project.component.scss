@@ -15,7 +15,6 @@ section {
     z-index: 99909;
 }
 
-
 .popup-container-all {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
     border: 1px solid styles.$feedback-container-border;
@@ -102,7 +101,6 @@ section {
         border-radius: 30px;
         object-fit: cover;
     }
-
 }
 
 .popup-right-next-div {
@@ -156,14 +154,11 @@ section {
     box-sizing: border-box;
 }
 
-
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
 @include styles.respond-to(tablet-large) {
-    // 1024px;
-
     .popup-container-all {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
         padding: 20px;
@@ -239,8 +234,6 @@ section {
 }
 
 @include styles.respond-to(tablet-small) {
-    // 768px;
-
     .popup-content-box-right {
         padding-top: -15px;
 
@@ -267,8 +260,6 @@ section {
 }
 
 @include styles.respond-to(smartphone-medium) {
-    // 576px
-
     .popup-project-id {
         font-size: styles.$popup-project-id-mobile-size;
         line-height: styles.$popup-project-id-mobile-line-height;
@@ -336,12 +327,10 @@ section {
         gap: 24px;
     }
 
-
     .popup-project-skills-box {
         height: auto;
         flex-wrap: wrap;
     }
-
 }
 
 @include styles.respond-to(smartphone-small) {

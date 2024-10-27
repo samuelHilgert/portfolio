@@ -80,7 +80,6 @@ section {
 // ==================
 
 @include styles.respond-to(tablet-large) {
-    // 1024px;
     h1 {
         font-size: 42px;
         white-space: normal;
@@ -94,16 +93,12 @@ section {
 }
 
 @include styles.respond-to(tablet-small) {
-    // 768px;
-
     h1 {
         line-height: 72px;
     }
 }
 
 @include styles.respond-to(smartphone-medium) {
-    // 576px
-
     .privacy-policy-title {
         h1 {
             font-size: 40px;
@@ -155,7 +150,6 @@ section {
 }
 
 @include styles.respond-to(smartphone-small) {
-
     section {
         padding: 10px;
         font-size: styles.$standard-text-mobile-small-size;

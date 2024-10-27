@@ -20,41 +20,28 @@ section {
     }
 }
 
-
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
 @include styles.respond-to(tablet-large) {
-    // 1024px;
-
     section {
         padding: 80px;
-        padding-top:112px;
+        padding-top: 112px;
         gap: 48px;
     }
 }
 
 @media screen and (max-width: 990px) {
-    // 990px;
-    
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
         padding: 80px;
-        padding-top:108px;
+        padding-top: 108px;
     }
 
 }
 
-@include styles.respond-to(tablet-small) {
-    // 768px;
-
-
-}
-
 @include styles.respond-to(smartphone-medium) {
-    // 576px
-
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 80px);
         padding: 96px 52px;
@@ -65,7 +52,7 @@ section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
         width: 100%;
         height: auto;
-    
+
         span {
             >span {
                 color: styles.$text-link-color;
@@ -85,8 +72,6 @@ section {
 }
 
 @include styles.respond-to(smartphone-small) {
-    // 385px
-
     section {
         padding: 78px 24px;
         padding-top: 52px;

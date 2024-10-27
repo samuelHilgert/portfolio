@@ -90,7 +90,6 @@ section {
         height: 200px;
         border-radius: 20px;
     }
-
 }
 
 .diagonal-lines {
@@ -109,10 +108,7 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-
 @media screen and (max-width: 1187px) {
-    // 1187px;
-
     .content-row {
         gap:48px;
     }
@@ -124,12 +120,9 @@ section {
         flex-wrap: wrap;
         box-sizing: border-box;
     }
-
 }
 
 @include styles.respond-to(tablet-large) {
-    // 1024px;
-
     section {
         padding: 80px;
         padding-top: 72px;
@@ -138,8 +131,6 @@ section {
 }
 
 @media screen and (max-width: 952px) {
-    // 952px;
-
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
         padding: 80px;
@@ -152,8 +143,6 @@ section {
 }
 
 @include styles.respond-to(tablet-small) {
-    // 768px;
-
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
         padding: 80px;
@@ -166,8 +155,6 @@ section {
 }
 
 @media screen and (max-width: 700px) {
-    // 700px;
-    
     h3 {
         font-size: styles.$h3-mobile-size;
         letter-spacing: styles.$h3-mobile-letter-spacing;
@@ -205,15 +192,7 @@ section {
     }
 }
 
-@include styles.respond-to(smartphone-medium) {
-    // 576px
-
- 
-}
-
 @include styles.respond-to(smartphone-small) {
-    // 385px
-
     section {
         padding: 24px;
         padding-top: 92px;
@@ -229,15 +208,12 @@ section {
 }
 
 @include styles.respond-to(smartphone-small-height) {
-    // height  531px
-
     h3 {
         font-size: styles.$h3-mobile-size-small-height;
     }
 }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
-
     section {
         padding: 24px;
         padding-top: 92px;
@@ -245,7 +221,6 @@ section {
         line-height: styles.$standard-text-mobile-line-small-height;
     }
 
-    
     .used-skills-div {
         width: 100%;
         height: auto;

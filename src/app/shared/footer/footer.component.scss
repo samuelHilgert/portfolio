@@ -55,8 +55,6 @@ section {
 // ==================
 
 @include styles.respond-to(tablet-large) {
-    // 1024px;
-
     section {
         padding: 80px;
         gap: 48px;
@@ -65,17 +63,13 @@ section {
 }
 
 @include styles.respond-to(tablet-small) {
-    // 768px;
-
     section {
         gap: 32px;
         padding-top: 58px;
     }
-
 }
 
 @media screen and (max-width: 720px) {
-    // 720px;
     .footer-center {
         display: none;
     }
@@ -90,8 +84,6 @@ section {
 
 
 @include styles.respond-to(smartphone-medium) {
-    // 576px
-
     section {
         padding: 52px;
         padding-top: 58px;
@@ -122,8 +114,6 @@ section {
 }
 
 @include styles.respond-to(smartphone-small) {
-    // 385px
-
     section {
         padding: 78px 24px;
         padding-top: 52px;
@@ -150,7 +140,6 @@ section {
     .footer-bottom {
         padding-top: 32px;
     }
-
 }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
@@ -180,5 +169,4 @@ section {
     .footer-bottom {
         padding-top: 32px;
     }
-
 }
