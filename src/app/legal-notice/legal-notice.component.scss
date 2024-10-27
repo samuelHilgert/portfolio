@@ -48,7 +48,7 @@ section {
     width: 100%;
     box-sizing: border-box;
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-end, $g: 0px);
-    
+
     >h1 {
         font-size: 84px;
     }
@@ -136,6 +136,16 @@ a {
 
     .popup-container {
         padding: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 788px) {
+
+    // 788px
+    h1 {
+        font-size: 96px;
     }
 
 }
