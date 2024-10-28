@@ -3,10 +3,7 @@
 section {
   @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
   height: 100svh;
-  ;
   margin-bottom: -1px;
-  width: 100%;
-  box-sizing: border-box;
   background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
 }
 

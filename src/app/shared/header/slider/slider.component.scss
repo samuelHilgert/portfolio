@@ -24,7 +24,7 @@ section {
 
 .banner {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
-    animation: slide-left 15s linear infinite;
+    animation: slide-left 20s linear infinite;
     white-space: nowrap;
     width: 180%;
     box-sizing: border-box;

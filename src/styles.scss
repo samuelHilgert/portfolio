@@ -4,7 +4,7 @@
 @forward './app/shared/styles/logo.scss';
 @forward './app/shared/styles/standard.scss';
 
-*{
+* {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #3DCFB6 #dddddd00;
@@ -13,7 +13,7 @@
 ::-webkit-scrollbar {
   width: 4px;
   height: 10px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -38,30 +38,51 @@ $breakpoint-smartphone-small-height: 531px;
 
 // Mixins for media queries
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == desktop-large {
-    @media (min-width: $breakpoint-desktop-large) { @content; }
+  @if $breakpoint ==desktop-large {
+    @media (min-width: $breakpoint-desktop-large) {
+      @content;
+    }
   }
-  @else if $breakpoint == desktop-normal {
-    @media (max-width: $breakpoint-desktop-normal) { @content; }
+
+  @else if $breakpoint ==desktop-normal {
+    @media (max-width: $breakpoint-desktop-normal) {
+      @content;
+    }
   }
-  @else if $breakpoint == tablet-large {
-    @media (max-width: $breakpoint-tablet-large) { @content; }
+
+  @else if $breakpoint ==tablet-large {
+    @media (max-width: $breakpoint-tablet-large) {
+      @content;
+    }
   }
-  @else if $breakpoint == tablet-small {
-    @media (max-width: $breakpoint-tablet-small) { @content; }
+
+  @else if $breakpoint ==tablet-small {
+    @media (max-width: $breakpoint-tablet-small) {
+      @content;
+    }
   }
-  @else if $breakpoint == smartphone-medium {
-    @media (max-width: $breakpoint-smartphone-medium) { @content; }
+
+  @else if $breakpoint ==smartphone-medium {
+    @media (max-width: $breakpoint-smartphone-medium) {
+      @content;
+    }
   }
-  @else if $breakpoint == smartphone-small {
-    @media (max-width: $breakpoint-smartphone-small) { @content; }
+
+  @else if $breakpoint ==smartphone-small {
+    @media (max-width: $breakpoint-smartphone-small) {
+      @content;
+    }
   }
-  @else if $breakpoint == smartphone-medium-height {
-    @media (max-height: $breakpoint-smartphone-medium-height) { @content; }
+
+  @else if $breakpoint ==smartphone-medium-height {
+    @media (max-height: $breakpoint-smartphone-medium-height) {
+      @content;
+    }
   }
-  @else if $breakpoint == smartphone-small-height {
-    @media (max-height: $breakpoint-smartphone-small-height) { @content; }
+
+  @else if $breakpoint ==smartphone-small-height {
+    @media (max-height: $breakpoint-smartphone-small-height) {
+      @content;
+    }
   }
 }
-
-
