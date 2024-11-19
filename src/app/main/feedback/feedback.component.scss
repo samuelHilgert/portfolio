@@ -3,8 +3,6 @@
 
 section {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 0px);
-  padding: 96px 92px;
-  padding-top: 72px;
   overflow: hidden;
   position: relative;
 }
@@ -141,29 +139,29 @@ hr {
 // RESPONSIVE STYLES
 // ==================
 
-@media screen and (max-width: 1800px) {
-  .quotes-icon {
-    left: -19.5%;
-  }
-}
+// @media screen and (max-width: 1800px) {
+//   .quotes-icon {
+//     left: -19.5%;
+//   }
+// }
 
-@media screen and (max-width: 1655px) {
-  .quotes-icon {
-    left: -19%;
-  }
-}
+// @media screen and (max-width: 1655px) {
+//   .quotes-icon {
+//     left: -19%;
+//   }
+// }
 
-@media screen and (max-width: 1482px) {
-  .quotes-icon {
-    left: -18%;
-  }
-}
+// @media screen and (max-width: 1482px) {
+//   .quotes-icon {
+//     left: -18%;
+//   }
+// }
 
-@media screen and (max-width: 1284px) {
-  .quotes-icon {
-    left: -17%;
-  }
-}
+// @media screen and (max-width: 1284px) {
+//   .quotes-icon {
+//     left: -17%;
+//   }
+// }
 
 @media screen and (max-width: 1210px) {
   .feedback-container {
@@ -186,26 +184,22 @@ hr {
     }
   }
 
-  .quotes-icon {
-    left: -16%;
-  }
+  // .quotes-icon {
+  //   left: -16%;
+  // }
 
 }
 
 @include styles.respond-to(tablet-large) {
-  section {
-    padding: 80px;
-    padding-top: 72px;
-  }
 
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 48px);
     width: 160%;
   }
 
-  .quotes-icon {
-    left: -20%;
-  }
+  // .quotes-icon {
+  //   left: -20%;
+  // }
 }
 
 @media screen and (max-width: 910px) {
@@ -214,9 +208,9 @@ hr {
     width: 170%;
   }
 
-  .quotes-icon {
-    left: -22%;
-  }
+  // .quotes-icon {
+  //   left: -22%;
+  // }
 }
 
 @media screen and (max-width: 852px) {
@@ -234,16 +228,12 @@ hr {
     }
   }
 
-  .quotes-icon {
-    left: -23%;
-  }
+  // .quotes-icon {
+  //   left: -23%;
+  // }
 }
 
 @include styles.respond-to(tablet-small) {
-  section {
-    padding: 80px;
-    padding-top: 72px;
-  }
 
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
@@ -259,9 +249,9 @@ hr {
     }
   }
 
-  .quotes-icon {
-    left: -26%;
-  }
+  // .quotes-icon {
+  //   left: -26%;
+  // }
 }
 
 @media screen and (max-width: 720px) {
@@ -279,9 +269,9 @@ hr {
     }
   }
 
-  .quotes-icon {
-    left: -28%;
-  }
+  // .quotes-icon {
+  //   left: -28%;
+  // }
 }
 
 @media screen and (max-width: 632px) {
@@ -299,16 +289,12 @@ hr {
     }
   }
 
-  .quotes-icon {
-    left: -33%;
-  }
+  // .quotes-icon {
+  //   left: -33%;
+  // }
 }
 
 @include styles.respond-to(smartphone-medium) {
-  section {
-    padding: 80px;
-    padding-top: 72px;
-  }
 
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
@@ -346,7 +332,7 @@ hr {
 @media screen and (max-width: 520px) {
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
-    width: 280%;
+    width: 260%;
   }
 
   .feedback-container {
@@ -361,24 +347,23 @@ hr {
 @media screen and (max-width: 460px) {
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
-    width: 360%;
   }
   
-  .quotes-icon {
-    left: -44%;
-  }
+  // .quotes-icon {
+  //   left: -44%;
+  // }
 }
 
-@media screen and (max-width: 440px) {
-  .quotes-icon {
-    left: -43%;
-  }
-}
+// @media screen and (max-width: 440px) {
+//   .quotes-icon {
+//     left: -43%;
+//   }
+// }
 
 @media screen and (max-width: 400px) {
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 28px);
-    width: 360%;
+    // width: 360%;
   }
 
   .feedback-container {
@@ -390,21 +375,17 @@ hr {
     }
   }
 
-  .quotes-icon {
-    left: -42%;
-  }
+  // .quotes-icon {
+  //   left: -42%;
+  // }
 }
 
 
 @include styles.respond-to(smartphone-small) {
-  section {
-    padding: 80px;
-    padding-top: 72px;
-  }
 
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
-    width: 390%;
+    // width: 390%;
   }
 
   .feedback-container {
@@ -437,15 +418,15 @@ hr {
     width: calc(100vw - 100px);
   }
 
-  .quotes-icon {
-    left: -46%;
-  }
+  // .quotes-icon {
+  //   left: -46%;
+  // }
 }
 
 @media screen and (max-width: 340px) {
   .feedback-slider {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 22px);
-    width: 420%;
+    // width: 420%;
   }
 
   .feedback-container {

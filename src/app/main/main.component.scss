@@ -2,4 +2,8 @@
 
 section {
     background-color: styles.$general-bg-color;
+    display:flex;
+    flex-direction: column;
+    gap: clamp(6rem, 10vw, 8rem);
+    padding:20% 5%;
 }
