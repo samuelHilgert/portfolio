@@ -341,9 +341,6 @@ hr {
     }
   }
 
-  h5 {
-    font-size: styles.$h5-mobile-size;
-  }
 }
 
 @media screen and (max-width: 520px) {
@@ -437,7 +434,6 @@ hr {
   }
 
   h5 {
-    font-size: styles.$h5-mobile-size;
     width: calc(100vw - 100px);
   }
 

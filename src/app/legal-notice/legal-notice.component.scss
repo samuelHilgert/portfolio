@@ -48,10 +48,6 @@ section {
     box-sizing: border-box;
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-end, $g: 0px);
 
-    >h1 {
-        font-size: 84px;
-    }
-
     >svg {
         fill: styles.$project-close-cross;
 
@@ -80,11 +76,9 @@ a {
 @include styles.respond-to(smartphone-medium) {
     .legal-notice-title {
         h1 {
-            font-size: 42px;
             white-space: normal;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            line-height: 42px;
             width: 100%;
         }
     }
@@ -112,11 +106,9 @@ a {
         }
 
         h3 {
-            font-size: 28px;
             white-space: normal;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            line-height: 28px;
             width: 100%;
         }
     }
@@ -129,11 +121,5 @@ a {
 
     .popup-container {
         padding: 20px;
-    }
-}
-
-@media screen and (max-width: 788px) {
-    h1 {
-        font-size: 96px;
     }
 }

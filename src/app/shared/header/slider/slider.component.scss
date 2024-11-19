@@ -30,6 +30,8 @@ section {
     box-sizing: border-box;
     padding: 0 12px;
     position: relative;
+
+    font-size: styles.$banner-text-size;
 }
 
 .spacer-div {
@@ -59,20 +61,8 @@ section {
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(smartphone-medium) {
-    .banner {
-        font-size: styles.$banner-text-mobile-size;
-        line-height: styles.$banner-text-mobile-line-height;
-    }
-}
-
 @media screen and (max-width: 390px) and (max-height: 844px) {
     .banner-container {
         height: 30px;
-    }
-
-    .banner {
-        font-size: styles.$banner-text-mobile-size;
-        line-height: styles.$banner-text-mobile-line-height;
     }
 }

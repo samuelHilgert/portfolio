@@ -2,16 +2,4 @@
 
 section {
     background-color: styles.$general-bg-color;
-    font-size: styles.$standard-text-large-size;
-    line-height: styles.$standard-text-large-line-height;
-}
-
-// ==================
-// RESPONSIVE STYLES
-// ==================
-
-@include styles.respond-to(smartphone-medium) {
-    section {
-        font-size: styles.$standard-text-mobile-size;
-    }
 }

@@ -43,6 +43,10 @@ label {
 }
 
 .form-input {
+    font-size: styles.$form-input-mobile-size;
+}
+
+.form-input {
     background-color: transparent;
     border: none;
     width: 100%;
@@ -157,7 +161,6 @@ label {
 .submit-btn {
     @include styles.btn();
     color: styles.$placeholder-text;
-    font-size: 16px;
 
     // Stil für den Button, wenn das Formular gültig ist
     &.validSubmitBtn {
@@ -178,7 +181,7 @@ label {
 
 .missing-msg {
     color: rgb(199, 80, 51);
-    font-size: 14px;
+    font-size: styles.$form-input-mobile-size;
 }
 
 .success-email-message {
@@ -191,16 +194,6 @@ label {
 // ==================
 
 @include styles.respond-to(smartphone-medium) {
-    .form-text {
-        font-size: styles.$form-label-text-mobile-size;
-        line-height: styles.$form-label-text-mobile-line-height;
-    }
-
-    .form-input {
-        font-size: styles.$form-input-mobile-size;
-        line-height: styles.$form-input-mobile-line-height;
-    }
-
     .terms-row {
         
         >input {

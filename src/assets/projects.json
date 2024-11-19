@@ -20,16 +20,6 @@
             "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.jpeg",
             "gitHub": "https://github.com/samuelHilgert/el-pollo-loco.git",
             "liveTest":"https://el-pollo-loco.samuelhilgert.com"
-        },
-        {
-            "id": 3,
-            "title": "DA Bubble",
-            "description": "",
-            "skills": "Angular, Firebase, TypeScript",
-            "imgStart": "assets/img/projects/start/da-bubble_start.png",
-            "imgGameplay": "assets/img/projects/example/da-bubble_example.png",
-            "gitHub": "",
-            "liveTest":""
         }
     ]
 }

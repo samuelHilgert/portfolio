@@ -6,7 +6,7 @@ section {
 
 nav {
     @include styles.dFlex($d: flex, $fd: row, $jc: space-evenly, $ai: center, $g: 8%);
-    width:100%;
+    width: 100%;
     box-sizing: border-box;
 
 }
@@ -14,24 +14,13 @@ nav {
 a {
     @include styles.navLinks();
     white-space: nowrap;
-    font-size: 24px;
 }
 
 // ==================
 // RESPONSIVE STYLES
 // ==================
 
-@include styles.respond-to(tablet-large) {  
-    a {
-        font-size: 22px;
-    }
-}
-
 @media screen and (max-width: 980px) {
-    a {
-        font-size: 20px;
-    }
-
     nav {
         @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 16px);
     }
@@ -39,16 +28,12 @@ a {
 
 @include styles.respond-to(smartphone-medium) {
     nav {
-        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 12px);
+        gap: 12px;
     }
 }
 
-@include styles.respond-to(smartphone-small) { 
-    a {
-        font-size: 14px;
-    }
-
+@include styles.respond-to(smartphone-small) {
     nav {
-        @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 8px);
+        gap: 8px;
     }
 }

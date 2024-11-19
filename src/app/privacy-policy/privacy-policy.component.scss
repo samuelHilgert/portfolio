@@ -63,10 +63,6 @@ section {
     @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 0px);
     width: 100%;
     box-sizing: border-box;
-
-    >h1 {
-        font-size: 84px;
-    }
 }
 
 .paragraph {
@@ -81,30 +77,16 @@ section {
 
 @include styles.respond-to(tablet-large) {
     h1 {
-        font-size: 42px;
         white-space: normal;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        line-height: 62px;
         width: 100%;
         box-sizing: border-box;
         padding-bottom:12px;
     }
 }
 
-@include styles.respond-to(tablet-small) {
-    h1 {
-        line-height: 72px;
-    }
-}
-
 @include styles.respond-to(smartphone-medium) {
-    .privacy-policy-title {
-        h1 {
-            font-size: 40px;
-            line-height: 42px;
-        }
-    }
 
     ul {
         padding-left: 25px;
@@ -139,11 +121,9 @@ section {
         }
 
         h3 {
-            font-size: 28px;
             white-space: normal;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            line-height: 28px;
             width: 100%;
         }
     }
@@ -152,8 +132,6 @@ section {
 @include styles.respond-to(smartphone-small) {
     section {
         padding: 10px;
-        font-size: styles.$standard-text-mobile-small-size;
-        line-height: styles.$standard-text-mobile-line-small-height;
     }
 
     .popup-container {

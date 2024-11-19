@@ -59,16 +59,6 @@ section {
             }
         }
     }
-
-    h3 {
-        font-size: styles.$h3-mobile-size;
-        letter-spacing: styles.$h3-mobile-letter-spacing;
-    }
-
-    h4 {
-        font-size: styles.$h4-mobile-size;
-        line-height: styles.$h4-mobile-line-height;
-    }
 }
 
 @include styles.respond-to(smartphone-small) {
@@ -82,7 +72,5 @@ section {
     section {
         padding: 78px 24px;
         padding-top: 52px;
-        font-size: styles.$standard-text-mobile-small-size;
-        line-height: styles.$standard-text-mobile-line-small-height;
     }
 }

@@ -10,97 +10,22 @@
     src: url('./../../../assets/fonts/Fira_Code/FiraCode-VariableFont_wght.ttf');
 }
 
-// ==================================================
-//  FONT STYLES VARIABLES (FOR SWITCH DISPLAY SIZES)
-// ==================================================
-
-// Style for standard text (used for example in main.component.scss)
-$standard-text-large-size: 18px;
-$standard-text-large-line-height: 21.6px;
-$standard-text-mobile-size: 16px;
-$standard-text-mobile-line-height: 19.2px;
-$standard-text-mobile-small-size: 14px;
-$standard-text-mobile-line-small-height: 17.2px;
-
-// Style for h1 headlines
-$h1-large-size: 128px;
-$h1-large-line-height: 128px;
-$h1-large-letter-spacing: -0.02em;
-$h1-mobile-large-size: 102px;
-$h1-mobile-large-line-height: 96px;
-$h1-mobile-large-letter-spacing: 0.02em;
-$h1-mobile-size: 62px;
-$h1-mobile-line-height: 62px;
-$h1-mobile-letter-spacing: -2%;
-$h1-mobile-small-size: 32px;
-$h1-mobile-small-line-height: 42px;
-$h1-mobile-small-letter-spacing: -4%;
-
-// Style for h2 headlines
-$h2-large-size: 40px;
-$h2-large-line-height: 40px;
-$h2-mobile-size: 24px;
-$h2-mobile-line-height: 24px;
-$h2-mobile-small-size: 18px;
-$h2-mobile-small-line-height: 20px;
-
-// Style for h3 headlines
-$h3-large-size: 64px;
-$h3-large-line-height: 64px;
-$h3-large-letter-spacing: -0.03em;
-$h3-mobile-size: 56px;
-$h3-mobile-line-height: 44.8px;
-$h3-mobile-letter-spacing: -3%;
-$h3-mobile-size-small-height: 48px;
-
-// Style for h4 headlines
-$h4-large-size: 24px;
-$h4-large-line-height: 28.06px;
-$h4-mobile-size: 18px;
-$h4-mobile-line-height: 21.04px;
-
-// Style for h5 headlines
-$h5-large-size: 32px;
-$h5-large-line-height: 31.49px;
-$h5-mobile-size: 28px;
-
-// Style for banner text
-$banner-text-large-size: 32px;
-$banner-text-large-line-height: 38.4px;
-$banner-text-mobile-size: 24px;
-$banner-text-mobile-line-height: 28.8px;
-
-// Style for form label-text
-$form-label-text-large-size: 24px;
-$form-label-text-arge-line-height: 28.8px;
-$form-label-text-mobile-size: 20px;
-$form-label-text-mobile-line-height: 24px;
-
-// Style for form input-text
-$form-input-large-size: 18px;
-$form-input-large-line-height: 21.6px;
-$form-input-mobile-size: 16px;
-$form-input-mobile-line-height: 19.2px;
-
-// Style for popup-project-id
-$popup-project-id-large-size: 128px;
-$popup-project-id-large-line-height: 100px;
-$popup-project-id-mobile-size: 72px;
-$popup-project-id-mobile-line-height: 72px;
-
-// Style for popup-project-name
-$popup-project-name-large-size: 64px;
-$popup-project-name-large-line-height: 51.2px;
-$popup-project-name-mobile-size: 56px;
-$popup-project-name-mobile-line-height: 44.8px;
-
 // =======================================
 // DEFAULT SETTINGS FOR ALL DISPLAY SIZES
 // =======================================
 
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+}
+
 body {
+    font-size: clamp(0.5rem, 5vw, 1.25rem);
+    line-height: clamp(1.5rem, 2vw, 2rem);
     font-family: Karla;
-    font-weight: 400px;
+    font-weight: 400;
     color: $main-text;
 }
 
@@ -115,52 +40,53 @@ p {
 
 h1 {
     font-weight: 700;
-    font-size: $h1-large-size;
-    line-height: $h1-large-line-height;
-    letter-spacing: $h1-large-letter-spacing;
     color: $header-headline;
+    font-size: 128px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
 }
 
 h2 {
     font-family: Fira Code;
     font-weight: 400;
-    font-size: $h2-large-size;
-    line-height: $h2-large-line-height;
     color: $header-subline;
+    font-size: 62px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
 }
 
 h3 {
     font-family: Fira Code;
     font-weight: 700;
-    font-size: $h3-large-size;
-    line-height: $h3-large-line-height;
-    letter-spacing: $h3-large-letter-spacing;
     color: $main-color;
     overflow-wrap: break-word;
     word-break: break-word;
+    font-size: 56px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
 }
 
 h4 {
     font-family: Karla;
     font-weight: 500;
-    font-size: $h4-large-size;
-    line-height: $h4-large-line-height;
     color: $main-color;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 h5 {
     font-family: Fira Code;
     font-weight: 700;
-    font-size: $h5-large-size;
-    line-height: $h5-large-line-height;
     color: $main-color;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .banner {
     font-family: Karla;
     font-weight: 400;
-    font-size: $banner-text-large-size;
-    line-height: $banner-text-large-line-height;
     color: $main-color;
 }
 
@@ -172,15 +98,11 @@ a {
 .form-text {
     font-family: Fira Code;
     font-weight: 500;
-    font-size: $form-input-large-size;
-    line-height: $form-input-large-line-height;
 }
 
 .form-input {
     font-family: Karla;
     font-weight: 400;
-    font-size: $form-input-large-size;
-    line-height: $form-input-large-line-height;
 }
 
 .terms-text {
@@ -208,8 +130,6 @@ a {
     font-family: Karla;
     font-weight: 700;
     letter-spacing: -0.02em;
-    font-size: $popup-project-id-large-size;
-    line-height: $popup-project-id-large-line-height;
     color: $project-index;
 }
 
@@ -217,10 +137,65 @@ a {
     font-family: Fira Code;
     font-weight: 700;
     letter-spacing: -0.03em;
-    font-size: $popup-project-name-large-size;
-    line-height: $popup-project-name-large-line-height;
     color: $project-title;
 }
+
+// ==================================================
+//  FONT STYLES VARIABLES (FOR SWITCH DISPLAY SIZES)
+// ==================================================
+
+// Dynamic style settings for h1 headlines
+h1 {
+    font-size: clamp(1.5rem, 8vw, 15rem);
+    line-height: clamp(1rem, 7vw, 15rem);
+    letter-spacing: clamp(-0.02em, 4vw, -0.05em);
+}
+
+// Dynamic style settings for h2 headlines
+h2 {
+    font-size: clamp(1.25rem, 3vw, 5rem);
+    line-height: clamp(1rem, 5vw, 15rem);
+    letter-spacing: clamp(-0.02em, 5vw, -0.05em);
+}
+
+// Dynamic style settings for h3 headlines
+h3 {
+    font-size: clamp(1.5rem, 4vw, 6rem);
+    line-height: clamp(1.5rem, 5vw, 8rem);
+    letter-spacing: clamp(-0.02em, 5vw, 0.02em);
+}
+
+// Dynamic style settings for h4 headlines
+h4 {
+    font-size: clamp(1.25rem, 2vw, 3rem);
+    line-height: clamp(1.25rem, 5vw, 8rem);
+    letter-spacing: clamp(-0.02em, -0.05em, 0.02em);
+}
+
+// Dynamic style settings for h5 headlines
+h5 {
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    line-height: clamp(1.75rem, 5vw, 8rem);
+    letter-spacing: clamp(-0.02em, -0.05em, 0.02em);
+}
+
+// Style for form input-text
+$form-input-mobile-size: clamp(0.25rem, 5vw, 1.5rem);
+
+// Style for banner-text
+$banner-text-size: clamp(1rem, 5vw, 2rem);
+
+// Style for popup-project-id
+$popup-project-id-large-size: 128px;
+$popup-project-id-large-line-height: 100px;
+$popup-project-id-mobile-size: 72px;
+$popup-project-id-mobile-line-height: 72px;
+
+// Style for popup-project-name
+$popup-project-name-large-size: 64px;
+$popup-project-name-large-line-height: 51.2px;
+$popup-project-name-mobile-size: 56px;
+$popup-project-name-mobile-line-height: 44.8px;
 
 // ====================
 //  FONT STYLES MIXIN
@@ -230,10 +205,9 @@ a {
     font-family: Fira Code;
     color: $nav-links;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 26.24px;
-    letter-spacing: -3%;
     text-decoration: none;
+    font-size: clamp(1rem, 1.75vw, 2.5rem);
+    line-height: clamp(0.25rem, 5vw, 1.5rem);
 
     &:visited {
         text-decoration: none;
@@ -243,5 +217,3 @@ a {
         text-decoration: none;
     }
 }
-
-

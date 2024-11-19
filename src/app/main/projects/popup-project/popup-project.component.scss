@@ -213,16 +213,6 @@ section {
         gap: 24px;
     }
 
-    .popup-project-id {
-        font-size: styles.$popup-project-id-mobile-size;
-        line-height: styles.$popup-project-id-mobile-line-height;
-    }
-
-    .popup-project-name {
-        font-size: styles.$popup-project-name-mobile-size;
-        line-height: styles.$popup-project-name-mobile-line-height;
-    }
-
     .popup-project-skills-box {
         height: auto;
         flex-wrap: wrap;
@@ -260,15 +250,6 @@ section {
 }
 
 @include styles.respond-to(smartphone-medium) {
-    .popup-project-id {
-        font-size: styles.$popup-project-id-mobile-size;
-        line-height: styles.$popup-project-id-mobile-line-height;
-    }
-
-    .popup-project-name {
-        font-size: styles.$popup-project-name-mobile-size;
-        line-height: styles.$popup-project-name-mobile-line-height;
-    }
 
     section {
         @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
