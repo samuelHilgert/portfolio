@@ -16,7 +16,7 @@
 
   <div class="skills-container">
     <div class="skills-div" *ngFor="let skill of skills">
-      <div class="skill">
+      <div class="skill" data-aos="flip-left">
         <img [src]="skill.img" [alt]="skill.skill" />
         <p>{{ skill.skill }}</p>
       </div>

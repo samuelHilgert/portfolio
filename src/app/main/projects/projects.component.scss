@@ -76,6 +76,20 @@ section {
     box-sizing: border-box;
 }
 
+.review-animation {
+    animation: slideInFromRight 0.4s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .review-col {
     position: relative;
     top: -55px;
@@ -108,7 +122,7 @@ section {
 
 @media screen and (max-width: 1187px) {
     .content-row {
-        gap:48px;
+        gap: 48px;
     }
 
     .used-skills-div {
@@ -130,7 +144,7 @@ section {
     section {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
     }
-    
+
     .review-container {
         display: none;
     }

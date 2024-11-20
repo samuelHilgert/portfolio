@@ -1,6 +1,5 @@
 <section>
   <h5>{{ 'feedback.title' | translate }}</h5>
-  <img class="quotes-icon" src="./../../../assets/img/quotes.svg" alt="" />
   
   <div class="feedback-slider">
     <div class="feedback-container" [ngClass]="getAnimationClass()">
@@ -12,6 +11,7 @@
     </div>
   
     <div class="feedback-container" [ngClass]="getAnimationClass()">
+      <img class="quotes-icon" src="./../../../assets/img/quotes.svg" alt="" />
       <p>{{ currentFeedback.messageKey | translate }}</p>
       <div class="author-div">
         <hr />
