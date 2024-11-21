@@ -16,7 +16,7 @@ h5 {
 .feedback-slider {
   @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 4%);
   width: 140%;
-  height: auto;
+  min-height: 380px;
   box-sizing: border-box;
   position: relative;
   margin-top:48px;

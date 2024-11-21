@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { Project } from './../projects.component';
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -13,7 +13,7 @@ interface SkillImage {
 @Component({
   selector: 'app-popup-project',
   standalone: true,
-  imports: [CommonModule, NgIf, TranslateModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './popup-project.component.html',
   styleUrls: ['./popup-project.component.scss'],
 })

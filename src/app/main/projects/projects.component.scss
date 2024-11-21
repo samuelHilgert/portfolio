@@ -2,14 +2,13 @@
 @use './../../../styles.scss' as styles;
 
 section {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 90px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 90px);
 }
 
 .content-box-projects {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width: 100%;
-    height: auto;
-
+    width:60%;
+    box-sizing: border-box;
     >p:first-of-type {
         text-align: justify;
     }
@@ -71,13 +70,15 @@ section {
 
 .review-container {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
-    height: 100%;
-    width: 500px;
+    width:40%;
+    height:100%;
     box-sizing: border-box;
+    background-color: aqua;
 }
 
 .review-animation {
     animation: slideInFromRight 0.4s ease-out forwards;
+
 }
 
 @keyframes slideInFromRight {
@@ -98,15 +99,15 @@ section {
         position: relative;
         right: 20px;
         bottom: 20px;
-        width: 300px;
-        height: 200px;
+        width: auto;
+        height: auto;
         border-radius: 20px;
     }
 }
 
 .diagonal-lines {
     position: absolute;
-    width: 300px;
+    width: 370px;
     height: 200px;
     border-radius: 20px 20px 10px 20px;
     background: repeating-linear-gradient(135deg,
