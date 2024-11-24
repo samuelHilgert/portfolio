@@ -13,12 +13,14 @@
     box-sizing: border-box;
     border-top: 1px solid styles.$contact-form-row-border;
     border-bottom: 1px solid styles.$contact-form-row-border;
-    padding: 40px 32px;
+    padding: 5%;
+    height:140px;
     cursor: pointer;
 
     >label,
     input,
     textarea {
+        min-height:20px;
         &:hover {
             cursor: pointer;
         }
@@ -108,7 +110,7 @@ label {
 
 .terms-row {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
-    
+    padding-bottom:10px;
     span {
         color: styles.$placeholder-text;
 
@@ -158,6 +160,21 @@ label {
     color: red;
 }
 
+.term-missing-msg {
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
+}
+
+.missing-msg {
+    color: rgb(199, 80, 51);
+    position: relative;
+    bottom:10px;
+}
+
+.success-email-message {
+    margin-top: 30px;
+    color: styles.$text-link-color;
+}
+
 .submit-btn {
     @include styles.btn();
     color: styles.$placeholder-text;
@@ -173,20 +190,6 @@ label {
         color: styles.$placeholder-text;
         border-color: styles.$placeholder-text;
     }
-}
-
-.term-missing-msg {
-    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
-}
-
-.missing-msg {
-    color: rgb(199, 80, 51);
-    font-size: styles.$form-input-mobile-size;
-}
-
-.success-email-message {
-    margin-top: 30px;
-    color: styles.$text-link-color;
 }
 
 // ==================
