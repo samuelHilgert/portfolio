@@ -47,7 +47,7 @@ export class FeedbackComponent {
     setTimeout(() => {
       this.animationDirection = direction;
       this.animationClass = direction === 'next' ? 'move-left' : 'move-right';
-
+  
       if (direction === 'prev') {
         this.currentFeedbackIndex =
           this.currentFeedbackIndex > 0
@@ -59,7 +59,7 @@ export class FeedbackComponent {
             ? this.currentFeedbackIndex + 1
             : 0;
       }
-    }, 10);
+    }, 50); 
   }
 
   /**

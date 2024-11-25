@@ -117,7 +117,6 @@ h5 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -127,10 +126,10 @@ h5 {
   0% {
     transform: translateX(-100%);
   }
-
   100% {
     transform: translateX(0);
   }
+
 }
 
 .move-left {
