@@ -26,6 +26,8 @@ section {
     border: 1px solid styles.$feedback-container-border;
     border-radius: 10px;
     overflow: scroll;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .popup-content {

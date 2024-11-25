@@ -4,6 +4,8 @@ section {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
     overflow: hidden;
     z-index: 10000;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .banner-container {
@@ -17,9 +19,14 @@ section {
     padding: 12px 0;
     transform: rotate(-3deg);
     transform-origin: bottom left;   
+
+    width:101%;
     max-width: 100%; 
     overflow: hidden;
     z-index: 10000;
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .banner {

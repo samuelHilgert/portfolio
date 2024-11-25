@@ -14,6 +14,10 @@ header {
   right: 0;
   padding: 0 96px;
   padding-top: 48px;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+
   @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 24px);
 
   >img {

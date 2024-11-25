@@ -152,7 +152,7 @@ a {
 
 // Dynamic style settings for h1 headlines
 h1 {
-    font-size: clamp(1.5rem, 8vw, 15rem);
+    font-size: clamp(1.5rem, 8vw, 10rem);
     line-height: clamp(1rem, 7vw, 15rem);
     letter-spacing: clamp(-0.02em, 4vw, -0.05em);
 }
