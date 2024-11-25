@@ -19,36 +19,40 @@ section {
     @include styles.dFlex($d: flex, $fd: column, $jc: space-between, $ai: flex-start, $g: 0px);
     border: 1px solid styles.$feedback-container-border;
     border-radius: 20px;
-    overflow: auto;
     box-sizing: border-box;
     background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
-    padding: 50px;
+    padding: 20px 40px;
     margin: 3px;
-    height:90%;
-    width:100%;
+    height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .popup-container {
     @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 24px);
-    height:100%;
+    height: 100%;
     box-sizing: border-box;
+    flex: 1;
+    height: auto; 
 }
 
 .popup-content-box-left {
-    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 4rem);
     width: 50%;
-    height:100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
 .popup-content-box-right {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-end, $g: 0px);
     width: 50%;
-    height:100%;
+    height: 100%;
     box-sizing: border-box;
 
     >svg {
         fill: styles.$project-close-cross;
+        width: auto;
+        height: clamp(1.5rem, 4vw, 4rem);
 
         &:hover {
             cursor: pointer;
@@ -58,9 +62,9 @@ section {
     }
 
     >img {
-        margin-top:62px;
+        margin-top: 62px;
         width: 100%;
-        max-width:550px;
+        max-width: 550px;
         height: auto;
         border-radius: 30px;
         object-fit: cover;
@@ -74,7 +78,7 @@ section {
 }
 
 .popup-div-project-content {
-    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 32px);
+    @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 4rem);
     width: 100%;
     box-sizing: border-box;
 }
@@ -91,8 +95,8 @@ section {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 2px);
 
     >img {
-        width: 30px;
-        height: 30px;
+        width: clamp(1.5rem, 4vw, 2rem);
+        height: auto;
     }
 
     >p {
@@ -104,6 +108,7 @@ section {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 24px);
     width: 100%;
     box-sizing: border-box;
+    padding-top: 2rem;
 }
 
 .popup-right-next-div {
@@ -120,6 +125,8 @@ section {
 
     >svg {
         stroke: styles.$main-color;
+        width: auto;
+        height: clamp(1.5rem, 4vw, 4rem);
     }
 
     &:hover {
@@ -145,8 +152,8 @@ section {
 
 .btn-popup-link-arrow {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    width: 30px;
-    height: 30px;
+    width: auto;
+    height: clamp(0.5rem, 4vw, 2rem);
     fill: none;
     stroke-width: 1;
 }
@@ -162,173 +169,68 @@ section {
 // ==================
 
 @include styles.respond-to(tablet-large) {
+
     .popup-container-all {
         @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
-        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 20px 50px;
         height: 95%;
+        overflow-y: auto;
     }
 
     .popup-container {
         flex-direction: column-reverse;
-        gap: 24px;
-        padding: 12px 24px;
+        justify-content: space-between;
     }
 
     .popup-content-box-left {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
         width: 100%;
-        align-items: flex-start;
-        justify-content: flex-start;
-        padding-top:14px;
+        height: auto;
+        gap: 2rem;
     }
 
     .popup-content-box-right {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
-        width: 100%;
         align-items: flex-start;
-        justify-content: flex-start;
-        padding-top: -15px;
+        width: 100%;
+        padding-bottom: 2rem;
+        height: auto;
 
         >svg {
-            margin-left: calc(100% - 20px);
             padding-bottom: 30px;
+            margin-left: 100%;
         }
 
         >img {
             margin-top: 0px;
-            width: 80%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 30px;
         }
     }
 
-    .popup-content-box-bottom {
-        padding: 0px 24px;
-    }
-
     .popup-div-project-content {
-        gap: 48px;
-    }
-
-    .popup-div-project-title {
-        gap: 24px;
+        gap: 2rem;
     }
 
     .popup-project-btn-div {
-        padding-top: 52px;
-    }
-}
-
-@include styles.respond-to(tablet-small) {
-    .popup-content-box-right {
-        padding-top: -15px;
-
-        >svg {
-            padding-bottom: 12px;
-        }
-    }
-
-    .popup-content-box-left {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 12px);
-    }
-
-    .popup-div-project-content {
-        gap: 32px;
-    }
-
-    .popup-project-btn-div {
-        padding-top: 38px;
-    }
-
-    .popup-div-project-title {
-        gap: 12px;
-    }
-}
-
-@include styles.respond-to(smartphone-medium) {
-
-    section {
-        @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    }
-
-    .popup-container-all {
-        @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 0px);
-        padding: 5px;
-        margin: 0px;
-        height: 95%;
-        width: 100%;
-    }
-
-    .popup-container {
-        flex-direction: column-reverse;
-        gap: 24px;
-        padding: 12px 24px;
-    }
-
-    .popup-content-box-left {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 24px);
-        width: 100%;
-        align-items: flex-start;
         justify-content: flex-start;
-    }
-
-    .popup-content-box-right {
-        @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
-        width: 100%;
         align-items: flex-start;
-        justify-content: flex-start;
-        padding-top: -15px;
-
-        >svg {
-            margin-left: calc(100% - 20px);
-            padding-bottom: 30px;
-        }
-
-        >img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            border-radius: 30px;
-        }
-    }
-
-    .popup-content-box-bottom {
-        padding: 20px 24px;
-    }
-
-    .popup-div-project-content {
-        gap: 48px;
-    }
-
-    .popup-div-project-title {
-        gap: 24px;
+        gap: 2rem;
+        padding-bottom: 10%;
     }
 
     .popup-project-skills-box {
-        height: auto;
-        flex-wrap: wrap;
+        padding-top: 1rem;
     }
+
 }
 
 @include styles.respond-to(smartphone-small) {
-    section {
-        padding: 0 10px;
-    }
 
-    .popup-content-box-right {
-        >svg {
-            margin-left: calc(100% - 30px);
-        }
-    }
-
-    .popup-container {
-        flex-direction: column-reverse;
-        gap: 24px;
-        padding: 12px 5px;
-    }
-
-    .popup-project-btn-div {
-        gap: 12px;
+    .popup-container-all {
+        padding: 20px 30px;
     }
 }
+
+
+
+
+

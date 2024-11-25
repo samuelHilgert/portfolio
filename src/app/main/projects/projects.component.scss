@@ -149,6 +149,9 @@ section {
     .review-container {
         display: none;
     }
+    .content-box-projects {
+        width:100%;
+    }
 }
 
 @include styles.respond-to(tablet-small) {
