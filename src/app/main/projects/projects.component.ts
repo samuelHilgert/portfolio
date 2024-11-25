@@ -23,12 +23,12 @@ export interface Project {
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-
 export class ProjectsComponent {
   openPopup: boolean = false;
   arrowState: { [key: number]: boolean } = {};
   projectList: Project[] = [];
   selectedProject: Project | null = null;
+  private lastScrollPosition = 0;
 
   constructor(
     private http: HttpClient,
@@ -60,6 +60,8 @@ export class ProjectsComponent {
    * @param i Index of the selected project in projectList
    */
   openProjectPopup(i: number) {
+    this.lastScrollPosition = window.scrollY;
+    document.body.classList.add('no-scroll');
     this.translationService.setOverflowSettings('popup');
     if (this.projectList.length > 0) {
       this.selectedProject = this.projectList[i];
@@ -73,9 +75,15 @@ export class ProjectsComponent {
    * Closes the project popup and resets overflow behavior
    */
   closeProjectPopup() {
+    document.documentElement.style.scrollBehavior = 'auto';
+    document.body.classList.remove('no-scroll');
     this.openPopup = false;
     this.selectedProject = null;
     this.translationService.setOverflowSettings('default');
+    window.scrollTo(0, this.lastScrollPosition);
+    setTimeout(() => {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    }, 0);
   }
 
   /**

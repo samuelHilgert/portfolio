@@ -113,12 +113,25 @@ section {
 
   .skills-container {
     margin-top: 10px;
+    margin: auto 100%;
   }
 }
 
 @media screen and (max-width: 450px) {
+
+  .skills-container {
+    gap:0px;
+    width: 105%;
+  }
+
   h3 {
     white-space: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skill {
+    width:100px;
   }
 }
 

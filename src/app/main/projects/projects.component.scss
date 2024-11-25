@@ -3,13 +3,14 @@
 
 section {
     @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 90px);
-    width:100%
+    width: 100%
 }
 
 .content-box-projects {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width:60%;
+    width: 60%;
     box-sizing: border-box;
+
     >p:first-of-type {
         text-align: justify;
     }
@@ -71,29 +72,28 @@ section {
 
 .review-container {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
-    width:40%;
-    height:100%;
+    width: 40%;
+    height: 100%;
     box-sizing: border-box;
+
 }
 
 .review-col {
     position: relative;
-    top: -55px;
     width: 100%;
     box-sizing: border-box;
 
     img {
-        position: absolute;
+        position: relative; 
         width: 100%;
-        height: auto; 
-        border-radius: 20px; 
-        object-fit: cover; 
+        height: auto;
+        border-radius: 20px;
+        object-fit: cover;
     }
 }
 
 .review-animation {
     animation: slideInFromRight 0.4s ease-out forwards;
-
 }
 
 @keyframes slideInFromRight {
@@ -108,14 +108,19 @@ section {
 
 .diagonal-lines {
     position: absolute;
-    width: 100%;
-    height: auto; 
-    border-radius: 20px 20px 10px 20px;
-    background: repeating-linear-gradient(135deg,
-            styles.$main-color,
-            styles.$main-color 1px,
-            transparent 2px,
-            transparent 10px);
+    top: 12%;
+    left: 7%;
+    width: 99%;
+    height: 99%;
+    background: repeating-linear-gradient(
+        135deg,
+        styles.$main-color,
+        styles.$main-color 1px,
+        transparent 2px,
+        transparent 10px
+    );
+    z-index: -1;
+    border-radius: 20px;
 }
 
 // ==================
@@ -125,6 +130,15 @@ section {
 @media screen and (max-width: 1187px) {
     .content-row {
         gap: 48px;
+        align-items:flex-start;
+        
+        >h4 {
+            line-height: normal;
+        }
+    }
+
+    .content-row-title {
+        align-items:flex-start;
     }
 
     .used-skills-div {
@@ -150,8 +164,9 @@ section {
     .review-container {
         display: none;
     }
+
     .content-box-projects {
-        width:100%;
+        width: 100%;
     }
 }
 

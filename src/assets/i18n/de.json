@@ -16,18 +16,18 @@
   "aboute-me": {
     "title": "Wer ich bin",
     "subtitle": "Über mich",
-    "intro": "Schon als Kind war ich von Computern und dessen Vielfalt an Möglichkeiten begeistert. Erste größere Berührungspunkte mit der IT hatte ich mit meiner Ausbildung im Bereich Wirtschaftsinformatik. Als Frontend-Entwickler aus Viernheim begeistert mich die Vielfalt der IT. Mit großer Leidenschaft gestalte ich moderne und benutzerfreundliche Webseiten und Anwendungen, die sich durch ihre klare Ästhetik und intuitive Bedienbarkeit auszeichnen.",
-    "first": "Ich bin flexibel, was den Arbeitsort betrifft und arbeite sowohl in der direkten Umgebung von Viernheim, Mannheim und Heidelberg als auch remote Bestleistung.",
+    "intro": "Schon als Kind war ich von Computern und dessen Vielfalt an Möglichkeiten begeistert. Erste größere Berührungspunkte in der IT hatte ich mit meiner Ausbildung im Bereich Wirtschaftsinformatik. Als Frontend-Entwickler aus Viernheim begeistert mich die Vielfalt der IT. Mit großer Leidenschaft gestalte ich moderne und benutzerfreundliche Webseiten und Anwendungen, die sich durch ihre klare Ästhetik und intuitive Bedienbarkeit auszeichnen.",
+    "first": "Ich bin flexibel, was den Arbeitsort betrifft und arbeite sowohl in der direkten Umgebung von Viernheim, Mannheim und Heidelberg als auch Remote Bestleistung.",
     "second": "Ich bin offen für neue Herausforderungen und stets auf der Suche nach Möglichkeiten, mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
     "third": "Programmieren ist für mich weit mehr als nur Code zu schreiben – es ist eine kreative Art, Probleme zu lösen. Ich lege großen Wert darauf, komplexe technische Herausforderungen in klare und benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Ideen zum Leben zu erwecken."
   },
   "skills": {
     "title": "Technologien",
     "subtitle": "Fähigkeiten",
-    "intro": "Auf meinem bisherigen Weg habe ich an einer Vielzahl von Projekten gearbeitet und eine breite Palette von Frontend-Technologien und -Konzepten genutzt. Ich bin immer offen für neue Ideen und lerne gerne neue Methoden und Technologien kennen, um meine Fähigkeiten kontinuierlich zu verbessern und um in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+    "intro": "Auf meinem bisherigen Weg habe ich an einer Vielzahl von Projekten gearbeitet und eine breite Palette an Frontend-Technologien und -Konzepten genutzt. Ich bin immer offen für neue Ideen und lerne gerne neue Methoden und Technologien kennen, um meine Fähigkeiten kontinuierlich zu verbessern und um in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
     "subline": "Sie vermissen",
     "sublineExt": "eine bestimmte Fähigkeit?",
-    "text": "Sie dürfen mich gerne kontaktieren. Ich freue mich auf neue Herausforderungen und Gelegenheiten mein Wissen zu erweitern.",
+    "text": "Sie dürfen mich gerne kontaktieren. Ich freue mich auf neue Herausforderungen und Gelegenheiten, mein Wissen zu erweitern.",
     "button": "Kontakt aufnehmen"
   },
   "projectSection": {
