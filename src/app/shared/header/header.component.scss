@@ -225,9 +225,6 @@ header {
   header {
     padding: 16px 24px;
 
-    >.burger-menu-icon {
-    }
-
     .logo-div {
       >img {
         height: 68px;
@@ -255,9 +252,6 @@ header {
 @include styles.respond-to(smartphone-small) {
   header {
     padding: 8px 16px;
-
-    >.burger-menu-icon {
-    }
 
     .logo-div {
       >img {
@@ -309,7 +303,7 @@ header {
   header {
     .logo-div {
       justify-content: flex-start;
-      
+
       >img {
         width: 12%;
         height: auto;
