@@ -32,6 +32,8 @@ header {
 
 .topline {
   @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 24px);
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .custom-toggle {
