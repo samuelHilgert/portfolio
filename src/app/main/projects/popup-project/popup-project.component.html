@@ -24,45 +24,6 @@
           </div>
         </div>
       </div>
-
-      <div class="popup-project-btn-div">
-        <a
-          class="btn-popup"
-          [ngClass]="{ 'disabled-link': !project.gitHub || project.gitHub === ''}"
-          [attr.href]="project.gitHub && project.gitHub !== '' ? project.gitHub : null"
-          target="_blank"
-        >
-          <span>GitHub</span>
-          <svg
-            class="btn-popup-link-arrow"
-            [attr.stroke]="project.gitHub ? '#3DCFB6' : 'grey'"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            viewBox="0 0 25 25"
-          >
-            <path d="M7 17L17 7" />
-            <path d="M7 7h10v10" />
-          </svg>
-        </a>
-        <a
-          class="btn-popup"
-          [ngClass]="{ 'disabled-link': !project.liveTest || project.liveTest === ''}"
-          [attr.href]="project.liveTest && project.liveTest !== '' ? project.liveTest : null"
-          target="_blank"
-        >
-          <span>Live Test</span>
-          <svg
-            [attr.stroke]="project.liveTest ? '#3DCFB6' : 'grey'"
-            class="btn-popup-link-arrow"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            viewBox="0 0 25 25"
-          >
-            <path d="M7 17L17 7" />
-            <path d="M7 7h10v10" />
-          </svg>
-        </a>
-      </div>
     </div>
 
     <div class="popup-content-box-right">
@@ -75,6 +36,45 @@
     </div>
   </div>
 
+  <div class="popup-project-btn-div">
+    <a
+      class="btn-popup"
+      [ngClass]="{ 'disabled-link': !project.gitHub || project.gitHub === ''}"
+      [attr.href]="project.gitHub && project.gitHub !== '' ? project.gitHub : null"
+      target="_blank"
+    >
+      <span>GitHub</span>
+      <svg
+        class="btn-popup-link-arrow"
+        [attr.stroke]="project.gitHub ? '#3DCFB6' : 'grey'"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 25 25"
+      >
+        <path d="M7 17L17 7" />
+        <path d="M7 7h10v10" />
+      </svg>
+    </a>
+    <a
+      class="btn-popup"
+      [ngClass]="{ 'disabled-link': !project.liveTest || project.liveTest === ''}"
+      [attr.href]="project.liveTest && project.liveTest !== '' ? project.liveTest : null"
+      target="_blank"
+    >
+      <span>Live Test</span>
+      <svg
+        [attr.stroke]="project.liveTest ? '#3DCFB6' : 'grey'"
+        class="btn-popup-link-arrow"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 25 25"
+      >
+        <path d="M7 17L17 7" />
+        <path d="M7 7h10v10" />
+      </svg>
+    </a>
+  </div>
+  
   <div class="popup-content-box-bottom">
     <div class="popup-right-next-div" (click)="loadNextProject()">
       <p>{{ "popup-project.next-project-text" | translate }}</p>
