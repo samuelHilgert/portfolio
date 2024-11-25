@@ -3,6 +3,7 @@
 
 section {
     @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 90px);
+    width:100%
 }
 
 .content-box-projects {
@@ -73,7 +74,21 @@ section {
     width:40%;
     height:100%;
     box-sizing: border-box;
-    background-color: aqua;
+}
+
+.review-col {
+    position: relative;
+    top: -55px;
+    width: 100%;
+    box-sizing: border-box;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: auto; 
+        border-radius: 20px; 
+        object-fit: cover; 
+    }
 }
 
 .review-animation {
@@ -91,24 +106,10 @@ section {
     }
 }
 
-.review-col {
-    position: relative;
-    top: -55px;
-
-    img {
-        position: relative;
-        right: 20px;
-        bottom: 20px;
-        width: auto;
-        height: auto;
-        border-radius: 20px;
-    }
-}
-
 .diagonal-lines {
     position: absolute;
-    width: 370px;
-    height: 200px;
+    width: 100%;
+    height: auto; 
     border-radius: 20px 20px 10px 20px;
     background: repeating-linear-gradient(135deg,
             styles.$main-color,
