@@ -26,7 +26,6 @@ import { CommonModule, NgIf } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-
 export class HeaderComponent {
   isEnglish: boolean = true;
   openBurgerMenu: boolean = false;
@@ -38,7 +37,6 @@ export class HeaderComponent {
     private translationService: TranslationService,
     private eRef: ElementRef
   ) {
-
     const storedLang = localStorage.getItem('lang') || 'de';
     this.isEnglish = storedLang === 'de';
 
@@ -49,9 +47,9 @@ export class HeaderComponent {
   /**
    * Toggles the language between German and English.
    * This method updates the `isEnglish` state, changes the current
-   * language used in the application, and stores the selected 
-   * language in local storage for persistence. It also calls the 
-   * `initializeLanguage` method on the `TranslationService` to 
+   * language used in the application, and stores the selected
+   * language in local storage for persistence. It also calls the
+   * `initializeLanguage` method on the `TranslationService` to
    * apply the necessary translations.
    */
   toggleLanguage() {
@@ -77,21 +75,32 @@ export class HeaderComponent {
   @HostListener('document:click', ['$event'])
   clickOutside(event: Event) {
     // Prüfen, ob der Klick außerhalb des Containers `popupBurgerMenu` war
-    if (this.openBurgerMenu && this.popupBurgerMenu && !this.popupBurgerMenu.nativeElement.contains(event.target)) {
+    if (
+      this.openBurgerMenu &&
+      this.popupBurgerMenu &&
+      !this.popupBurgerMenu.nativeElement.contains(event.target)
+    ) {
       this.openBurgerMenu = false;
     }
   }
 
   /**
-   * Toggles the visibility of the burger menu. If the menu is open, 
-   * it closes it; if it is closed, it opens the menu. This method 
+   * Toggles the visibility of the burger menu. If the menu is open,
+   * it closes it; if it is closed, it opens the menu. This method
    * updates the `openBurgerMenu` state accordingly.
    */
   openPopupBurgerMenu() {
-    if(this.openBurgerMenu) {
+    if (this.openBurgerMenu) {
       this.openBurgerMenu = false;
     } else {
       this.openBurgerMenu = true;
     }
+  }
+
+  /**
+   * Closes the burger menu by setting the `openBurgerMenu` state to `false`.
+   */
+  closeBurgerMenu() {
+    this.openBurgerMenu = false;
   }
 }

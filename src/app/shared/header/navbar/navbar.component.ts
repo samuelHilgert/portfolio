@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+
+import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -9,4 +10,10 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './navbar.component.scss'
 })
 
-export class NavbarComponent {}
+export class NavbarComponent {
+  @Output() linkClicked = new EventEmitter<void>();
+
+  onLinkClick() {
+    this.linkClicked.emit();
+  }
+}

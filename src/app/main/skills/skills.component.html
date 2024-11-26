@@ -6,21 +6,24 @@
       <p>{{ "skills.intro" | translate }}</p>
       <span
         >{{ "skills.subline" | translate }}
-        <a>{{ "skills.sublineExt" | translate }}</a></span>
+        <a>{{ "skills.sublineExt" | translate }}</a></span
+      >
       <p>{{ "skills.text" | translate }}</p>
 
       <a class="btn" href="#contact"
-        ><span>{{ "skills.button" | translate }}</span></a>
+        ><span>{{ "skills.button" | translate }}</span></a
+      >
     </div>
   </div>
 
   <div class="skills-container">
-    <div class="skills-div" *ngFor="let skill of skills">
-      <div class="skill" data-aos="flip-left">
-        <img [src]="skill.img" [alt]="skill.skill" />
-        <p>{{ skill.skill }}</p>
+    <div class="skills-box">
+      <div class="skills-div" *ngFor="let skill of skills">
+        <div class="skill" data-aos="flip-left">
+          <img [src]="skill.img" [alt]="skill.skill" />
+          <p>{{ skill.skill }}</p>
+        </div>
       </div>
     </div>
-
   </div>
 </section>

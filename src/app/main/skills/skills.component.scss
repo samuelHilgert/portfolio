@@ -45,14 +45,19 @@ section {
 }
 
 .skills-container {
+  @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
+}
+
+.skills-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 1rem;
   margin-top: 6%;
   width: 100%;
   box-sizing: border-box;
 }
+
 
 .skills-div {
   @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
@@ -106,32 +111,66 @@ section {
   }
 }
 
+// @media screen and (max-width: 990px) {
+//   section {
+//     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 32px);
+//   }
+
+//   .skills-container {
+//     margin-top: 10px;
+//     margin: auto 100%;
+//   }
+
+
+// }
+
 @media screen and (max-width: 990px) {
   section {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 32px);
   }
 
   .skills-container {
-    margin-top: 10px;
-    margin: auto 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  .skills-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: auto;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .skill {
+    text-align: left; 
+  }
+}
+
+@media screen and (max-width: 525px) {
+
+  .skills-container {
+    gap: 0px;
+    width: 105%;
+  }
+
+  .skill {
+    width: 100px;
   }
 }
 
 @media screen and (max-width: 450px) {
-
-  .skills-container {
-    gap:0px;
-    width: 105%;
-  }
-
   h3 {
     white-space: wrap;
   }
-}
 
-@media screen and (max-width: 400px) {
-  .skill {
-    width:100px;
+  .skills-box {
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
   }
 }
 
@@ -142,6 +181,10 @@ section {
 
   .content-box-border {
     padding: 20px;
+  }
+
+  .skills-box {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   }
 }
 

@@ -30,11 +30,10 @@ section {
 
 .banner {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
-    animation: slide-left 20s linear infinite;
+    animation: slide-left 4s linear infinite;
     white-space: nowrap;
-    width: 180%;
+    width: 100%;
     box-sizing: border-box;
-    padding: 0 12px;
     position: relative;
     font-size: styles.$banner-text-size;
 }
@@ -54,11 +53,11 @@ section {
 
 @keyframes slide-left {
     0% {
-        transform: translateX(110%);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(-160%);
+        transform: translateX(-100%);
     }
 }
 

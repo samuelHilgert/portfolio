@@ -6,9 +6,9 @@ section {
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 20%;
     padding: 20px;
-    height: 100%;
+    height: 75%;
     width: 100%;
     box-sizing: border-box;
     background-color: styles.$bg-filter;
@@ -35,13 +35,19 @@ section {
     width: 100%;
     box-sizing: border-box;
 
-    >h1 {
-        color: styles.$project-index !important;
-    }
-
     >h3 {
         color: styles.$project-title !important;
         padding-bottom: 12px;
+    }
+}
+
+.legal-notice-title {
+    >span {
+        font-weight: 700;
+        color: styles.$header-headline;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+        font-size: clamp(1rem, 5vw, 7rem);
     }
 }
 

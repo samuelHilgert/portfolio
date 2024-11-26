@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contactform',
@@ -12,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contactform.component.scss'
 })
 
-export class ContactformComponent {
+export class ContactformComponent implements OnInit, OnDestroy {
   http = inject(HttpClient);
 
   contactData = {
@@ -35,6 +37,31 @@ export class ContactformComponent {
       },
     },
   };
+
+  /**
+ * This lifecycle hook is called when the component is initialized.
+ * It initializes AOS (Animate On Scroll) with specific animation settings
+ * such as duration, easing, and delay. AOS is responsible for animating
+ * elements as they scroll into view.
+ */
+  ngOnInit(): void {
+    AOS.init({
+      duration: 500,
+      easing: 'ease-in',
+      once: true,
+      offset: 0,
+      delay: 200, 
+    });
+  }
+
+/**
+ * This lifecycle hook is called when the component is destroyed.
+ * It refreshes AOS to ensure that any animations are properly cleaned up.
+ * This is necessary to reset AOS behavior when the component is removed.
+ */
+  ngOnDestroy(): void {
+    AOS.refresh();
+  }
 
   /**
    * Handles form submission, performs validation, and sends an HTTP POST request.
@@ -62,5 +89,6 @@ export class ContactformComponent {
       ngForm.resetForm();
     }
   }
+
 }
 

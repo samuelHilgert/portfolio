@@ -41,7 +41,7 @@
 
   <div class="popupBurgerMenu" *ngIf="openBurgerMenu" #popupBurgerMenu>
     <div class="contentBurgerMenu">
-      <app-navbar></app-navbar>
+      <app-navbar (linkClicked)="closeBurgerMenu()"></app-navbar>
       <div class="custom-toggle">
         <input
           type="checkbox"

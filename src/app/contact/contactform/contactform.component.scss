@@ -14,13 +14,14 @@
     border-top: 1px solid styles.$contact-form-row-border;
     border-bottom: 1px solid styles.$contact-form-row-border;
     padding: 5%;
-    height:150px;
+    height: 150px;
     cursor: pointer;
 
     >label,
     input,
     textarea {
-        min-height:20px;
+        min-height: 20px;
+
         &:hover {
             cursor: pointer;
         }
@@ -45,15 +46,12 @@ label {
 }
 
 .form-input {
-    font-size: styles.$form-input-mobile-size;
-}
-
-.form-input {
     background-color: transparent;
     border: none;
     width: 100%;
     box-sizing: border-box;
     color: styles.$placeholder-text;
+    font-size: styles.$form-input-mobile-size;
 
     &::placeholder {
         color: styles.$placeholder-text;
@@ -101,6 +99,17 @@ label {
     }
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px styles.$general-bg-color inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: styles.$placeholder-text !important;
+}
+
 .terms-div {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 12px);
     padding: 40px 0;
@@ -110,7 +119,8 @@ label {
 
 .terms-row {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 12px);
-    padding-bottom:10px;
+    padding-bottom: 10px;
+
     span {
         color: styles.$placeholder-text;
 
@@ -152,7 +162,7 @@ label {
 .submit-row {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: flex-start, $g: 0px);
     width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .missing-field-div {
@@ -167,12 +177,24 @@ label {
 .missing-msg {
     color: rgb(199, 80, 51);
     position: relative;
-    bottom:10px;
+    bottom: 10px;
 }
 
 .success-email-message {
-    margin-top: 30px;
+    position:relative;
+    right:0;
+    left:0;
+    top:-20rem;
+    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    box-sizing: border-box;
+    padding: 20% 10%;
+    border-radius: 30px;
+    border: 1px solid styles.$content-box-border;
+    background: styles.$content-box-bg-sucess-msg;
+    margin-top: 2.5rem;
     color: styles.$text-link-color;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    z-index:99999999;
 }
 
 .submit-btn {
@@ -187,8 +209,9 @@ label {
     }
 
     &.invalidSubmitBtn {
-        color: styles.$placeholder-text;
-        border-color: styles.$placeholder-text;
+        color: styles.$invalid-submit-btn-text;
+        border-color: styles.$invalid-submit-btn-border;
+        cursor:not-allowed;
     }
 }
 
@@ -198,7 +221,7 @@ label {
 
 @include styles.respond-to(smartphone-medium) {
     .terms-row {
-        
+
         >input {
             width: 30px !important;
             height: 17px !important;
