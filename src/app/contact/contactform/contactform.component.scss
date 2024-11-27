@@ -1,4 +1,5 @@
 // @import './../../../styles.scss';
+
 @use './../../../styles.scss' as styles;
 
 .content-rows-div {
@@ -103,7 +104,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px styles.$general-bg-color inset !important;
+    transition: background-color 5000000s ease-in-out 0s !important;
 }
 
 input:-webkit-autofill {
@@ -140,7 +141,6 @@ input:-webkit-autofill {
 
         &:checked {
             background-color: transparent;
-            /* Checkbox bleibt transparent */
             border-color: styles.$main-color;
         }
 
@@ -201,7 +201,6 @@ input:-webkit-autofill {
     @include styles.btn();
     color: styles.$placeholder-text;
 
-    // Stil für den Button, wenn das Formular gültig ist
     &.validSubmitBtn {
         color: styles.$main-color;
         border-color: styles.$main-color;

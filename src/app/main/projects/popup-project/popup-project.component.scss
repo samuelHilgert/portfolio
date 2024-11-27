@@ -1,4 +1,4 @@
-// @import './../../../../styles.scss';
+
 @use './../../../../styles.scss' as styles;
 
 section {
@@ -220,11 +220,9 @@ section {
     .popup-project-skills-box {
         padding-top: 1rem;
     }
-
 }
 
 @include styles.respond-to(smartphone-small) {
-
     .popup-container-all {
         padding: 20px 30px;
     }

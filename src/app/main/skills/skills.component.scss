@@ -111,19 +111,6 @@ section {
   }
 }
 
-// @media screen and (max-width: 990px) {
-//   section {
-//     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 32px);
-//   }
-
-//   .skills-container {
-//     margin-top: 10px;
-//     margin: auto 100%;
-//   }
-
-
-// }
-
 @media screen and (max-width: 990px) {
   section {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: center, $g: 32px);
