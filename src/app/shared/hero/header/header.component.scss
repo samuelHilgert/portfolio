@@ -10,7 +10,7 @@ header {
   box-sizing: border-box;
   max-width: 1920px;
   margin: 0 auto;
-
+  height:150px;
   @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 24px);
 
   >img {

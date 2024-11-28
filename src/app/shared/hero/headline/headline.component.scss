@@ -1,8 +1,7 @@
 @use './../../../../styles.scss' as styles;
 
-section {
+.section-headline {
     @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 36px);
-    text-align: center;
 }
 
 .headline-btns-div {

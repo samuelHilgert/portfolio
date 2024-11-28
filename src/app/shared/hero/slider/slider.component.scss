@@ -4,6 +4,11 @@
     @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-end, $g: 0px);
     max-width: 1920px;
     margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:3;
 }
 
 .banner-container {
@@ -22,7 +27,7 @@
     box-sizing: border-box;
     font-size: styles.$banner-text-size;
     background-color: styles.$banner-bg-c;
-    height:50px;
+    height: 50px;
 }
 
 .spacer-div {
