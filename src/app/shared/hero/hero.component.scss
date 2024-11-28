@@ -1,0 +1,11 @@
+@use './../../../styles.scss' as styles;
+
+section {
+    @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
+    height: 100vh;
+    margin-bottom: -1px;
+    background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  

@@ -1,41 +1,28 @@
 @use './../../../../styles.scss' as styles;
 
-section {
-    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    overflow: hidden;
-    z-index: 10000;
+.section-banner {
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-end, $g: 0px);
     max-width: 1920px;
     margin: 0 auto;
 }
 
 .banner-container {
-    @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px;
-    background-color: styles.$banner-bg-c;
-    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
     transform: rotate(-3deg);
     transform-origin: bottom left;
-    width: 101%;
-    max-width: 100%;
-    overflow: hidden;
-    z-index: 10000;
-    box-sizing: border-box;
-    max-width: 1920px;
-    margin: 0 auto;
 }
 
 .banner {
-    @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: center, $g: 0px);
-    animation: slide-left 12s linear infinite;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    animation: slide-left 5s linear infinite;
+    width: fit-content;
     white-space: nowrap;
     box-sizing: border-box;
-    position: relative;
     font-size: styles.$banner-text-size;
+    background-color: styles.$banner-bg-c;
+    height:50px;
 }
 
 .spacer-div {
@@ -53,22 +40,17 @@ section {
 
 @keyframes slide-left {
     0% {
-        transform: translateX(1%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform: translateX(-120%);
+        transform: translateX(-50%);
     }
 }
-
 
 // ==================
 // RESPONSIVE STYLES
 // ==================
-
-@media screen and (max-width: 1230px) {
-
-  }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
     .banner-container {

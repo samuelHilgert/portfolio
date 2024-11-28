@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './shared/header/header.component';
+import { HeroComponent } from './shared/hero/hero.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from "./shared/footer/footer.component";
 import { TranslateModule } from "@ngx-translate/core";
@@ -10,7 +10,7 @@ import { TranslationService } from './shared/services/translationService';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, MainComponent, FooterComponent, TranslateModule],
+  imports: [CommonModule, RouterOutlet, HeroComponent, MainComponent, FooterComponent, TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
