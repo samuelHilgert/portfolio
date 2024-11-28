@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 import { TranslationService } from '../shared/services/translationService';
+import { HeaderComponent } from '../shared/hero/header/header.component';
 
 @Component({
   selector: 'app-legal-notice',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, HeaderComponent],
   templateUrl: './legal-notice.component.html',
   styleUrls: ['./legal-notice.component.scss'],
 })
