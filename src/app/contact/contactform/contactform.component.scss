@@ -15,7 +15,7 @@
     border-top: 1px solid styles.$contact-form-row-border;
     border-bottom: 1px solid styles.$contact-form-row-border;
     padding: 5%;
-    height: 150px;
+    min-height: 150px;
     cursor: pointer;
 
     >label,
@@ -40,6 +40,12 @@
         filter: brightness(1.1);
         border-color: lighten(styles.$contact-form-row-border, 25%);
     }
+
+    textarea {
+        resize: none; 
+        height: clamp(6rem, 2vh, 20rem);
+    }
+
 }
 
 label {

@@ -1,7 +1,8 @@
 @use './colors.scss' as *;
 
 @mixin btn() {
-  padding: clamp(0.5rem, 2vw, 1rem) clamp(0.5rem, 2vw, 2rem);
+  padding: clamp(0.5rem, 2vh, 5rem) clamp(0.75rem, 2vw, 8rem);
+  min-width:6rem;
   border-radius: 24px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
