@@ -1,38 +1,32 @@
-<app-header></app-header>
-
-<section (click)="closePopupOnClickOutside($event)">
-  <div class="popup-container" (click)="$event.stopPropagation()">
+<section>
+  <div class="popup-container">
     <div class="popup-content">
       <div class="paragraph">
-
-        <div class="top">
-          <svg (click)="closeLegalNotice()" viewBox="0 0 24 24" width="35" height="35">
-            <path
-              d="M18.3 5.71a1 1 0 00-1.42 0L12 10.59 7.11 5.71A1 1 0 105.7 7.12L10.59 12l-4.88 4.88a1 1 0 001.42 1.42L12 13.41l4.88 4.88a1 1 0 001.42-1.42L13.41 12l4.88-4.88a1 1 0 000-1.41z"/>
-          </svg>
-        </div>
-  
         <div class="legal-notice-title">
           <span>{{ "legal-notice.title" | translate }}</span>
         </div>
 
-      <div class="paragraph">
-        <h3>{{ "legal-notice.responsible" | translate }}</h3>
-      </div>
+        <div class="paragraph">
+          <h3>{{ "legal-notice.responsible" | translate }}</h3>
+        </div>
 
-      <div class="paragraph">
-        <p>{{ "legal-notice.responsible-name" | translate }}<br />
-          {{ "legal-notice.responsible-adress" | translate }}<br />
-          {{ "legal-notice.responsible-city" | translate }}<br />
-          {{ "legal-notice.responsible-country" | translate }}</p>
-        <p>{{ "legal-notice.authorized-representative" | translate }}</p>
-        <p>{{ "legal-notice.responsible-mail" | translate }}</p>
-      </div>
+        <div class="paragraph">
+          <p>
+            {{ "legal-notice.responsible-name" | translate }}<br />
+            {{ "legal-notice.responsible-adress" | translate }}<br />
+            {{ "legal-notice.responsible-city" | translate }}<br />
+            {{ "legal-notice.responsible-country" | translate }}
+          </p>
+          <p>{{ "legal-notice.authorized-representative" | translate }}</p>
+          <p>{{ "legal-notice.responsible-mail" | translate }}</p>
+        </div>
 
-      <div class="paragraph">
-        <a href="privacy-policy">{{ "legal-notice.link-privacy-policy" | translate }}</a>
+        <div class="paragraph">
+          <a href="privacy-policy">{{
+            "legal-notice.link-privacy-policy" | translate
+          }}</a>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </section>

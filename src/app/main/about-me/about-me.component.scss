@@ -1,8 +1,8 @@
-
 @use './../../../styles.scss' as styles;
 
 section {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 112px);
+
     >img {
         &:first-child {
             width: 568px;

@@ -1,4 +1,11 @@
-import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  OnChanges,
+  SimpleChanges,
+} from '@angular/core';
 import { Project } from './../projects.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
@@ -17,18 +24,17 @@ interface SkillImage {
   templateUrl: './popup-project.component.html',
   styleUrls: ['./popup-project.component.scss'],
 })
-
 export class PopupProjectComponent implements OnChanges {
   @Input() openPopup: boolean = false;
   @Input() project!: Project;
-  @Output() closePopup: EventEmitter<void> = new EventEmitter(); 
+  @Output() closePopup: EventEmitter<void> = new EventEmitter();
   @Output() nextProject: EventEmitter<void> = new EventEmitter();
 
   skillImagesList: SkillImage[] = [];
   matchingSkillImages: SkillImage[] = [];
 
   constructor(private http: HttpClient) {
-    this.loadSkillImages(); 
+    this.loadSkillImages();
   }
 
   /**
@@ -56,8 +62,10 @@ export class PopupProjectComponent implements OnChanges {
    */
   getMatchingSkillImages() {
     if (this.project && this.project.skills) {
-      const projectSkillsArray = this.project.skills.split(', ').map(skill => skill.trim());
-      this.matchingSkillImages = this.skillImagesList.filter(skillImage =>
+      const projectSkillsArray = this.project.skills
+        .split(', ')
+        .map((skill) => skill.trim());
+      this.matchingSkillImages = this.skillImagesList.filter((skillImage) =>
         projectSkillsArray.includes(skillImage.skill)
       );
     }

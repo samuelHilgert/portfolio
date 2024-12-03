@@ -3,34 +3,22 @@
 
 section {
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 20%;
     padding: 20px;
-    height: 75%;
-    width: 100%;
     box-sizing: border-box;
-    background-color: styles.$bg-filter;
-    z-index: 99999;
-    height:80%;
-    z-index: 1;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 180px;
 }
 
 .popup-container {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-start, $ai: flex-start, $g: 12px);
-    position: relative;
+    width: 100%;
     background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
     padding: 30px;
-    height: 100%;
-    width: 100%;
     box-sizing: border-box;
     border: 1px solid styles.$feedback-container-border;
     border-radius: 10px;
-    overflow: auto;
-    max-width: 1920px;
-    margin: 0 auto;
-    z-index: 1;
 }
 
 .popup-content {
@@ -91,7 +79,7 @@ section {
         overflow-wrap: break-word;
         width: 100%;
         box-sizing: border-box;
-        padding-bottom:12px;
+        padding-bottom: 12px;
     }
 }
 

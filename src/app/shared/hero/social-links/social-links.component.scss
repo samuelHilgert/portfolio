@@ -9,11 +9,11 @@
     padding: 0px 5%;
     max-width: 1920px;
     margin: 0 auto;
-    z-index:3;
+    z-index: 3;
 }
 
 .left {
-    height:100vh;
+    height: 100vh;
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: flex-end, $g: 9px);
 
     hr {
@@ -33,7 +33,7 @@
 }
 
 .right {
-    height:100vh;
+    height: 100vh;
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-end, $ai: flex-end, $g: 8px);
     width: 0;
     box-sizing: border-box;

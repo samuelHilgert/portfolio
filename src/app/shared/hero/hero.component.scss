@@ -7,6 +7,11 @@ section {
   max-width: 1920px;
   margin: 0 auto;
   height: 100svh;
-  position:relative;
-  z-index:1;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  z-index: 1;
+  max-width: 1920px;
+  margin: 0 auto;
 }

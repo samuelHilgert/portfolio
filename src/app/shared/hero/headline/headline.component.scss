@@ -3,8 +3,8 @@
 .section-headline {
     @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 36px);
     margin: 0 auto;
-    position:relative;
-    z-index:4;
+    position: relative;
+    z-index: 4;
 }
 
 .headline-btns-div {

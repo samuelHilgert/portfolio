@@ -1,10 +1,10 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { NavbarComponent } from '../hero/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../../services/translationService';
+import { TranslationService } from '../services/translationService';
 import { CommonModule, NgIf } from '@angular/common';
 
 @Component({

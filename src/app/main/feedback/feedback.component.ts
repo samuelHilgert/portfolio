@@ -9,7 +9,6 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.scss'],
 })
-
 export class FeedbackComponent {
   currentFeedbackIndex: number = 0;
   animationDirection: string = 'next';
@@ -47,7 +46,7 @@ export class FeedbackComponent {
     setTimeout(() => {
       this.animationDirection = direction;
       this.animationClass = direction === 'next' ? 'move-left' : 'move-right';
-  
+
       if (direction === 'prev') {
         this.currentFeedbackIndex =
           this.currentFeedbackIndex > 0
@@ -59,12 +58,12 @@ export class FeedbackComponent {
             ? this.currentFeedbackIndex + 1
             : 0;
       }
-    }, 50); 
+    }, 50);
   }
 
   /**
    * Returns the CSS class for the current animation.
-   * 
+   *
    * @returns The current animation CSS class
    */
   getAnimationClass() {

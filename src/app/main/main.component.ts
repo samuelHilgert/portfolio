@@ -21,18 +21,17 @@ import { TranslationService } from '../shared/services/translationService';
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
-
 export class MainComponent implements OnInit {
   constructor(private translationService: TranslationService) {}
 
-/**
- * Lifecycle hook that is called after the component is initialized.
- * This method sets the overflow settings for the translation service to 
- * 'default'. This is typically used to manage the display and behavior 
- * of the application's overflow settings when the main component is 
- * rendered. This ensures that any necessary configurations for 
- * translations are applied at the start.
- */
+  /**
+   * Lifecycle hook that is called after the component is initialized.
+   * This method sets the overflow settings for the translation service to
+   * 'default'. This is typically used to manage the display and behavior
+   * of the application's overflow settings when the main component is
+   * rendered. This ensures that any necessary configurations for
+   * translations are applied at the start.
+   */
   ngOnInit(): void {
     this.translationService.setOverflowSettings('default');
   }
