@@ -5,7 +5,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactComponent } from '../contact/contact.component';
-import { PopupProjectComponent } from './projects/popup-project/popup-project.component';
 import { TranslationService } from '../shared/services/translationService';
 
 @Component({

@@ -16,6 +16,7 @@
     box-sizing: border-box;
     transform: rotate(-3deg);
     transform-origin: bottom left;
+    overflow: hidden;
 }
 
 .banner {
@@ -25,7 +26,7 @@
     width: fit-content;
     white-space: nowrap;
     box-sizing: border-box;
-    font-size: styles.$banner-text-size;
+    font-size: 24px;
     background-color: styles.$banner-bg-c;
     height: 50px;
 }
@@ -49,7 +50,7 @@
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-62.5%);
     }
 }
 

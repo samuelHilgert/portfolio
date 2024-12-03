@@ -1,8 +1,8 @@
 @use './colors.scss' as *;
 
 @mixin btn() {
-  padding: clamp(0.5rem, 2vh, 5rem) clamp(0.75rem, 2vw, 8rem);
-  min-width:6rem;
+  padding: clamp(0.5rem, 2vh, 5rem) clamp(0.75rem, 2vw, 6rem);
+  min-width:5rem;
   border-radius: 24px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
@@ -45,11 +45,11 @@
   }
 
   50% {
-    transform: translateX(-160%);
+    transform: translateX(-180%);
   }
 
   51% {
-    transform: translateX(180%);
+    transform: translateX(200%);
   }
 
   100% {
