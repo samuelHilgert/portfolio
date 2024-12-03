@@ -8,14 +8,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 999; 
 }
 
 .banner-container {
     width: 100%;
     box-sizing: border-box;
     transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
     transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
     overflow: hidden;
 }
 
@@ -23,7 +25,7 @@
     display: flex;
     align-items: center;
     animation: slide-left 15s linear infinite;
-    width: fit-content;
+    width: max-content; 
     white-space: nowrap;
     box-sizing: border-box;
     font-size: 24px;
@@ -44,12 +46,31 @@
 // ANIMATION
 // ==================
 
-@keyframes slide-left {
+@-webkit-keyframes slide-left {
     0% {
+        -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
 
     100% {
+        -webkit-transform: translateX(-62.5%);
         transform: translateX(-62.5%);
     }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-62.5%);
+        transform: translateX(-62.5%);
+    }
+}
+
+.banner {
+    animation: slide-left 15s linear infinite;
+    -webkit-animation: slide-left 15s linear infinite;
 }
