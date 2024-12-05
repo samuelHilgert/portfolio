@@ -15,9 +15,9 @@
     width: 100%;
     box-sizing: border-box;
     transform: rotate(-3deg);
-    // -webkit-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
     transform-origin: bottom left;
-    // -webkit-transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
     overflow: hidden;
 }
 
@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     animation: slide-left 15s linear infinite;
-    width: max-content; 
+    width: 4430px;
     white-space: nowrap;
     box-sizing: border-box;
     font-size: 24px;
@@ -48,24 +48,24 @@
 
 @-webkit-keyframes slide-left {
     0% {
-        // -webkit-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
 
     100% {
-        // -webkit-transform: translateX(-62.5%);
+        -webkit-transform: translateX(-62.5%);
         transform: translateX(-62.5%);
     }
 }
 
 @keyframes slide-left {
     0% {
-        // -webkit-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
         transform: translateX(0%);
     }
 
     100% {
-        // -webkit-transform: translateX(-62.5%);
+        -webkit-transform: translateX(-62.5%);
         transform: translateX(-62.5%);
     }
 }
