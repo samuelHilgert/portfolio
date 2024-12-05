@@ -14,6 +14,26 @@ nav {
 a {
     @include styles.navLinks();
     white-space: nowrap;
+    text-decoration: none;
+    position: relative; 
+    &:hover {
+        &::after {
+          content: '';
+          position: absolute; 
+          left: 50%;
+          bottom: -1rem;
+          width: 10px;
+          height: 10px;
+          background-color: styles.$main-color;
+          border-radius: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s; 
+        }
+        &::after {
+          opacity: 1;
+        }
+      }
 }
 
 // ==================

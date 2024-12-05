@@ -4,7 +4,6 @@ section {
   @include styles.dFlex($d: flex, $fd: column, $jc: center, $ai: center, $g: 0px);
   margin-bottom: -1px;
   background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
-  max-width: 1920px;
   margin: 0 auto;
   height: 100svh;
   top: 0;
@@ -12,6 +11,7 @@ section {
   right: 0;
   position: relative;
   z-index: 1;
-  max-width: 1920px;
+  // max-width: 1920px;
+  width:100%;
   margin: 0 auto;
 }

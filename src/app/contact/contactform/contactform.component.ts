@@ -3,13 +3,14 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contactform',
   standalone: true,
-  imports: [TranslateModule, FormsModule, CommonModule],
+  imports: [TranslateModule, FormsModule, CommonModule, RouterModule],
   templateUrl: './contactform.component.html',
   styleUrl: './contactform.component.scss',
 })

@@ -1,14 +1,11 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HeroComponent } from './shared/hero/hero.component';
-import { MainComponent } from './main/main.component';
+import { RouterModule } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from './shared/services/translationService';
 import { HeaderComponent } from './shared/header/header.component';
-import { RoutingService } from './shared/services/routingService';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -17,47 +14,25 @@ import { Subscription } from 'rxjs';
     CommonModule,
     HeaderComponent,
     RouterOutlet,
-    HeroComponent,
-    MainComponent,
+    RouterModule,
     FooterComponent,
     TranslateModule,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit, OnDestroy {
-  isRoutingActivated: boolean = true;
-  private routingSubscription: Subscription = new Subscription();
-
-  constructor(
-    private translationService: TranslationService,
-    private routingService: RoutingService
-  ) {}
+export class AppComponent implements OnInit {
+  constructor(private translationService: TranslationService) {}
 
   title = 'portfolio';
 
   /**
-   * Lifecycle hook that is called after the component has been initialized.
-   * This method calls `initializeLanguage` from the TranslationService to set up
-   * the initial language configuration for the application.
+   * Lifecycle hook called after the component has been initialized.
+   * This method is used to initialize the language settings of the application
+   * by calling the `initializeLanguage` method from the `TranslationService`.
+   * It ensures that the correct language configuration is applied at the start of the app.
    */
   ngOnInit(): void {
     this.translationService.initializeLanguage();
-    this.routingSubscription = this.routingService.activatePrivacy$.subscribe(
-      (isActive) => {
-        this.isRoutingActivated = isActive;
-      }
-    );
-  }
-
-  /**
-   * Lifecycle hook that is called when the component is about to be destroyed.
-   * This method ensures that the subscription to the `activatePrivacy$` observable is properly cleaned up.
-   * It prevents memory leaks by unsubscribing from the observable when the component is destroyed.
-   */
-  ngOnDestroy(): void {
-    if (this.routingSubscription) {
-      this.routingSubscription.unsubscribe();
-    }
   }
 }
