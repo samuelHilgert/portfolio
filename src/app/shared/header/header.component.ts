@@ -6,6 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../services/translationService';
 import { CommonModule, NgIf } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,6 +17,7 @@ import { CommonModule, NgIf } from '@angular/common';
     NavbarComponent,
     FormsModule,
     TranslateModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
