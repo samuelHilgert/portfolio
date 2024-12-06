@@ -16,18 +16,18 @@
   "aboute-me": {
     "title": "Who I Am",
     "subtitle": "About me",
-    "intro": "As a frontend developer based in Viernheim, I am passionate about the diversity within IT. With great enthusiasm, I design modern and user-friendly websites and applications that stand out with their clean aesthetics and intuitive usability.",
-    "first": "I am flexible when it comes to the workplace and deliver top performance both in the direct vicinity of Viernheim, Mannheim, Heidelberg, as well as remotely.",
-    "second": "I am open to new challenges and always looking for opportunities to continuously improve my knowledge and skills.",
-    "third": "For me, programming is much more than just writing code – it's a creative way to solve problems. I place great importance on translating complex technical challenges into clear and user-friendly solutions. This way, I help you achieve your goals and bring your ideas to life."
+    "intro": "Even as a child, I was enthusiastic about technology and computers in particular. I had my first major contact with IT as part of my training in business informatics with various programming languages such as C, C++ and PHP. However, it was during the implementation of my first own Wordpress projects as a freelancer that I developed a passion for coding and the goal of gaining a professional foothold in IT. As a front-end developer, I design modern and user-friendly applications that are characterized by their clear aesthetics and intuitive usability.",
+    "first": "For me, programming is much more than just coding - it is a creative method for solving technical problems. I attach great importance to transforming complex technical applications into clear and user-friendly solutions.",
+    "second": "I am open to new challenges and always looking for new opportunities to continuously improve my knowledge and skills.",
+    "third": "I am flexible in terms of where I work. I work both remotely and on site in the Mannheim and Heidelberg area."
   },
   "skills": {
     "title": "Technologies",
     "subtitle": "Skill Set",
-    "intro": "On my journey so far, I have worked on a variety of projects and utilized a wide range of frontend technologies and concepts. I am always open to new ideas and enjoy acquiring new methods and technologies to continuously improve my skills and stay up to date in the ever-evolving world of web development.",
+    "intro": "Along the way, I have worked on many projects and have become familiar with and used a wide range of front-end technologies and concepts. Here you will find a small selection of technologies in which I excel.",
     "subline": "You need",
     "sublineExt": "another skill?",
-    "text": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "text": "I am of course open to learning new technologies, methods and concepts in order to be able to offer competent solutions tailored to your needs, but also to keep up to date in the constantly evolving world of web development. You are welcome to contact me. I look forward to new challenges and opportunities to expand my knowledge.",
     "button": "Let's Talk"
   },
   "projectSection": {
@@ -37,12 +37,12 @@
   },
   "feedback": {
     "title": "What others say about me",
-    "l_pan": "Working with Samuel was fantastic! His ability to solve complex frontend issues significantly advanced our project. Always creative and reliable!",
-    "l_pan_role": "Team Partner",
-    "g_heinrich": "Samuel not only brings technical knowledge, but also has an excellent sense of user experience. His designs are appealing and intuitive, which greatly benefits our users.",
-    "g_heinrich_role": "Frontend Developer",
-    "e_henriks": "It's always a pleasure to work with Samuel. He is not only talented in programming but also a team player, always willing to share his knowledge and support others.",
-    "e_henriks_role": "Customer"
+    "lena_schone": "Samuel not only designed our website functionally, but also beautifully. He really responded to our wishes and needs! Not only we, but also our user were delighted with the website.",
+    "lena_schone_role": "Customer",
+    "g_heinrich": "Working with Samuel was great! His commitment and perseverance played a key role in moving our project forward. You could always rely on him!",
+    "g_heinrich_role": "Team Partner",
+    "e_köppel": "It was a great pleasure to work with Samuel. He is not only talented in programming, but also a team player who is always willing to share his knowledge and support others.",
+    "e_köppel_role": "Team Partner"
   },
   "contact": {
     "title": "Contact me",
@@ -83,6 +83,12 @@
     },
     {
       "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    {
+      "description": "A professional advertising presence for a real estate agency. This site is linked to a database to show current offers as well as references."
+    },
+    {
+      "description": "A website for the upcoming wedding. After logging in, the invited guests can, for example, leave feedback or fulfill wishes from the wish list."
     },
     {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."

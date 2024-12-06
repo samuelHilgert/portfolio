@@ -37,14 +37,22 @@
     </div>
   </div>
 
-<div class="review-container">
-  <div class="review-col" *ngFor="let proj of projectList; let i = index" 
-       [ngClass]="{'review-animation': arrowState[i]}"
-       [ngStyle]="{ display: arrowState[i] ? 'flex' : 'none', top: i === 0 ? '5rem' : '10rem'}">
-    <div class="diagonal-lines"></div>
-    <img [src]="'./' + proj.imgStart" alt="{{ proj.title }}" />
+  <div class="review-container">
+    <div class="review-col" *ngFor="let proj of projectList; let i = index" 
+         [ngClass]="{'review-animation': arrowState[i]}"
+         [ngStyle]="{ 
+           display: arrowState[i] ? 'flex' : 'none', 
+           top: i === 0 ? '0rem' : 
+                i === 1 ? '5rem' : 
+                i === 2 ? '10rem' : 
+                i === 3 ? '15rem' : 
+                i === 4 ? '20rem' : 
+                '25rem' 
+         }">
+      <div class="diagonal-lines"></div>
+      <img [src]="'./' + proj.imgStart" alt="{{ proj.title }}" />
+    </div>
   </div>
-</div>
 
 </section>
 

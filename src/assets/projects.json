@@ -8,7 +8,7 @@
             "imgStart": "assets/img/projects/start/join_start.png",
             "imgGameplay": "assets/img/projects/example/join_example.png",
             "gitHub": "https://github.com/samuelHilgert/Join-Kanban.git",
-            "liveTest":"https://join.samuelhilgert.com"
+            "liveTest":"https://www.join.samuelhilgert.com"
 
         },
         {
@@ -19,7 +19,27 @@
             "imgStart": "assets/img/projects/start/el-pollo-loco_start.jpeg",
             "imgGameplay": "assets/img/projects/example/el-pollo-loco_example.jpeg",
             "gitHub": "https://github.com/samuelHilgert/el-pollo-loco.git",
-            "liveTest":"https://el-pollo-loco.samuelhilgert.com"
+            "liveTest":"https://www.el-pollo-loco.samuelhilgert.com"
+        },
+        {
+            "id": 3,
+            "title": "Hilgert Immobilien",
+            "description": "",
+            "skills": "HTML, CSS, JavaScript",
+            "imgStart": "assets/img/projects/start/hilgert-immobilien_start.jpeg",
+            "imgGameplay": "assets/img/projects/example/hilgert-immobilien_example.jpeg",
+            "gitHub": "",
+            "liveTest":"https://www.hilgert-immobilien.de"
+        },
+        {
+            "id": 4,
+            "title": "Wedding Page",
+            "description": "",
+            "skills": "HTML, CSS, JavaScript",
+            "imgStart": "assets/img/projects/start/lenathans-hochzeit_start.jpeg",
+            "imgGameplay": "assets/img/projects/example/lenathans-hochzeit_start.jpeg",
+            "gitHub": "",
+            "liveTest":"https://www.lenathans-hochzeit.de"
         }
     ]
 }

@@ -16,9 +16,9 @@ export class FeedbackComponent {
 
   feedbackList = [
     {
-      author: 'L. Pan',
-      role: 'feedback.l_pan_role',
-      messageKey: 'feedback.l_pan',
+      author: 'L. Schone',
+      role: 'feedback.lena_schone_role',
+      messageKey: 'feedback.lena_schone',
     },
     {
       author: 'G. Heinrich',
@@ -26,9 +26,9 @@ export class FeedbackComponent {
       messageKey: 'feedback.g_heinrich',
     },
     {
-      author: 'E. Henriks',
-      role: 'feedback.e_henriks_role',
-      messageKey: 'feedback.e_henriks',
+      author: 'E. Köppel',
+      role: 'feedback.e_köppel_role',
+      messageKey: 'feedback.e_köppel',
     },
   ];
 

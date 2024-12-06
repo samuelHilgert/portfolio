@@ -16,18 +16,18 @@
   "aboute-me": {
     "title": "Wer ich bin",
     "subtitle": "Über mich",
-    "intro": "Schon als Kind war ich von Computern und dessen Vielfalt an Möglichkeiten begeistert. Erste größere Berührungspunkte in der IT hatte ich mit meiner Ausbildung im Bereich Wirtschaftsinformatik. Als Frontend-Entwickler aus Viernheim begeistert mich die Vielfalt der IT. Mit großer Leidenschaft gestalte ich moderne und benutzerfreundliche Webseiten und Anwendungen, die sich durch ihre klare Ästhetik und intuitive Bedienbarkeit auszeichnen.",
-    "first": "Ich bin flexibel, was den Arbeitsort betrifft und arbeite sowohl in der direkten Umgebung von Viernheim, Mannheim und Heidelberg als auch Remote Bestleistung.",
-    "second": "Ich bin offen für neue Herausforderungen und stets auf der Suche nach Möglichkeiten, mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
-    "third": "Programmieren ist für mich weit mehr als nur Code zu schreiben – es ist eine kreative Art, Probleme zu lösen. Ich lege großen Wert darauf, komplexe technische Herausforderungen in klare und benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Ideen zum Leben zu erwecken."
+    "intro": "Schon als Kind war ich von Technik und besonders von Computern begeistert. Erste größere Berührungspunkte in der IT hatte ich im Rahmen meiner Ausbildung im Bereich Wirtschaftsinformatik mit verschiedenen Programmiersprachen wie C, C++ und PHP. Gerade aber beim Umsetzen meiner ersten eigenen Wordpress-Projekte als Freelancer entstand die Leidenschaft fürs Coden und das Ziel in der IT beruflich Fuß zu fassen. Als Frontend-Entwickler gestalte ich moderne und benutzerfreundliche Applikationen, die sich durch ihre klare Ästhetik und intuitive Bedienbarkeit auszeichnen.",
+    "first": "Programmieren ist für mich weit mehr als nur Coden – es ist für mich eine kreative Methode, um technische Probleme zu lösen. Ich lege dabei großen Wert darauf, komplexe technische Anwendungen in klare und benutzerfreundliche Lösungen zu verwandeln.",
+    "second": "Ich bin offen für neue Herausforderungen und stets auf der Suche nach neuen Möglichkeiten, mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+    "third": "Ich bin flexibel, was den Arbeitsort betrifft. Ich arbeite sowohl remote als auch vor Ort im Umfeld von Mannheim und Heidelberg."
   },
   "skills": {
     "title": "Technologien",
     "subtitle": "Fähigkeiten",
-    "intro": "Auf meinem bisherigen Weg habe ich an einer Vielzahl von Projekten gearbeitet und eine breite Palette an Frontend-Technologien und -Konzepten genutzt. Ich bin immer offen für neue Ideen und lerne gerne neue Methoden und Technologien kennen, um meine Fähigkeiten kontinuierlich zu verbessern und um in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.",
+    "intro": "Auf meinem bisherigen Weg habe ich an vielen Projekten gearbeitet und eine breite Palette an Frontend-Technologien und -Konzepten kennengelernt und genutzt. Hier finden Sie eine kleine Auswahl an Technologien, in denen ich überzeuge.",
     "subline": "Sie vermissen",
     "sublineExt": "eine bestimmte Fähigkeit?",
-    "text": "Sie dürfen mich gerne kontaktieren. Ich freue mich auf neue Herausforderungen und Gelegenheiten, mein Wissen zu erweitern.",
+    "text": "Ich bin selbstverständlich offen für das Aneignen neuer Technologien, Methoden und Konzepte, um speziell auf Ihren Bedarf hin kompetente Lösungen anbieten zu können, aber auch um in der sich ständig weiterentwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben. Sie dürfen mich gerne kontaktieren. Ich freue mich auf neue Herausforderungen und Gelegenheiten, mein Wissen zu erweitern.",
     "button": "Kontakt aufnehmen"
   },
   "projectSection": {
@@ -37,14 +37,13 @@
   },
   "feedback": {
     "title": "Was andere über mich sagen",
-    "l_pan": "Die Zusammenarbeit mit Samuel war großartig! Seine Fähigkeit, komplexe Frontend-Probleme zu lösen, hat unser Projekt entscheidend vorangebracht. Immer kreativ und zuverlässig!",
-    "l_pan_role": "Team Partner",
-    "g_heinrich": "Samuel bringt nicht nur technisches Wissen mit, sondern auch ein hervorragendes Gespür für Benutzererfahrung. Seine Designs sind ansprechend und intuitiv, was unseren Nutzern sehr zugutekommt.",
-    "g_heinrich_role": "Frontend Entwickler",
-    "e_henriks": "Es ist immer eine Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen.",
-    "e_henriks_role": "Kunde"
+    "lena_schone": "Samuel hat unsere Webseite nicht nur funktional, sondern auch wunderschön gestaltet. Er ist super auf unsere Wünsche und Bedürfnisse eingegangen! Nicht nur wir, auch unsere Nutzer waren von der Homepage begeistert.",
+    "lena_schone_role": "Kunde",
+    "g_heinrich": "Die Zusammenarbeit mit Samuel war großartig! Sein Engagement und seine Ausdauer haben wesentlich dazu beigetragen, unser Projekt entscheidend voranzubringen. Auf ihn war immer Verlass!",
+    "g_heinrich_role": "Team Partner",
+    "e_köppel": "Es war mir eine große Freude, mit Samuel zu arbeiten. Er ist nicht nur talentiert im Programmieren, sondern auch ein Teamplayer, der stets bereit ist, sein Wissen zu teilen und andere zu unterstützen.",
+    "e_köppel_role": "Team Partner"
   },
-
   "contact": {
     "title": "Kontaktieren Sie mich",
     "subtitle": "Lassen Sie uns zusammenarbeiten",
@@ -84,6 +83,12 @@
     },
     {
       "description": "Ein Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco einzusammeln, um gegen das verrückte Huhn zu kämpfen."
+    },
+    {
+      "description": "Ein professioneller Werbeauftritt für eine Immobilienagentur. Diese Seite ist mit einer Datenbank verbunden, um sowohl aktuelle Angebote als auch Referenzen zu zeigen."
+    },
+    {
+      "description": "Eine Webseite für die anstehende Hochzeit. Nach dem Login können die eingeladenen Gäste bspw. Rückmeldungen abgeben oder Wünsche aus der Wunschliste erfüllen."
     },
     {
       "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Channel-Struktur."
