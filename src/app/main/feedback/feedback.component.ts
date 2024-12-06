@@ -26,9 +26,9 @@ export class FeedbackComponent {
       messageKey: 'feedback.g_heinrich',
     },
     {
-      author: 'E. Köppel',
-      role: 'feedback.e_köppel_role',
-      messageKey: 'feedback.e_köppel',
+      author: 'T. Wahrenberg',
+      role: 'feedback.t_wahrenberg_role',
+      messageKey: 'feedback.t_wahrenberg',
     },
   ];
 
