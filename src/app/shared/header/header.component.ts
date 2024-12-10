@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from '../../shared/header/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
@@ -52,15 +52,20 @@ export class HeaderComponent {
     this.isEnglish = this.isEnglish;
     if (!this.isEnglish) {
       this.translate.use('en');
-      // console.log('english');
       localStorage.setItem('lang', 'en');
     } else {
       this.translate.use('de');
-      // console.log('german');
       localStorage.setItem('lang', 'de');
     }
     this.translationService.initializeLanguage();
   }
+
+  // control msg.
+  // ngAfterViewInit() {
+  //   if (!this.popupBurgerMenu) {
+  //     console.error('popupBurgerMenu nicht gefunden!');
+  //   }
+  // }
 
   /**
    * Handles click events on the document. If the user clicks outside
@@ -70,12 +75,7 @@ export class HeaderComponent {
    */
   @HostListener('document:click', ['$event'])
   clickOutside(event: Event) {
-    // Prüfen, ob der Klick außerhalb des Containers `popupBurgerMenu` war
-    if (
-      this.openBurgerMenu &&
-      this.popupBurgerMenu &&
-      !this.popupBurgerMenu.nativeElement.contains(event.target)
-    ) {
+    if (this.popupBurgerMenu && !this.popupBurgerMenu.nativeElement.contains(event.target)) {
       this.openBurgerMenu = false;
     }
   }
@@ -85,15 +85,9 @@ export class HeaderComponent {
    * it closes it; if it is closed, it opens the menu. This method
    * updates the `openBurgerMenu` state accordingly.
    */
-  openPopupBurgerMenu() {
-    console.log(`zuerst: ` + this.openBurgerMenu);
-    if (this.openBurgerMenu) {
-      this.openBurgerMenu = false;
-      console.log(this.openBurgerMenu);
-    } else {
-      this.openBurgerMenu = true;
-      console.log(this.openBurgerMenu);
-    }
+  openPopupBurgerMenu(event: Event) {
+    event.stopPropagation();
+    this.openBurgerMenu = !this.openBurgerMenu;
   }
 
   /**

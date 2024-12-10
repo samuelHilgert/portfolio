@@ -29,14 +29,14 @@
   </a>
 
   <img
-    (click)="openPopupBurgerMenu()"
+    (click)="openPopupBurgerMenu($event)"
     class="burger-menu-icon"
     src="./../../../assets/img/menu.svg"
     alt=""
   />
 </header>
 
-<div class="popupBurgerMenu" *ngIf="openBurgerMenu">
+<div class="popupBurgerMenu" *ngIf="openBurgerMenu" #popupBurgerMenu>
   <div class="contentBurgerMenu">
     <app-navbar (linkClicked)="closeBurgerMenu()"></app-navbar>
     <div class="custom-toggle">
