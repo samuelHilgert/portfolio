@@ -49,6 +49,12 @@
 }
 
 @include styles.respond-to(smartphone-small) {
+
+    h1 {
+        font-weight: 600;
+        letter-spacing: -0.01em;
+    }
+
     section {
         margin-bottom: 120px;
     }

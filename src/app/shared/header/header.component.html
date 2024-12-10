@@ -36,7 +36,7 @@
   />
 </header>
 
-<div class="popupBurgerMenu" *ngIf="openBurgerMenu" #popupBurgerMenu>
+<div class="popupBurgerMenu" *ngIf="openBurgerMenu">
   <div class="contentBurgerMenu">
     <app-navbar (linkClicked)="closeBurgerMenu()"></app-navbar>
     <div class="custom-toggle">

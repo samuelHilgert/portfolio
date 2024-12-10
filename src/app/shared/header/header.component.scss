@@ -93,8 +93,8 @@ header {
 
 .popupBurgerMenu {
   position: absolute;
-  right: 42px;
-  top: 130px;
+  right: 5%;
+  top: 11%;
   width: 40%;
   height: auto;
   background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
@@ -216,8 +216,6 @@ header {
 
 @include styles.respond-to(smartphone-medium) {
   .popupBurgerMenu {
-    right: 24px;
-    top: 86px;
     width: 45%;
   }
 
@@ -261,8 +259,7 @@ header {
   }
 
   .popupBurgerMenu {
-    right: 16px;
-    top: 62px;
+    top: 14%;
     width: 55%;
   }
 

@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { NavbarComponent } from '../../main/hero/navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
@@ -86,10 +86,13 @@ export class HeaderComponent {
    * updates the `openBurgerMenu` state accordingly.
    */
   openPopupBurgerMenu() {
+    console.log(`zuerst: ` + this.openBurgerMenu);
     if (this.openBurgerMenu) {
       this.openBurgerMenu = false;
+      console.log(this.openBurgerMenu);
     } else {
       this.openBurgerMenu = true;
+      console.log(this.openBurgerMenu);
     }
   }
 

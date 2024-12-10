@@ -24,10 +24,10 @@
   "skills": {
     "title": "Technologies",
     "subtitle": "Skill Set",
-    "intro": "Along the way, I have worked on many projects and have become familiar with and used a wide range of front-end technologies and concepts. Here you will find a small selection of technologies in which I excel.",
+    "intro": "Along the way, I have worked on many projects and learned and used a wide range of front-end technologies and concepts. Here is a small selection of technologies that you can use to assess my skills.",
     "subline": "You need",
     "sublineExt": "another skill?",
-    "text": "I am of course open to learning new technologies, methods and concepts in order to be able to offer competent solutions tailored to your needs, but also to keep up to date in the constantly evolving world of web development. You are welcome to contact me. I look forward to new challenges and opportunities to expand my knowledge.",
+    "text": "I am open to learning new technologies, methods and concepts in order to be able to offer competent solutions specifically tailored to your needs, but also to keep up to date in the constantly evolving world of web development. You are welcome to contact me. I look forward to new challenges and opportunities to expand my knowledge.",
     "button": "Let's Talk"
   },
   "projectSection": {
@@ -47,7 +47,7 @@
   "contact": {
     "title": "Contact me",
     "subtitle": "Let's work together",
-    "subline": "Got a problem to solve?",
+    "subline": "Would you like to solve a problem or implement a specific idea?",
     "text": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
     "question": "Need a Frontend developer?",
     "link": "Let's talk!",
