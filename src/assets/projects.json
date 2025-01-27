@@ -40,6 +40,16 @@
             "imgGameplay": "assets/img/projects/example/lenathans-hochzeit_start.jpeg",
             "gitHub": "",
             "liveTest":"https://www.lenathans-hochzeit.de"
+        },
+        {
+            "id": 5,
+            "title": "DA Bubble",
+            "description": "",
+            "skills": "Angular, TypeScript, HTML, CSS, Firebase",
+            "imgStart": "assets/img/projects/start/da-bubble_start.png",
+            "imgGameplay": "assets/img/projects/example/da-bubble_example.png",
+            "gitHub": "",
+            "liveTest":"https://www.da-bubble.samuelhilgert.com"
         }
     ]
 }
