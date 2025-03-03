@@ -22,16 +22,15 @@ section {
     background: linear-gradient(to top right, styles.$bg-linear-c-1, styles.$bg-linear-c-2);
     padding: 20px 40px;
     margin: 3px;
-    height: 90vh;
+    height: 95vh;
     width: 100%;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .popup-container {
     @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: flex-start, $g: 24px);
-    height: 100%;
     box-sizing: border-box;
-    flex: 1;
     height: auto;
 }
 

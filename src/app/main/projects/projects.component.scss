@@ -7,7 +7,7 @@ section {
 
 .content-box-projects {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width: 60%;
+    width: 67%;
     box-sizing: border-box;
 
     >p:first-of-type {
