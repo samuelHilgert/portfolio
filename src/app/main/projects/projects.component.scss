@@ -1,13 +1,13 @@
 @use './../../../styles.scss' as styles;
 
 section {
-    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 90px);
+    @include styles.dFlex($d: flex, $fd: row, $jc: space-between, $ai: center, $g: 48px);
     width: 100%
 }
 
 .content-box-projects {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width: 67%;
+    width: 80%;
     box-sizing: border-box;
 
     >p:first-of-type {
@@ -29,6 +29,7 @@ section {
     padding: 40px 32px;
 
     h4 {
+        font-size: 24px !important;
         font-weight: 700;
         color: styles.$project-title;
     }
@@ -55,6 +56,7 @@ section {
 
 .used-skills-div {
     @include styles.dFlex($d: flex, $fd: row, $jc: flex-end, $ai: flex-start, $g: 12px);
+    font-size:16px;
 
     >div {
         display: flex;

@@ -31,6 +31,11 @@
         "img_green": "assets/img/skills/green/ANGULAR_GREEN.svg"
       },
       {
+        "skill": "PHP",
+        "img": "assets/img/skills/PHP.svg",
+        "img_green": "assets/img/skills/green/PHP_GREEN.svg"
+      },
+      {
         "skill": "Firebase",
         "img": "assets/img/skills/Firebase.svg",
         "img_green": "assets/img/skills/green/FIREBASE_GREEN.svg"
@@ -52,7 +57,7 @@
       },
       {
         "skill": "Growth Mindset",
-        "img": "assets/img/skills/Growth_mindset.svg",
+        "img": "assets/img/skills/GROWTH.svg",
         "img_green": ""
       }
     ]
