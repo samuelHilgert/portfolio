@@ -190,9 +190,9 @@ input:-webkit-autofill {
     position:relative;
     right:0;
     left:0;
-    top:-760px;
+    top:-780px;
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
-    height:630px;
+    height:670px;
     width:100%;
     box-sizing: border-box;
     padding: 20px 24px;
