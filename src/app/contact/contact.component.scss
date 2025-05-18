@@ -8,8 +8,15 @@ section {
 
 .content-box-contact {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width: 100%;
+    width: 50%;
+    box-sizing: border-box;
     height: auto;
+
+    h4 {
+        width:100%;
+        box-sizing: border-box;
+        text-wrap: unset !important;
+    }
 
     span {
         >span {
