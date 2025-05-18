@@ -8,7 +8,7 @@ section {
 
 .content-box-contact {
     @include styles.dFlex($d: flex, $fd: column, $jc: flex-start, $ai: flex-start, $g: 24px);
-    width: 50%;
+    width: 80%;
     box-sizing: border-box;
     height: auto;
 
