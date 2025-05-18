@@ -190,10 +190,12 @@ input:-webkit-autofill {
     position:relative;
     right:0;
     left:0;
-    top:-20rem;
+    top:-760px;
     @include styles.dFlex($d: flex, $fd: row, $jc: center, $ai: center, $g: 0px);
+    height:630px;
+    width:100%;
     box-sizing: border-box;
-    padding: 12px 24px;
+    padding: 20px 24px;
     border-radius: 30px;
     border: 1px solid styles.$content-box-border;
     background: styles.$content-box-bg-sucess-msg;
