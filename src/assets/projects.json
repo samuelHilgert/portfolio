@@ -28,7 +28,7 @@
             "skills": "HTML, CSS, TypeScript, Angular, PHP, Firebase",
             "imgStart": "assets/img/projects/start/hilgert-immobilien_start.jpeg",
             "imgGameplay": "assets/img/projects/example/hilgert-immobilien_example.jpeg",
-            "gitHub": "",
+            "gitHub": "https://github.com/samuelHilgert/Immobilienagentur-Hilgert",
             "liveTest":"https://www.hilgert-immobilien.de"
         },
         {
@@ -48,7 +48,7 @@
             "skills": "HTML, CSS, TypeScript, Angular, Firebase",
             "imgStart": "assets/img/projects/start/da-bubble_start.jpeg",
             "imgGameplay": "assets/img/projects/example/da-bubble_example.jpeg",
-            "gitHub": "",
+            "gitHub": "https://github.com/samuelHilgert/dabubble/tree/main",
             "liveTest":"http://da-bubble.samuelhilgert.com/"
         }
     ]
